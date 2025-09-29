@@ -1,0 +1,948 @@
+dirname,filename,filename_abb,state_id,state_name,district_id,district_name
+~/iec/pc01/district_handbooks/,DH_02_2001_B_KAN.pdf,B_KAN,2,himachal pradesh,2,kangra
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_02_2001_B_KAN_EB.pdf,B_KAN_EB,2,himachal pradesh,2,kangra
+~/iec/pc01/district_handbooks/,DH_02_2001_B_MAN.pdf,B_MAN,2,himachal pradesh,5,mandi
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_02_2001_B_MAN_EB.pdf,B_MAN_EB,2,himachal pradesh,5,mandi
+~/iec/pc01/district_handbooks/,DH_02_2001_B_SHI.pdf,B_SHI,2,himachal pradesh,11,shimla
+~/iec/pc01/district_handbooks/,DH_02_2001_BIL.pdf,BIL,2,himachal pradesh,8,bilaspur
+~/iec/pc01/district_handbooks/,DH_02_2001_CHA.pdf,CHA,2,himachal pradesh,1,chamba
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_02_2001_CHA_EB.pdf,CHA_EB,2,himachal pradesh,1,chamba
+~/iec/pc01/district_handbooks/,DH_02_2001_HAM.pdf,HAM,2,himachal pradesh,6,hamirpur
+~/iec/pc01/district_handbooks/,DH_02_2001_KIN.pdf,KIN,2,himachal pradesh,12,kinnaur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_02_2001_KIN_EB.pdf,KIN_EB,2,himachal pradesh,12,kinnaur
+~/iec/pc01/district_handbooks/,DH_02_2001_KUL.pdf,KUL,2,himachal pradesh,4,kullu
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_02_2001_KUL_EB.pdf,KUL_EB,2,himachal pradesh,4,kullu
+~/iec/pc01/district_handbooks/,DH_02_2001_LAH.pdf,LAH,2,himachal pradesh,3,lahul spiti
+~/iec/pc01/district_handbooks/,DH_02_2001_SIR.pdf,SIR,2,himachal pradesh,10,sirmaur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_02_2001_SIR_EB.pdf,SIR_EB,2,himachal pradesh,10,sirmaur
+~/iec/pc01/district_handbooks/,DH_02_2001_UNA.pdf,UNA,2,himachal pradesh,7,una
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_02_2001_UNA_EB.pdf,UNA_EB,2,himachal pradesh,7,una
+~/iec/pc01/district_handbooks/,DH_03_2001_AMR.pdf,AMR,3,punjab,2,amritsar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_03_2001_AMR_EB.pdf,AMR_EB,3,punjab,2,amritsar
+~/iec/pc01/district_handbooks/,DH_03_2001_BAT.pdf,BAT,3,punjab,14,bathinda
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_03_2001_BAT_EB.pdf,BAT_EB,3,punjab,14,bathinda
+~/iec/pc01/district_handbooks/,DH_03_2001_FAR.pdf,FAR,3,punjab,13,faridkot
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_03_2001_FAR_EB.pdf,FAR_EB,3,punjab,13,faridkot
+~/iec/pc01/district_handbooks/,DH_03_2001_FAT.pdf,FAT,3,punjab,8,fatehgarh sahib
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_03_2001_FAT_EB.pdf,FAT_EB,3,punjab,8,fatehgarh sahib
+~/iec/pc01/district_handbooks/,DH_03_2001_FIR.pdf,FIR,3,punjab,11,firozpur
+~/iec/pc01/district_handbooks/,DH_03_2001_HOS.pdf,HOS,3,punjab,5,hoshiarpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_03_2001_HOS_EB.pdf,HOS_EB,3,punjab,5,hoshiarpur
+~/iec/pc01/district_handbooks/,DH_03_2001_JAL.pdf,JAL,3,punjab,4,jalandhar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_03_2001_JAL_EB.pdf,JAL_EB,3,punjab,4,jalandhar
+~/iec/pc01/district_handbooks/,DH_03_2001_KAP.pdf,KAP,3,punjab,3,kapurthala
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_03_2001_KAP_EB.pdf,KAP_EB,3,punjab,3,kapurthala
+~/iec/pc01/district_handbooks/,DH_03_2001_LUD.pdf,LUD,3,punjab,9,ludhiana
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_03_2001_LUD_EB.pdf,LUD_EB,3,punjab,9,ludhiana
+~/iec/pc01/district_handbooks/,DH_03_2001_MAN.pdf,MAN,3,punjab,15,mansa
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_03_2001_MAN_EB.pdf,MAN_EB,3,punjab,15,mansa
+~/iec/pc01/district_handbooks/,DH_03_2001_MOG.pdf,MOG,3,punjab,10,moga
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_03_2001_MOG_EB.pdf,MOG_EB,3,punjab,10,moga
+~/iec/pc01/district_handbooks/,DH_03_2001_MUK.pdf,MUK,3,punjab,12,muktsar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_03_2001_MUK_EB.pdf,MUK_EB,3,punjab,12,muktsar
+~/iec/pc01/district_handbooks/,DH_03_2001_NAW.pdf,NAW,3,punjab,6,nawanshahr
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_03_2001_NAW_EB.pdf,NAW_EB,3,punjab,6,nawanshahr
+~/iec/pc01/district_handbooks/,DH_03_2001_PAT.pdf,PAT,3,punjab,17,patiala
+~/iec/pc01/district_handbooks/,DH_03_2001_RUP.pdf,RUP,3,punjab,7,rupnagar
+~/iec/pc01/district_handbooks/,DH_03_2001_SAN.pdf,SAN,3,punjab,16,sangrur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_03_2001_SAN_EB.pdf,SAN_EB,3,punjab,16,sangrur
+~/iec/pc01/district_handbooks/,DH_04_2001_CHA.pdf,CHA,4,chandigarh,1,chandigarh
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_04_2001_CHA_EB.pdf,CHA_EB,4,chandigarh,1,chandigarh
+~/iec/pc01/district_handbooks/,DH_05_2001_BAG.pdf,BAG,5,uttarakhand,8,bageshwar
+~/iec/pc01/district_handbooks/,DH_05_2001_GAR_VOL-02.pdf,GAR_VOL-02,5,uttarakhand,6,garhwal
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_05_2001_GAR_VOL-02_EB.pdf,GAR_VOL-02_EB,5,uttarakhand,6,garhwal
+~/iec/pc01/district_handbooks/,DH_05_2001_HAR.pdf,HAR,5,uttarakhand,13,hardwar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_05_2001_HAR_EB.pdf,HAR_EB,5,uttarakhand,13,hardwar
+~/iec/pc01/district_handbooks/,DH_05_2001_RUD.pdf,RUD,5,uttarakhand,3,rudraprayag
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_05_2001_RUD_EB.pdf,RUD_EB,5,uttarakhand,3,rudraprayag
+~/iec/pc01/district_handbooks/,DH_05_2001_TEH_VOL-01.pdf,TEH_VOL-01,5,uttarakhand,4,tehri garhwal
+~/iec/pc01/district_handbooks/,DH_05_2001_TEH_VOL-02.pdf,TEH_VOL-02,5,uttarakhand,4,tehri garhwal
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_05_2001_TEH_VOL-02_EB.pdf,TEH_VOL-02_EB,5,uttarakhand,4,tehri garhwal
+~/iec/pc01/district_handbooks/,DH_05_2001_UDH.pdf,UDH,5,uttarakhand,12,udham singh nagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_05_2001_UDH_EB.pdf,UDH_EB,5,uttarakhand,12,udham singh nagar
+~/iec/pc01/district_handbooks/,DH_05_2001_UTT.pdf,UTT,5,uttarakhand,1,uttarkashi
+~/iec/pc01/district_handbooks/,DH_08_2001_AJM.pdf,AJM,8,rajasthan,21,ajmer
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_AJM_EB.pdf,AJM_EB,8,rajasthan,21,ajmer
+~/iec/pc01/district_handbooks/,DH_08_2001_ALW.pdf,ALW,8,rajasthan,6,alwar
+~/iec/pc01/district_handbooks/,DH_08_2001_BAN.pdf,BAN,8,rajasthan,28,banswara
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_BAN_EB.pdf,BAN_EB,8,rajasthan,28,banswara
+~/iec/pc01/district_handbooks/,DH_08_2001_BAR.pdf,BAR,8,rajasthan,17,barmer
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_BAR_EB.pdf,BAR_EB,8,rajasthan,17,barmer
+~/iec/pc01/district_handbooks/,DH_08_2001_BHA.pdf,BHA,8,rajasthan,7,bharatpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_BHA_EB.pdf,BHA_EB,8,rajasthan,7,bharatpur
+~/iec/pc01/district_handbooks/,DH_08_2001_BHI.pdf,BHI,8,rajasthan,24,bhilwara
+~/iec/pc01/district_handbooks/,DH_08_2001_BIK.pdf,BIK,8,rajasthan,3,bikaner
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_BIK_EB.pdf,BIK_EB,8,rajasthan,3,bikaner
+~/iec/pc01/district_handbooks/,DH_08_2001_BRN.pdf,BRN,8,rajasthan,31,baran
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_BRN_EB.pdf,BRN_EB,8,rajasthan,31,baran
+~/iec/pc01/district_handbooks/,DH_08_2001_BUN.pdf,BUN,8,rajasthan,23,bundi
+~/iec/pc01/district_handbooks/,DH_08_2001_CHI.pdf,CHI,8,rajasthan,29,chittaurgarh
+~/iec/pc01/district_handbooks/,DH_08_2001_CHU.pdf,CHU,8,rajasthan,4,churu
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_CHU_EB.pdf,CHU_EB,8,rajasthan,4,churu
+~/iec/pc01/district_handbooks/,DH_08_2001_DAU.pdf,DAU,8,rajasthan,11,dausa
+~/iec/pc01/district_handbooks/,DH_08_2001_DHA.pdf,DHA,8,rajasthan,8,dhaulpur
+~/iec/pc01/district_handbooks/,DH_08_2001_DUN.pdf,DUN,8,rajasthan,27,dungarpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_DUN_EB.pdf,DUN_EB,8,rajasthan,27,dungarpur
+~/iec/pc01/district_handbooks/,DH_08_2001_GAN.pdf,GAN,8,rajasthan,1,ganganagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_GAN_EB.pdf,GAN_EB,8,rajasthan,1,ganganagar
+~/iec/pc01/district_handbooks/,DH_08_2001_HAN.pdf,HAN,8,rajasthan,2,hanumangarh
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_HAN_EB.pdf,HAN_EB,8,rajasthan,2,hanumangarh
+~/iec/pc01/district_handbooks/,DH_08_2001_JAI.pdf,JAI,8,rajasthan,12,jaipur
+~/iec/pc01/district_handbooks/,DH_08_2001_JAL.pdf,JAL,8,rajasthan,18,jalor
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_JAL_EB.pdf,JAL_EB,8,rajasthan,18,jalor
+~/iec/pc01/district_handbooks/,DH_08_2001_JHA.pdf,JHA,8,rajasthan,32,jhalawar
+~/iec/pc01/district_handbooks/,DH_08_2001_JHU.pdf,JHU,8,rajasthan,5,jhunjhunun
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_JHU_EB.pdf,JHU_EB,8,rajasthan,5,jhunjhunun
+~/iec/pc01/district_handbooks/,DH_08_2001_JOD.pdf,JOD,8,rajasthan,15,jodhpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_JOD_EB.pdf,JOD_EB,8,rajasthan,15,jodhpur
+~/iec/pc01/district_handbooks/,DH_08_2001_JSL.pdf,JSL,8,rajasthan,16,jaisalmer
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_JSL_EB.pdf,JSL_EB,8,rajasthan,16,jaisalmer
+~/iec/pc01/district_handbooks/,DH_08_2001_KAR.pdf,KAR,8,rajasthan,9,karauli
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_KAR_EB.pdf,KAR_EB,8,rajasthan,9,karauli
+~/iec/pc01/district_handbooks/,DH_08_2001_KOT.pdf,KOT,8,rajasthan,30,kota
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_KOT_EB.pdf,KOT_EB,8,rajasthan,30,kota
+~/iec/pc01/district_handbooks/,DH_08_2001_NAG.pdf,NAG,8,rajasthan,14,nagaur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_NAG_EB.pdf,NAG_EB,8,rajasthan,14,nagaur
+~/iec/pc01/district_handbooks/,DH_08_2001_PAL.pdf,PAL,8,rajasthan,20,pali
+~/iec/pc01/district_handbooks/,DH_08_2001_RAJ.pdf,RAJ,8,rajasthan,25,rajsamand
+~/iec/pc01/district_handbooks/,DH_08_2001_SAW.pdf,SAW,8,rajasthan,10,sawai madhopur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_SAW_EB.pdf,SAW_EB,8,rajasthan,10,sawai madhopur
+~/iec/pc01/district_handbooks/,DH_08_2001_SIK.pdf,SIK,8,rajasthan,13,sikar
+~/iec/pc01/district_handbooks/,DH_08_2001_SIR.pdf,SIR,8,rajasthan,19,sirohi
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_SIR_EB.pdf,SIR_EB,8,rajasthan,19,sirohi
+~/iec/pc01/district_handbooks/,DH_08_2001_TON.pdf,TON,8,rajasthan,22,tonk
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_TON_EB.pdf,TON_EB,8,rajasthan,22,tonk
+~/iec/pc01/district_handbooks/,DH_08_2001_UDA.pdf,UDA,8,rajasthan,26,udaipur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_08_2001_UDA_EB.pdf,UDA_EB,8,rajasthan,26,udaipur
+~/iec/pc01/district_handbooks/,DH_09_2001_AGR.pdf,AGR,9,uttar pradesh,15,agra
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_AGR_EB.pdf,AGR_EB,9,uttar pradesh,15,agra
+~/iec/pc01/district_handbooks/,DH_09_2001_ALI.pdf,ALI,9,uttar pradesh,12,aligarh
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_ALI_EB.pdf,ALI_EB,9,uttar pradesh,12,aligarh
+~/iec/pc01/district_handbooks/,DH_09_2001_AUR.pdf,AUR,9,uttar pradesh,32,auraiya
+~/iec/pc01/district_handbooks/,DH_09_2001_BAG.pdf,BAG,9,uttar pradesh,8,baghpat
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_BAG_EB.pdf,BAG_EB,9,uttar pradesh,8,baghpat
+~/iec/pc01/district_handbooks/,DH_09_2001_BAH.pdf,BAH,9,uttar pradesh,50,bahraich
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_BAH_EB.pdf,BAH_EB,9,uttar pradesh,50,bahraich
+~/iec/pc01/district_handbooks/,DH_09_2001_BAL.pdf,BAL,9,uttar pradesh,52,balrampur
+~/iec/pc01/district_handbooks/,DH_09_2001_BAN.pdf,BAN,9,uttar pradesh,40,banda
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_BAN_EB.pdf,BAN_EB,9,uttar pradesh,40,banda
+~/iec/pc01/district_handbooks/,DH_09_2001_BAS_VOL-02.pdf,BAS_VOL-02,9,uttar pradesh,55,Basti
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_BAS_VOL-02_EB.pdf,BAS_VOL-02_EB,9,uttar pradesh,55,Basti
+~/iec/pc01/district_handbooks/,DH_09_2001_BIJ_VOL-02.pdf,BIJ_VOL-02,9,uttar pradesh,3,bijnor
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_BIJ_VOL-02_EB.pdf,BIJ_VOL-02_EB,9,uttar pradesh,3,bijnor
+~/iec/pc01/district_handbooks/,DH_09_2001_BLA_VOL-01.pdf,BLA_VOL-01,9,uttar pradesh,63,ballia
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_BLA_VOL-01_EB.pdf,BLA_VOL-01_EB,9,uttar pradesh,63,ballia
+~/iec/pc01/district_handbooks/,DH_09_2001_BLA_VOL-02.pdf,BLA_VOL-02,9,uttar pradesh,63,ballia
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_BLA_VOL-02_EB.pdf,BLA_VOL-02_EB,9,uttar pradesh,63,ballia
+~/iec/pc01/district_handbooks/,DH_09_2001_BUD_VOL-01.pdf,BUD_VOL-01,9,uttar pradesh,19,budaun
+~/iec/pc01/district_handbooks/,DH_09_2001_BUD_VOL-02.pdf,BUD_VOL-02,9,uttar pradesh,19,budaun
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_BUD_VOL-02_EB.pdf,BUD_VOL-02_EB,9,uttar pradesh,19,budaun
+~/iec/pc01/district_handbooks/,DH_09_2001_BUL.pdf,BUL,9,uttar pradesh,11,bulandshahr
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_BUL_EB.pdf,BUL_EB,9,uttar pradesh,11,bulandshahr
+~/iec/pc01/district_handbooks/,DH_09_2001_CHT.pdf,CHT,9,uttar pradesh,41,chitrakoot
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_CHT_EB.pdf,CHT_EB,9,uttar pradesh,41,chitrakoot
+~/iec/pc01/district_handbooks/,DH_09_2001_DEO_VOL-01.pdf,DEO_VOL-01,9,uttar pradesh,60,deoria
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_DEO_VOL-01_EB.pdf,DEO_VOL-01_EB,9,uttar pradesh,60,deoria
+~/iec/pc01/district_handbooks/,DH_09_2001_DEO_VOL-02.pdf,DEO_VOL-02,9,uttar pradesh,60,deoria
+~/iec/pc01/district_handbooks/,DH_09_2001_ETA_VOL-01.pdf,ETA_VOL-01,9,uttar pradesh,17,etah
+~/iec/pc01/district_handbooks/,DH_09_2001_ETA_VOL-02.pdf,ETA_VOL-02,9,uttar pradesh,17,etah
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_ETA_VOL-02_EB.pdf,ETA_VOL-02_EB,9,uttar pradesh,17,etah
+~/iec/pc01/district_handbooks/,DH_09_2001_ETW.pdf,ETW,9,uttar pradesh,31,etawah
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_ETW_EB.pdf,ETW_EB,9,uttar pradesh,31,etawah
+~/iec/pc01/district_handbooks/,DH_09_2001_FAR.pdf,FAR,9,uttar pradesh,29,farrukhabad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_FAR_EB.pdf,FAR_EB,9,uttar pradesh,29,farrukhabad
+~/iec/pc01/district_handbooks/,DH_09_2001_FRO.pdf,FRO,9,uttar pradesh,16,firozabad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_FRO_EB.pdf,FRO_EB,9,uttar pradesh,16,firozabad
+~/iec/pc01/district_handbooks/,DH_09_2001_GAU.pdf,GAU,9,uttar pradesh,10,gautam buddha nagar
+~/iec/pc01/district_handbooks/,DH_09_2001_GHA.pdf,GHA,9,uttar pradesh,65,ghazipur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_GHA_EB.pdf,GHA_EB,9,uttar pradesh,65,ghazipur
+~/iec/pc01/district_handbooks/,DH_09_2001_GKP.pdf,GKP,9,uttar pradesh,58,gorakhpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_GKP_EB.pdf,GKP_EB,9,uttar pradesh,58,gorakhpur
+~/iec/pc01/district_handbooks/,DH_09_2001_GOD_VOL-01.pdf,GOD_VOL-01,9,uttar pradesh,53,gonda
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_GOD_VOL-01_EB.pdf,GOD_VOL-01_EB,9,uttar pradesh,53,gonda
+~/iec/pc01/district_handbooks/,DH_09_2001_GOD_VOL-02.pdf,GOD_VOL-02,9,uttar pradesh,53,gonda
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_GOD_VOL-02_EB.pdf,GOD_VOL-02_EB,9,uttar pradesh,53,gonda
+~/iec/pc01/district_handbooks/,DH_09_2001_HAM.pdf,HAM,9,uttar pradesh,38,hamirpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_HAM_EB.pdf,HAM_EB,9,uttar pradesh,38,hamirpur
+~/iec/pc01/district_handbooks/,DH_09_2001_HAR_VOL-01.pdf,HAR_VOL-01,9,uttar pradesh,25,hardoi
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_HAR_VOL-01_EB.pdf,HAR_VOL-01_EB,9,uttar pradesh,25,hardoi
+~/iec/pc01/district_handbooks/,DH_09_2001_HAR_VOL-02.pdf,HAR_VOL-02,9,uttar pradesh,25,hardoi
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_HAR_VOL-02_EB.pdf,HAR_VOL-02_EB,9,uttar pradesh,25,hardoi
+~/iec/pc01/district_handbooks/,DH_09_2001_HAT.pdf,HAT,9,uttar pradesh,13,hathras
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_HAT_EB.pdf,HAT_EB,9,uttar pradesh,13,hathras
+~/iec/pc01/district_handbooks/,DH_09_2001_JAL.pdf,JAL,9,uttar pradesh,35,jalaun
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_JAL_EB.pdf,JAL_EB,9,uttar pradesh,35,jalaun
+~/iec/pc01/district_handbooks/,DH_09_2001_JHA.pdf,JHA,9,uttar pradesh,36,jhansi
+~/iec/pc01/district_handbooks/,DH_09_2001_JYO.pdf,JYO,9,uttar pradesh,6,jyotiba phule nagar
+~/iec/pc01/district_handbooks/,DH_09_2001_KAN.pdf,KAN,9,uttar pradesh,30,kannauj
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_KAN_EB.pdf,KAN_EB,9,uttar pradesh,30,kannauj
+~/iec/pc01/district_handbooks/,DH_09_2001_KAU.pdf,KAU,9,uttar pradesh,44,kaushambi
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_KAU_EB.pdf,KAU_EB,9,uttar pradesh,44,kaushambi
+~/iec/pc01/district_handbooks/,DH_09_2001_KDE.pdf,KDE,9,uttar pradesh,33,kanpur dehat
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_KDE_EB.pdf,KDE_EB,9,uttar pradesh,33,kanpur dehat
+~/iec/pc01/district_handbooks/,DH_09_2001_KNR.pdf,KNR,9,uttar pradesh,34,kanpur nagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_KNR_EB.pdf,KNR_EB,9,uttar pradesh,34,kanpur nagar
+~/iec/pc01/district_handbooks/,DH_09_2001_KUS.pdf,KUS,9,uttar pradesh,59,kushinagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_KUS_EB.pdf,KUS_EB,9,uttar pradesh,59,kushinagar
+~/iec/pc01/district_handbooks/,DH_09_2001_LAL.pdf,LAL,9,uttar pradesh,37,lalitpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_LAL_EB.pdf,LAL_EB,9,uttar pradesh,37,lalitpur
+~/iec/pc01/district_handbooks/,DH_09_2001_LKW.pdf,LKW,9,uttar pradesh,27,lucknow
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_LKW_EB.pdf,LKW_EB,9,uttar pradesh,27,lucknow
+~/iec/pc01/district_handbooks/,DH_09_2001_MAH.pdf,MAH,9,uttar pradesh,39,mahoba
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_MAH_EB.pdf,MAH_EB,9,uttar pradesh,39,mahoba
+~/iec/pc01/district_handbooks/,DH_09_2001_MAT.pdf,MAT,9,uttar pradesh,14,mathura
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_MAT_EB.pdf,MAT_EB,9,uttar pradesh,14,mathura
+~/iec/pc01/district_handbooks/,DH_09_2001_MAU_VOL-01.pdf,MAU_VOL-01,9,uttar pradesh,62,mau
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_MAU_VOL-01_EB.pdf,MAU_VOL-01_EB,9,uttar pradesh,62,mau
+~/iec/pc01/district_handbooks/,DH_09_2001_MAU_VOL-02.pdf,MAU_VOL-02,9,uttar pradesh,62,mau
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_MAU_VOL-02_EB.pdf,MAU_VOL-02_EB,9,uttar pradesh,62,mau
+~/iec/pc01/district_handbooks/,DH_09_2001_MEE.pdf,MEE,9,uttar pradesh,7,meerut
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_MEE_EB.pdf,MEE_EB,9,uttar pradesh,7,meerut
+~/iec/pc01/district_handbooks/,DH_09_2001_MNI.pdf,MNI,9,uttar pradesh,18,mainpuri
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_MNI_EB.pdf,MNI_EB,9,uttar pradesh,18,mainpuri
+~/iec/pc01/district_handbooks/,DH_09_2001_MOR_VOL-01.pdf,MOR_VOL-01,9,uttar pradesh,4,moradabad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_MOR_VOL-01_EB.pdf,MOR_VOL-01_EB,9,uttar pradesh,4,moradabad
+~/iec/pc01/district_handbooks/,DH_09_2001_MOR_VOL-02.pdf,MOR_VOL-02,9,uttar pradesh,4,moradabad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_MOR_VOL-02_EB.pdf,MOR_VOL-02_EB,9,uttar pradesh,4,moradabad
+~/iec/pc01/district_handbooks/,DH_09_2001_MRJ.pdf,MRJ,9,uttar pradesh,57,maharajganj
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_MRJ_EB.pdf,MRJ_EB,9,uttar pradesh,57,maharajganj
+~/iec/pc01/district_handbooks/,DH_09_2001_MUZ.pdf,MUZ,9,uttar pradesh,2,muzaffarnagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_MUZ_EB.pdf,MUZ_EB,9,uttar pradesh,2,muzaffarnagar
+~/iec/pc01/district_handbooks/,DH_09_2001_PIL.pdf,PIL,9,uttar pradesh,21,pilibhit
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_PIL_EB.pdf,PIL_EB,9,uttar pradesh,21,pilibhit
+~/iec/pc01/district_handbooks/,DH_09_2001_PRA.pdf,PRA,9,uttar pradesh,43,pratapgarh
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_PRA_EB.pdf,PRA_EB,9,uttar pradesh,43,pratapgarh
+~/iec/pc01/district_handbooks/,DH_09_2001_RAE.pdf,RAE,9,uttar pradesh,28,rae bareli
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_RAE_EB.pdf,RAE_EB,9,uttar pradesh,28,rae bareli
+~/iec/pc01/district_handbooks/,DH_09_2001_RAM.pdf,RAM,9,uttar pradesh,5,rampur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_RAM_EB.pdf,RAM_EB,9,uttar pradesh,5,rampur
+~/iec/pc01/district_handbooks/,DH_09_2001_SHA_VOL-01.pdf,SHA_VOL-01,9,uttar pradesh,22,shahjahanpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_SHA_VOL-01_EB.pdf,SHA_VOL-01_EB,9,uttar pradesh,22,shahjahanpur
+~/iec/pc01/district_handbooks/,DH_09_2001_SHA_VOL-02.pdf,SHA_VOL-02,9,uttar pradesh,22,shahjahanpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_SHA_VOL-02_EB.pdf,SHA_VOL-02_EB,9,uttar pradesh,22,shahjahanpur
+~/iec/pc01/district_handbooks/,DH_09_2001_SID.pdf,SID,9,uttar pradesh,54,siddharthnagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_SID_EB.pdf,SID_EB,9,uttar pradesh,54,siddharthnagar
+~/iec/pc01/district_handbooks/,DH_09_2001_SIT.pdf,SIT,9,uttar pradesh,24,sitapur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_SIT_EB.pdf,SIT_EB,9,uttar pradesh,24,sitapur
+~/iec/pc01/district_handbooks/,DH_09_2001_SKA.pdf,SKA,9,uttar pradesh,56,sant kabir nagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_SKA_EB.pdf,SKA_EB,9,uttar pradesh,56,sant kabir nagar
+~/iec/pc01/district_handbooks/,DH_09_2001_SON.pdf,SON,9,uttar pradesh,70,sonbhadra
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_SON_EB.pdf,SON_EB,9,uttar pradesh,70,sonbhadra
+~/iec/pc01/district_handbooks/,DH_09_2001_SRA.pdf,SRA,9,uttar pradesh,51,shrawasti
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_SRA_EB.pdf,SRA_EB,9,uttar pradesh,51,shrawasti
+~/iec/pc01/district_handbooks/,DH_09_2001_SRV.pdf,SRV,9,uttar pradesh,68,sant ravidas nagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_SRV_EB.pdf,SRV_EB,9,uttar pradesh,68,sant ravidas nagar
+~/iec/pc01/district_handbooks/,DH_09_2001_SUL_VOL-02.pdf,SUL_VOL-02,9,uttar pradesh,49,sultanpur
+~/iec/pc01/district_handbooks/,DH_09_2001_UNA.pdf,UNA,9,uttar pradesh,26,unnao
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_UNA_EB.pdf,UNA_EB,9,uttar pradesh,26,unnao
+~/iec/pc01/district_handbooks/,DH_09_2001_VAR.pdf,VAR,9,uttar pradesh,67,varanasi
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_09_2001_VAR_EB.pdf,VAR_EB,9,uttar pradesh,67,varanasi
+~/iec/pc01/district_handbooks/,DH_10_2001_ARA.pdf,ARA,10,bihar,7,araria
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_ARA_EB.pdf,ARA_EB,10,bihar,7,araria
+~/iec/pc01/district_handbooks/,DH_10_2001_AUR.pdf,AUR,10,bihar,34,aurangabad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_AUR_EB.pdf,AUR_EB,10,bihar,34,aurangabad
+~/iec/pc01/district_handbooks/,DH_10_2001_BAN.pdf,BAN,10,bihar,23,banka
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_BAN_EB.pdf,BAN_EB,10,bihar,23,banka
+~/iec/pc01/district_handbooks/,DH_10_2001_BEG.pdf,BEG,10,bihar,20,begusarai
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_BEG_EB.pdf,BEG_EB,10,bihar,20,begusarai
+~/iec/pc01/district_handbooks/,DH_10_2001_BHA.pdf,BHA,10,bihar,22,bhagalpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_BHA_EB.pdf,BHA_EB,10,bihar,22,bhagalpur
+~/iec/pc01/district_handbooks/,DH_10_2001_BHO.pdf,BHO,10,bihar,29,bhojpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_BHO_EB.pdf,BHO_EB,10,bihar,29,bhojpur
+~/iec/pc01/district_handbooks/,DH_10_2001_BUX.pdf,BUX,10,bihar,30,buxar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_BUX_EB.pdf,BUX_EB,10,bihar,30,buxar
+~/iec/pc01/district_handbooks/,DH_10_2001_DAR.pdf,DAR,10,bihar,13,darbhanga
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_DAR_EB.pdf,DAR_EB,10,bihar,13,darbhanga
+~/iec/pc01/district_handbooks/,DH_10_2001_GOP.pdf,GOP,10,bihar,15,gopalganj
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_GOP_EB.pdf,GOP_EB,10,bihar,15,gopalganj
+~/iec/pc01/district_handbooks/,DH_10_2001_JAM.pdf,JAM,10,bihar,37,jamui
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_JAM_EB.pdf,JAM_EB,10,bihar,37,jamui
+~/iec/pc01/district_handbooks/,DH_10_2001_JEH.pdf,JEH,10,bihar,33,jehanabad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_JEH_EB.pdf,JEH_EB,10,bihar,33,jehanabad
+~/iec/pc01/district_handbooks/,DH_10_2001_KAI.pdf,KAI,10,bihar,31,kaimur bhabua
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_KAI_EB.pdf,KAI_EB,10,bihar,31,kaimur bhabua
+~/iec/pc01/district_handbooks/,DH_10_2001_KAT.pdf,KAT,10,bihar,10,katihar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_KAT_EB.pdf,KAT_EB,10,bihar,10,katihar
+~/iec/pc01/district_handbooks/,DH_10_2001_KHA.pdf,KHA,10,bihar,21,khagaria
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_KHA_EB.pdf,KHA_EB,10,bihar,21,khagaria
+~/iec/pc01/district_handbooks/,DH_10_2001_KIS.pdf,KIS,10,bihar,8,kishanganj
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_KIS_EB.pdf,KIS_EB,10,bihar,8,kishanganj
+~/iec/pc01/district_handbooks/,DH_10_2001_LAK.pdf,LAK,10,bihar,25,lakhisarai
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_LAK_EB.pdf,LAK_EB,10,bihar,25,lakhisarai
+~/iec/pc01/district_handbooks/,DH_10_2001_MAD.pdf,MAD,10,bihar,5,madhubani
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_MAD_EB.pdf,MAD_EB,10,bihar,5,madhubani
+~/iec/pc01/district_handbooks/,DH_10_2001_MDP.pdf,MDP,10,bihar,11,madhepura
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_MDP_EB.pdf,MDP_EB,10,bihar,11,madhepura
+~/iec/pc01/district_handbooks/,DH_10_2001_MUN.pdf,MUN,10,bihar,24,munger
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_MUN_EB.pdf,MUN_EB,10,bihar,24,munger
+~/iec/pc01/district_handbooks/,DH_10_2001_MUZ.pdf,MUZ,10,bihar,14,muzaffarpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_MUZ_EB.pdf,MUZ_EB,10,bihar,14,muzaffarpur
+~/iec/pc01/district_handbooks/,DH_10_2001_NAL.pdf,NAL,10,bihar,27,nalanda
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_NAL_EB.pdf,NAL_EB,10,bihar,27,nalanda
+~/iec/pc01/district_handbooks/,DH_10_2001_NAW.pdf,NAW,10,bihar,36,nawada
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_NAW_EB.pdf,NAW_EB,10,bihar,36,nawada
+~/iec/pc01/district_handbooks/,DH_10_2001_PAS.pdf,PAS,10,bihar,1,pashchim champaran
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_PAS_EB.pdf,PAS_EB,10,bihar,1,pashchim champaran
+~/iec/pc01/district_handbooks/,DH_10_2001_PAT.pdf,PAT,10,bihar,28,patna
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_PAT_EB.pdf,PAT_EB,10,bihar,28,patna
+~/iec/pc01/district_handbooks/,DH_10_2001_PUN.pdf,PUN,10,bihar,9,purnia
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_PUN_EB.pdf,PUN_EB,10,bihar,9,purnia
+~/iec/pc01/district_handbooks/,DH_10_2001_PUR.pdf,PUR,10,bihar,2,purba champaran
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_PUR_EB.pdf,PUR_EB,10,bihar,2,purba champaran
+~/iec/pc01/district_handbooks/,DH_10_2001_ROH.pdf,ROH,10,bihar,32,rohtas
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_ROH_EB.pdf,ROH_EB,10,bihar,32,rohtas
+~/iec/pc01/district_handbooks/,DH_10_2001_SAH.pdf,SAH,10,bihar,12,saharsa
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_SAH_EB.pdf,SAH_EB,10,bihar,12,saharsa
+~/iec/pc01/district_handbooks/,DH_10_2001_SAM.pdf,SAM,10,bihar,19,samastipur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_SAM_EB.pdf,SAM_EB,10,bihar,19,samastipur
+~/iec/pc01/district_handbooks/,DH_10_2001_SAR.pdf,SAR,10,bihar,17,saran
+~/iec/pc01/district_handbooks/,DH_10_2001_SHE.pdf,SHE,10,bihar,3,sheohar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_SHE_EB.pdf,SHE_EB,10,bihar,3,sheohar
+~/iec/pc01/district_handbooks/,DH_10_2001_SHK.pdf,SHK,10,bihar,26,sheikhpura
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_SHK_EB.pdf,SHK_EB,10,bihar,26,sheikhpura
+~/iec/pc01/district_handbooks/,DH_10_2001_SIT.pdf,SIT,10,bihar,4,sitamarhi
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_SIT_EB.pdf,SIT_EB,10,bihar,4,sitamarhi
+~/iec/pc01/district_handbooks/,DH_10_2001_SIW.pdf,SIW,10,bihar,16,siwan
+~/iec/pc01/district_handbooks/,DH_10_2001_SUP.pdf,SUP,10,bihar,6,supaul
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_SUP_EB.pdf,SUP_EB,10,bihar,6,supaul
+~/iec/pc01/district_handbooks/,DH_10_2001_VAI.pdf,VAI,10,bihar,18,vaishali
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_10_2001_VAI_EB.pdf,VAI_EB,10,bihar,18,vaishali
+~/iec/pc01/district_handbooks/,DH_11_2001_SIK.pdf,SIK,11,sikkim,1,north
+~/iec/pc01/district_handbooks/,DH_11_2001_SIK.pdf,SIK,11,sikkim,2,west
+~/iec/pc01/district_handbooks/,DH_11_2001_SIK.pdf,SIK,11,sikkim,3,south
+~/iec/pc01/district_handbooks/,DH_11_2001_SIK.pdf,SIK,11,sikkim,4,east
+~/iec/pc01/district_handbooks/,DH_12_2001_CHA.pdf,CHA,12,arunachal pradesh,12,changlang
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_12_2001_CHA_EB.pdf,CHA_EB,12,arunachal pradesh,12,changlang
+~/iec/pc01/district_handbooks/,DH_12_2001_DIB.pdf,DIB,12,arunachal pradesh,10,dibang valley
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_12_2001_DIB_EB.pdf,DIB_EB,12,arunachal pradesh,10,dibang valley
+~/iec/pc01/district_handbooks/,DH_12_2001_EKAM.pdf,EKAM,12,arunachal pradesh,3,east kameng
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_12_2001_EKAM_EB.pdf,EKAM_EB,12,arunachal pradesh,3,east kameng
+~/iec/pc01/district_handbooks/,DH_12_2001_ESIA.pdf,ESIA,12,arunachal pradesh,8,east siang
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_12_2001_ESIA_EB.pdf,ESIA_EB,12,arunachal pradesh,8,east siang
+~/iec/pc01/district_handbooks/,DH_12_2001_LOH.pdf,LOH,12,arunachal pradesh,11,lohit
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_12_2001_LOH_EB.pdf,LOH_EB,12,arunachal pradesh,11,lohit
+~/iec/pc01/district_handbooks/,DH_12_2001_LSUB.pdf,LSUB,12,arunachal pradesh,5,lower subansiri
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_12_2001_LSUB_EB.pdf,LSUB_EB,12,arunachal pradesh,5,lower subansiri
+~/iec/pc01/district_handbooks/,DH_12_2001_PAP.pdf,PAP,12,arunachal pradesh,4,papum pare
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_12_2001_PAP_EB.pdf,PAP_EB,12,arunachal pradesh,4,papum pare
+~/iec/pc01/district_handbooks/,DH_12_2001_TAW.pdf,TAW,12,arunachal pradesh,1,tawang
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_12_2001_TAW_EB.pdf,TAW_EB,12,arunachal pradesh,1,tawang
+~/iec/pc01/district_handbooks/,DH_12_2001_TIR.pdf,TIR,12,arunachal pradesh,13,tirap
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_12_2001_TIR_EB.pdf,TIR_EB,12,arunachal pradesh,13,tirap
+~/iec/pc01/district_handbooks/,DH_12_2001_USIA.pdf,USIA,12,arunachal pradesh,6,upper subansiri
+~/iec/pc01/district_handbooks/,DH_12_2001_USUB.pdf,USUB,12,arunachal pradesh,6,upper subansiri
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_12_2001_USUB_EB.pdf,USUB_EB,12,arunachal pradesh,6,upper subansiri
+~/iec/pc01/district_handbooks/,DH_12_2001_WKAM.pdf,WKAM,12,arunachal pradesh,2,west kameng
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_12_2001_WKAM_EB.pdf,WKAM_EB,12,arunachal pradesh,2,west kameng
+~/iec/pc01/district_handbooks/,DH_12_2001_WSIA.pdf,WSIA,12,arunachal pradesh,7,west siang
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_12_2001_WSIA_EB.pdf,WSIA_EB,12,arunachal pradesh,7,west siang
+~/iec/pc01/district_handbooks/,DH_13_2001_DIM.pdf,DIM,13,nagaland,6,dimapur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_13_2001_DIM_EB.pdf,DIM_EB,13,nagaland,6,dimapur
+~/iec/pc01/district_handbooks/,DH_13_2001_KOH.pdf,KOH,13,nagaland,7,kohima
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_13_2001_KOH_EB.pdf,KOH_EB,13,nagaland,7,kohima
+~/iec/pc01/district_handbooks/,DH_13_2001_MOK.pdf,MOK,13,nagaland,3,mokokchung
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_13_2001_MOK_EB.pdf,MOK_EB,13,nagaland,3,mokokchung
+~/iec/pc01/district_handbooks/,DH_13_2001_MON.pdf,MON,13,nagaland,1,mon
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_13_2001_MON_EB.pdf,MON_EB,13,nagaland,1,mon
+~/iec/pc01/district_handbooks/,DH_13_2001_PHE.pdf,PHE,13,nagaland,8,phek
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_13_2001_PHE_EB.pdf,PHE_EB,13,nagaland,8,phek
+~/iec/pc01/district_handbooks/,DH_13_2001_TUE.pdf,TUE,13,nagaland,2,tuensang
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_13_2001_TUE_EB.pdf,TUE_EB,13,nagaland,2,tuensang
+~/iec/pc01/district_handbooks/,DH_13_2001_WOK.pdf,WOK,13,nagaland,5,wokha
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_13_2001_WOK_EB.pdf,WOK_EB,13,nagaland,5,wokha
+~/iec/pc01/district_handbooks/,DH_13_2001_ZUN.pdf,ZUN,13,nagaland,4,zunheboto
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_13_2001_ZUN_EB.pdf,ZUN_EB,13,nagaland,4,zunheboto
+~/iec/pc01/district_handbooks/,DH_14_2001_BIS.pdf,BIS,14,manipur,4,bishnupur
+~/iec/pc01/district_handbooks/,DH_14_2001_CHA.pdf,CHA,14,manipur,9,chandel
+~/iec/pc01/district_handbooks/,DH_14_2001_CHU.pdf,CHU,14,manipur,3,churachandpur
+~/iec/pc01/district_handbooks/,DH_14_2001_IME.pdf,IME,14,manipur,7,imphal east
+~/iec/pc01/district_handbooks/,DH_14_2001_IMW.pdf,IMW,14,manipur,6,imphal west
+~/iec/pc01/district_handbooks/,DH_14_2001_SEN.pdf,SEN,14,manipur,1,senapati
+~/iec/pc01/district_handbooks/,DH_14_2001_TAM.pdf,TAM,14,manipur,2,tamenglong
+~/iec/pc01/district_handbooks/,DH_14_2001_THO.pdf,THO,14,manipur,5,thoubal
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_14_2001_THO_EB.pdf,THO_EB,14,manipur,5,thoubal
+~/iec/pc01/district_handbooks/,DH_14_2001_UKH.pdf,UKH,14,manipur,8,ukhrul
+~/iec/pc01/district_handbooks/,DH_15_2001_AIZ.pdf,AIZ,15,mizoram,3,aizawl
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_15_2001_AIZ_EB.pdf,AIZ_EB,15,mizoram,3,aizawl
+~/iec/pc01/district_handbooks/,DH_15_2001_CHA.pdf,CHA,15,mizoram,4,champhai
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_15_2001_CHA_EB.pdf,CHA_EB,15,mizoram,4,champhai
+~/iec/pc01/district_handbooks/,DH_15_2001_KOL.pdf,KOL,15,mizoram,2,kolasib
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_15_2001_KOL_EB.pdf,KOL_EB,15,mizoram,2,kolasib
+~/iec/pc01/district_handbooks/,DH_15_2001_LAW.pdf,LAW,15,mizoram,7,lawngtlai
+~/iec/pc01/district_handbooks/,DH_15_2001_LUN.pdf,LUN,15,mizoram,6,lunglei
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_15_2001_LUN_EB.pdf,LUN_EB,15,mizoram,6,lunglei
+~/iec/pc01/district_handbooks/,DH_15_2001_MAM.pdf,MAM,15,mizoram,1,mamit
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_15_2001_MAM_EB.pdf,MAM_EB,15,mizoram,1,mamit
+~/iec/pc01/district_handbooks/,DH_15_2001_SAI.pdf,SAI,15,mizoram,8,saiha
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_15_2001_SAI_EB.pdf,SAI_EB,15,mizoram,8,saiha
+~/iec/pc01/district_handbooks/,DH_15_2001_SER.pdf,SER,15,mizoram,5,serchhip
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_15_2001_SER_EB.pdf,SER_EB,15,mizoram,5,serchhip
+~/iec/pc01/district_handbooks/,DH_16_2001_DHA.pdf,DHA,16,tripura,3,dhalai
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_16_2001_DHA_EB.pdf,DHA_EB,16,tripura,3,dhalai
+~/iec/pc01/district_handbooks/,DH_16_2001_NTRI.pdf,NTRI,16,tripura,4,north tripura
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_16_2001_NTRI_EB.pdf,NTRI_EB,16,tripura,4,north tripura
+~/iec/pc01/district_handbooks/,DH_16_2001_STRI.pdf,STRI,16,tripura,2,south tripura
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_16_2001_STRI_EB.pdf,STRI_EB,16,tripura,2,south tripura
+~/iec/pc01/district_handbooks/,DH_16_2001_WTRI.pdf,WTRI,16,tripura,1,west tripura
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_16_2001_WTRI_EB.pdf,WTRI_EB,16,tripura,1,west tripura
+~/iec/pc01/district_handbooks/,DH_17_2001_EGAR.pdf,EGAR,17,meghalaya,2,east garo hills
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_17_2001_EGAR_EB.pdf,EGAR_EB,17,meghalaya,2,east garo hills
+~/iec/pc01/district_handbooks/,DH_17_2001_EKHA.pdf,EKHA,17,meghalaya,6,east khasi hills
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_17_2001_EKHA_EB.pdf,EKHA_EB,17,meghalaya,6,east khasi hills
+~/iec/pc01/district_handbooks/,DH_17_2001_JAI.pdf,JAI,17,meghalaya,7,jaintia hills
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_17_2001_JAI_EB.pdf,JAI_EB,17,meghalaya,7,jaintia hills
+~/iec/pc01/district_handbooks/,DH_17_2001_RIB.pdf,RIB,17,meghalaya,5,ri bhoi
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_17_2001_RIB_EB.pdf,RIB_EB,17,meghalaya,5,ri bhoi
+~/iec/pc01/district_handbooks/,DH_17_2001_SGAR.pdf,SGAR,17,meghalaya,3,south garo hills
+~/iec/pc01/district_handbooks/,DH_17_2001_WGAR.pdf,WGAR,17,meghalaya,1,west garo hills
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_17_2001_WGAR_EB.pdf,WGAR_EB,17,meghalaya,1,west garo hills
+~/iec/pc01/district_handbooks/,DH_17_2001_WKHA.pdf,WKHA,17,meghalaya,4,west khasi hills
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_17_2001_WKHA_EB.pdf,WKHA_EB,17,meghalaya,4,west khasi hills
+~/iec/pc01/district_handbooks/,DH_18_2001_BAR.pdf,BAR,18,assam,5,barpeta
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_BAR_EB.pdf,BAR_EB,18,assam,5,barpeta
+~/iec/pc01/district_handbooks/,DH_18_2001_BON.pdf,BON,18,assam,4,bongaigaon
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_BON_EB.pdf,BON_EB,18,assam,4,bongaigaon
+~/iec/pc01/district_handbooks/,DH_18_2001_CAC.pdf,CAC,18,assam,21,cachar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_CAC_EB.pdf,CAC_EB,18,assam,21,cachar
+~/iec/pc01/district_handbooks/,DH_18_2001_DAR.pdf,DAR,18,assam,8,darrang
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_DAR_EB.pdf,DAR_EB,18,assam,8,darrang
+~/iec/pc01/district_handbooks/,DH_18_2001_DHE.pdf,DHE,18,assam,13,dhemaji
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_DHE_EB.pdf,DHE_EB,18,assam,13,dhemaji
+~/iec/pc01/district_handbooks/,DH_18_2001_DHU.pdf,DHU,18,assam,2,dhubri
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_DHU_EB.pdf,DHU_EB,18,assam,2,dhubri
+~/iec/pc01/district_handbooks/,DH_18_2001_DIB.pdf,DIB,18,assam,15,dibrugarh
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_DIB_EB.pdf,DIB_EB,18,assam,15,dibrugarh
+~/iec/pc01/district_handbooks/,DH_18_2001_GOA.pdf,GOA,18,assam,3,goalpara
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_GOA_EB.pdf,GOA_EB,18,assam,3,goalpara
+~/iec/pc01/district_handbooks/,DH_18_2001_GOL.pdf,GOL,18,assam,18,golaghat
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_GOL_EB.pdf,GOL_EB,18,assam,18,golaghat
+~/iec/pc01/district_handbooks/,DH_18_2001_HAI.pdf,HAI,18,assam,23,hailakandi
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_HAI_EB.pdf,HAI_EB,18,assam,23,hailakandi
+~/iec/pc01/district_handbooks/,DH_18_2001_JOR.pdf,JOR,18,assam,17,jorhat
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_JOR_EB.pdf,JOR_EB,18,assam,17,jorhat
+~/iec/pc01/district_handbooks/,DH_18_2001_KAG.pdf,KAG,18,assam,19,karbi anglong
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_KAG_EB.pdf,KAG_EB,18,assam,19,karbi anglong
+~/iec/pc01/district_handbooks/,DH_18_2001_KAM.pdf,KAM,18,assam,6,kamrup
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_KAM_EB.pdf,KAM_EB,18,assam,6,kamrup
+~/iec/pc01/district_handbooks/,DH_18_2001_KOK.pdf,KOK,18,assam,1,kokrajhar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_KOK_EB.pdf,KOK_EB,18,assam,1,kokrajhar
+~/iec/pc01/district_handbooks/,DH_18_2001_LAK.pdf,LAK,18,assam,12,lakhimpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_LAK_EB.pdf,LAK_EB,18,assam,12,lakhimpur
+~/iec/pc01/district_handbooks/,DH_18_2001_MAR.pdf,MAR,18,assam,9,marigaon
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_MAR_EB.pdf,MAR_EB,18,assam,9,marigaon
+~/iec/pc01/district_handbooks/,DH_18_2001_NAG.pdf,NAG,18,assam,10,nagaon
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_NAG_EB.pdf,NAG_EB,18,assam,10,nagaon
+~/iec/pc01/district_handbooks/,DH_18_2001_NAL.pdf,NAL,18,assam,7,nalbari
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_NAL_EB.pdf,NAL_EB,18,assam,7,nalbari
+~/iec/pc01/district_handbooks/,DH_18_2001_NCH.pdf,NCH,18,assam,20,north cachar hills
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_NCH_EB.pdf,NCH_EB,18,assam,20,north cachar hills
+~/iec/pc01/district_handbooks/,DH_18_2001_SIB.pdf,SIB,18,assam,16,sibsagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_SIB_EB.pdf,SIB_EB,18,assam,16,sibsagar
+~/iec/pc01/district_handbooks/,DH_18_2001_SON.pdf,SON,18,assam,11,sonitpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_SON_EB.pdf,SON_EB,18,assam,11,sonitpur
+~/iec/pc01/district_handbooks/,DH_18_2001_TIN.pdf,TIN,18,assam,14,tinsukia
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_18_2001_TIN_EB.pdf,TIN_EB,18,assam,14,tinsukia
+~/iec/pc01/district_handbooks/,DH_19_2001_BAK.pdf,BAK,19,west bengal,13,bankura
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_BAK_EB.pdf,BAK_EB,19,west bengal,13,bankura
+~/iec/pc01/district_handbooks/,DH_19_2001_BIR.pdf,BIR,19,west bengal,8,birbhum
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_BIR_EB.pdf,BIR_EB,19,west bengal,8,birbhum
+~/iec/pc01/district_handbooks/,DH_19_2001_BRD.pdf,BRD,19,west bengal,9,barddhaman
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_BRD_EB.pdf,BRD_EB,19,west bengal,9,barddhaman
+~/iec/pc01/district_handbooks/,DH_19_2001_DAR.pdf,DAR,19,west bengal,1,darjiling
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_DAR_EB.pdf,DAR_EB,19,west bengal,1,darjiling
+~/iec/pc01/district_handbooks/,DH_19_2001_DDIN.pdf,DDIN,19,west bengal,5,dakshin dinajpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_DDIN_EB.pdf,DDIN_EB,19,west bengal,5,dakshin dinajpur
+~/iec/pc01/district_handbooks/,DH_19_2001_HOR.pdf,HOR,19,west bengal,16,haora
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_HOR_EB.pdf,HOR_EB,19,west bengal,16,haora
+~/iec/pc01/district_handbooks/,DH_19_2001_HUG.pdf,HUG,19,west bengal,12,hugli
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_HUG_EB.pdf,HUG_EB,19,west bengal,12,hugli
+~/iec/pc01/district_handbooks/,DH_19_2001_JAL.pdf,JAL,19,west bengal,2,jalpaiguri
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_JAL_EB.pdf,JAL_EB,19,west bengal,2,jalpaiguri
+~/iec/pc01/district_handbooks/,DH_19_2001_KOB.pdf,KOB,19,west bengal,3,koch bihar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_KOB_EB.pdf,KOB_EB,19,west bengal,3,koch bihar
+~/iec/pc01/district_handbooks/,DH_19_2001_KOL.pdf,KOL,19,west bengal,17,kolkata
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_KOL_EB.pdf,KOL_EB,19,west bengal,17,kolkata
+~/iec/pc01/district_handbooks/,DH_19_2001_MAD.pdf,MAD,19,west bengal,15,medinipur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_MAD_EB.pdf,MAD_EB,19,west bengal,15,medinipur
+~/iec/pc01/district_handbooks/,DH_19_2001_MAL.pdf,MAL,19,west bengal,6,maldah
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_MAL_EB.pdf,MAL_EB,19,west bengal,6,maldah
+~/iec/pc01/district_handbooks/,DH_19_2001_MUR.pdf,MUR,19,west bengal,7,murshidabad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_MUR_EB.pdf,MUR_EB,19,west bengal,7,murshidabad
+~/iec/pc01/district_handbooks/,DH_19_2001_NAD.pdf,NAD,19,west bengal,10,nadia
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_NAD_EB.pdf,NAD_EB,19,west bengal,10,nadia
+~/iec/pc01/district_handbooks/,DH_19_2001_NTFP.pdf,NTFP,19,west bengal,11,north twenty four parganas
+~/iec/pc01/district_handbooks/,DH_19_2001_PUR.pdf,PUR,19,west bengal,14,puruliya
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_PUR_EB.pdf,PUR_EB,19,west bengal,14,puruliya
+~/iec/pc01/district_handbooks/,DH_19_2001_STFP.pdf,STFP,19,west bengal,18,south twenty four parganas
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_STFP_EB.pdf,STFP_EB,19,west bengal,18,south twenty four parganas
+~/iec/pc01/district_handbooks/,DH_19_2001_UDIN.pdf,UDIN,19,west bengal,4,uttar dinajpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_19_2001_UDIN_EB.pdf,UDIN_EB,19,west bengal,4,uttar dinajpur
+~/iec/pc01/district_handbooks/,DH_20_2001_BOK.pdf,BOK,20,jharkhand,13,bokaro
+~/iec/pc01/district_handbooks/,DH_20_2001_CH.pdf,CH,20,jharkhand,3,chatra
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_20_2001_CH_EB.pdf,CH_EB,20,jharkhand,3,chatra
+~/iec/pc01/district_handbooks/,DH_20_2001_DEO.pdf,DEO,20,jharkhand,7,deoghar
+~/iec/pc01/district_handbooks/,DH_20_2001_GAR.pdf,GAR,20,jharkhand,1,garhwa
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_20_2001_GAR_EB.pdf,GAR_EB,20,jharkhand,1,garhwa
+~/iec/pc01/district_handbooks/,DH_20_2001_GIR.pdf,GIR,20,jharkhand,6,giridih
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_20_2001_GIR_EB.pdf,GIR_EB,20,jharkhand,6,giridih
+~/iec/pc01/district_handbooks/,DH_20_2001_GOD.pdf,GOD,20,jharkhand,8,godda
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_20_2001_GOD_EB.pdf,GOD_EB,20,jharkhand,8,godda
+~/iec/pc01/district_handbooks/,DH_20_2001_GUM.pdf,GUM,20,jharkhand,16,gumla
+~/iec/pc01/district_handbooks/,DH_20_2001_KOD.pdf,KOD,20,jharkhand,5,kodarma
+~/iec/pc01/district_handbooks/,DH_20_2001_LO.pdf,LO,20,jharkhand,15,lohardaga
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_20_2001_LO_EB.pdf,LO_EB,20,jharkhand,15,lohardaga
+~/iec/pc01/district_handbooks/,DH_20_2001_PAK.pdf,PAK,20,jharkhand,10,pakaur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_20_2001_PAK_EB.pdf,PAK_EB,20,jharkhand,10,pakaur
+~/iec/pc01/district_handbooks/,DH_20_2001_PAL.pdf,PAL,20,jharkhand,2,palamu
+~/iec/pc01/district_handbooks/,DH_20_2001_PUR.pdf,PUR,20,jharkhand,18,purbi singhbhum
+~/iec/pc01/district_handbooks/,DH_20_2001_SAH.pdf,SAH,20,jharkhand,9,sahibganj
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_20_2001_SAH_EB.pdf,SAH_EB,20,jharkhand,9,sahibganj
+~/iec/pc01/district_handbooks/,DH_2011_2001_PART_B_DCHB_GARHWA.pdf,PART_B_DCHB_GARHWA,20,jharkhand,1,garhwa
+~/iec/pc01/district_handbooks/,DH_21_2001_ANU.pdf,ANU,21,orissa,15,anugul
+~/iec/pc01/district_handbooks/,DH_21_2001_BAL.pdf,BAL,21,orissa,8,baleshwar
+~/iec/pc01/district_handbooks/,DH_21_2001_BAR.pdf,BAR,21,orissa,1,bargarh
+~/iec/pc01/district_handbooks/,DH_21_2001_BAU.pdf,BAU,21,orissa,22,baudh
+~/iec/pc01/district_handbooks/,DH_21_2001_BHA.pdf,BHA,21,orissa,9,bhadrak
+~/iec/pc01/district_handbooks/,DH_21_2001_BLN.pdf,BLN,21,orissa,24,balangir
+~/iec/pc01/district_handbooks/,DH_21_2001_CUT.pdf,CUT,21,orissa,12,cuttack
+~/iec/pc01/district_handbooks/,DH_21_2001_DEB.pdf,DEB,21,orissa,4,debagarh
+~/iec/pc01/district_handbooks/,DH_21_2001_DHE.pdf,DHE,21,orissa,14,dhenkanal
+~/iec/pc01/district_handbooks/,DH_21_2001_GAN.pdf,GAN,21,orissa,19,ganjam
+~/iec/pc01/district_handbooks/,DH_21_2001_JAG.pdf,JAG,21,orissa,11,jagatsinghapur
+~/iec/pc01/district_handbooks/,DH_21_2001_JAJ.pdf,JAJ,21,orissa,13,jajapur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_21_2001_JAJ_EB.pdf,JAJ_EB,21,orissa,13,jajapur
+~/iec/pc01/district_handbooks/,DH_21_2001_JHA.pdf,JHA,21,orissa,2,jharsuguda
+~/iec/pc01/district_handbooks/,DH_21_2001_KAL.pdf,KAL,21,orissa,26,kalahandi
+~/iec/pc01/district_handbooks/,DH_21_2001_KAN.pdf,KAN,21,orissa,21,kandhamal
+~/iec/pc01/district_handbooks/,DH_21_2001_KEN.pdf,KEN,21,orissa,6,kendujhar
+~/iec/pc01/district_handbooks/,DH_21_2001_KHO.pdf,KHO,21,orissa,17,khordha
+~/iec/pc01/district_handbooks/,DH_21_2001_KOR.pdf,KOR,21,orissa,29,koraput
+~/iec/pc01/district_handbooks/,DH_21_2001_MAL.pdf,MAL,21,orissa,30,malkangiri
+~/iec/pc01/district_handbooks/,DH_21_2001_MAY.pdf,MAY,21,orissa,7,mayurbhanj
+~/iec/pc01/district_handbooks/,DH_21_2001_NAY.pdf,NAY,21,orissa,16,nayagarh
+~/iec/pc01/district_handbooks/,DH_21_2001_NUA.pdf,NUA,21,orissa,25,nuapada
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_21_2001_NUA_EB.pdf,NUA_EB,21,orissa,25,nuapada
+~/iec/pc01/district_handbooks/,DH_21_2001_PUR.pdf,PUR,21,orissa,18,puri
+~/iec/pc01/district_handbooks/,DH_21_2001_RAY.pdf,RAY,21,orissa,27,rayagada
+~/iec/pc01/district_handbooks/,DH_21_2001_SAM.pdf,SAM,21,orissa,3,sambalpur
+~/iec/pc01/district_handbooks/,DH_21_2001_SON.pdf,SON,21,orissa,23,sonapur
+~/iec/pc01/district_handbooks/,DH_21_2001_SUN.pdf,SUN,21,orissa,5,sundargarh
+~/iec/pc01/district_handbooks/,DH_22_2001_BAS.pdf,BAS,22,chhattisgarh,15,bastar
+~/iec/pc01/district_handbooks/,DH_22_2001_BIL.pdf,BIL,22,chhattisgarh,7,bilaspur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_22_2001_BIL_EB.pdf,BIL_EB,22,chhattisgarh,7,bilaspur
+~/iec/pc01/district_handbooks/,DH_22_2001_DAN.pdf,DAN,22,chhattisgarh,16,dantewada
+~/iec/pc01/district_handbooks/,DH_22_2001_DHA.pdf,DHA,22,chhattisgarh,13,dhamtari
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_22_2001_DHA_EB.pdf,DHA_EB,22,chhattisgarh,13,dhamtari
+~/iec/pc01/district_handbooks/,DH_22_2001_DUR.pdf,DUR,22,chhattisgarh,10,durg
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_22_2001_DUR_EB.pdf,DUR_EB,22,chhattisgarh,10,durg
+~/iec/pc01/district_handbooks/,DH_22_2001_JAN.pdf,JAN,22,chhattisgarh,6,janjgir champa
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_22_2001_JAN_EB.pdf,JAN_EB,22,chhattisgarh,6,janjgir champa
+~/iec/pc01/district_handbooks/,DH_22_2001_JAS.pdf,JAS,22,chhattisgarh,3,jashpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_22_2001_JAS_EB.pdf,JAS_EB,22,chhattisgarh,3,jashpur
+~/iec/pc01/district_handbooks/,DH_22_2001_KAN.pdf,KAN,22,chhattisgarh,14,kanker
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_22_2001_KAN_EB.pdf,KAN_EB,22,chhattisgarh,14,kanker
+~/iec/pc01/district_handbooks/,DH_22_2001_KAW.pdf,KAW,22,chhattisgarh,8,kawardha
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_22_2001_KAW_EB.pdf,KAW_EB,22,chhattisgarh,8,kawardha
+~/iec/pc01/district_handbooks/,DH_22_2001_KOR.pdf,KOR,22,chhattisgarh,5,korba
+~/iec/pc01/district_handbooks/,DH_22_2001_KOY.pdf,KOY,22,chhattisgarh,1,koriya
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_22_2001_KOY_EB.pdf,KOY_EB,22,chhattisgarh,1,koriya
+~/iec/pc01/district_handbooks/,DH_22_2001_MAH.pdf,MAH,22,chhattisgarh,12,mahasamund
+~/iec/pc01/district_handbooks/,DH_22_2001_RAI.pdf,RAI,22,chhattisgarh,11,raipur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_22_2001_RAI_EB.pdf,RAI_EB,22,chhattisgarh,11,raipur
+~/iec/pc01/district_handbooks/,DH_22_2001_RAJ.pdf,RAJ,22,chhattisgarh,9,rajnandgaon
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_22_2001_RAJ_EB.pdf,RAJ_EB,22,chhattisgarh,9,rajnandgaon
+~/iec/pc01/district_handbooks/,DH_23_2001_BAL.pdf,BAL,23,madhya pradesh,45,balaghat
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_BAL_EB.pdf,BAL_EB,23,madhya pradesh,45,balaghat
+~/iec/pc01/district_handbooks/,DH_23_2001_BAR.pdf,BAR,23,madhya pradesh,28,barwani
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_BAR_EB.pdf,BAR_EB,23,madhya pradesh,28,barwani
+~/iec/pc01/district_handbooks/,DH_23_2001_BET.pdf,BET,23,madhya pradesh,35,betul
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_BET_EB.pdf,BET_EB,23,madhya pradesh,35,betul
+~/iec/pc01/district_handbooks/,DH_23_2001_BHI.pdf,BHI,23,madhya pradesh,3,bhind
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_BHI_EB.pdf,BHI_EB,23,madhya pradesh,3,bhind
+~/iec/pc01/district_handbooks/,DH_23_2001_BHO.pdf,BHO,23,madhya pradesh,32,bhopal
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_BHO_EB.pdf,BHO_EB,23,madhya pradesh,32,bhopal
+~/iec/pc01/district_handbooks/,DH_23_2001_CHH.pdf,CHH,23,madhya pradesh,9,chhatarpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_CHH_EB.pdf,CHH_EB,23,madhya pradesh,9,chhatarpur
+~/iec/pc01/district_handbooks/,DH_23_2001_CHN.pdf,CHN,23,madhya pradesh,43,chhindwara
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_CHN_EB.pdf,CHN_EB,23,madhya pradesh,43,chhindwara
+~/iec/pc01/district_handbooks/,DH_23_2001_DAM.pdf,DAM,23,madhya pradesh,12,damoh
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_DAM_EB.pdf,DAM_EB,23,madhya pradesh,12,damoh
+~/iec/pc01/district_handbooks/,DH_23_2001_DAT.pdf,DAT,23,madhya pradesh,5,datia
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_DAT_EB.pdf,DAT_EB,23,madhya pradesh,5,datia
+~/iec/pc01/district_handbooks/,DH_23_2001_DEW.pdf,DEW,23,madhya pradesh,23,dewas
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_DEW_EB.pdf,DEW_EB,23,madhya pradesh,23,dewas
+~/iec/pc01/district_handbooks/,DH_23_2001_DHA.pdf,DHA,23,madhya pradesh,25,dhar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_DHA_EB.pdf,DHA_EB,23,madhya pradesh,25,dhar
+~/iec/pc01/district_handbooks/,DH_23_2001_DIN.pdf,DIN,23,madhya pradesh,41,dindori
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_DIN_EB.pdf,DIN_EB,23,madhya pradesh,41,dindori
+~/iec/pc01/district_handbooks/,DH_23_2001_ENIR.pdf,ENIR,23,madhya pradesh,29,east nimar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_ENIR_EB.pdf,ENIR_EB,23,madhya pradesh,29,east nimar
+~/iec/pc01/district_handbooks/,DH_23_2001_GUN.pdf,GUN,23,madhya pradesh,7,guna
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_GUN_EB.pdf,GUN_EB,23,madhya pradesh,7,guna
+~/iec/pc01/district_handbooks/,DH_23_2001_GWA.pdf,GWA,23,madhya pradesh,4,gwalior
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_GWA_EB.pdf,GWA_EB,23,madhya pradesh,4,gwalior
+~/iec/pc01/district_handbooks/,DH_23_2001_HAR.pdf,HAR,23,madhya pradesh,36,harda
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_HAR_EB.pdf,HAR_EB,23,madhya pradesh,36,harda
+~/iec/pc01/district_handbooks/,DH_23_2001_HOS.pdf,HOS,23,madhya pradesh,37,hoshangabad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_HOS_EB.pdf,HOS_EB,23,madhya pradesh,37,hoshangabad
+~/iec/pc01/district_handbooks/,DH_23_2001_IND.pdf,IND,23,madhya pradesh,26,indore
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_IND_EB.pdf,IND_EB,23,madhya pradesh,26,indore
+~/iec/pc01/district_handbooks/,DH_23_2001_JAB.pdf,JAB,23,madhya pradesh,39,jabalpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_JAB_EB.pdf,JAB_EB,23,madhya pradesh,39,jabalpur
+~/iec/pc01/district_handbooks/,DH_23_2001_JHA.pdf,JHA,23,madhya pradesh,24,jhabua
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_JHA_EB.pdf,JHA_EB,23,madhya pradesh,24,jhabua
+~/iec/pc01/district_handbooks/,DH_23_2001_KAT.pdf,KAT,23,madhya pradesh,38,katni
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_KAT_EB.pdf,KAT_EB,23,madhya pradesh,38,katni
+~/iec/pc01/district_handbooks/,DH_23_2001_MAN.pdf,MAN,23,madhya pradesh,19,mandsaur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_MAN_EB.pdf,MAN_EB,23,madhya pradesh,19,mandsaur
+~/iec/pc01/district_handbooks/,DH_23_2001_MND.pdf,MND,23,madhya pradesh,42,mandla
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_MND_EB.pdf,MND_EB,23,madhya pradesh,42,mandla
+~/iec/pc01/district_handbooks/,DH_23_2001_MOR.pdf,MOR,23,madhya pradesh,2,morena
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_MOR_EB.pdf,MOR_EB,23,madhya pradesh,2,morena
+~/iec/pc01/district_handbooks/,DH_23_2001_NAR.pdf,NAR,23,madhya pradesh,40,narsimhapur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_NAR_EB.pdf,NAR_EB,23,madhya pradesh,40,narsimhapur
+~/iec/pc01/district_handbooks/,DH_23_2001_NEE.pdf,NEE,23,madhya pradesh,18,neemuch
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_NEE_EB.pdf,NEE_EB,23,madhya pradesh,18,neemuch
+~/iec/pc01/district_handbooks/,DH_23_2001_PAN.pdf,PAN,23,madhya pradesh,10,panna
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_PAN_EB.pdf,PAN_EB,23,madhya pradesh,10,panna
+~/iec/pc01/district_handbooks/,DH_23_2001_RAI.pdf,RAI,23,madhya pradesh,34,raisen
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_RAI_EB.pdf,RAI_EB,23,madhya pradesh,34,raisen
+~/iec/pc01/district_handbooks/,DH_23_2001_RAJ.pdf,RAJ,23,madhya pradesh,30,rajgarh
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_RAJ_EB.pdf,RAJ_EB,23,madhya pradesh,30,rajgarh
+~/iec/pc01/district_handbooks/,DH_23_2001_RAT.pdf,RAT,23,madhya pradesh,20,ratlam
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_RAT_EB.pdf,RAT_EB,23,madhya pradesh,20,ratlam
+~/iec/pc01/district_handbooks/,DH_23_2001_REW.pdf,REW,23,madhya pradesh,14,rewa
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_REW_EB.pdf,REW_EB,23,madhya pradesh,14,rewa
+~/iec/pc01/district_handbooks/,DH_23_2001_SAG.pdf,SAG,23,madhya pradesh,11,sagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_SAG_EB.pdf,SAG_EB,23,madhya pradesh,11,sagar
+~/iec/pc01/district_handbooks/,DH_23_2001_SAT.pdf,SAT,23,madhya pradesh,13,satna
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_SAT_EB.pdf,SAT_EB,23,madhya pradesh,13,satna
+~/iec/pc01/district_handbooks/,DH_23_2001_SEH.pdf,SEH,23,madhya pradesh,33,sehore
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_SEH_EB.pdf,SEH_EB,23,madhya pradesh,33,sehore
+~/iec/pc01/district_handbooks/,DH_23_2001_SEO.pdf,SEO,23,madhya pradesh,44,seoni
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_SEO_EB.pdf,SEO_EB,23,madhya pradesh,44,seoni
+~/iec/pc01/district_handbooks/,DH_23_2001_SHA.pdf,SHA,23,madhya pradesh,16,shahdol
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_SHA_EB.pdf,SHA_EB,23,madhya pradesh,16,shahdol
+~/iec/pc01/district_handbooks/,DH_23_2001_SHE.pdf,SHE,23,madhya pradesh,1,sheopur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_SHE_EB.pdf,SHE_EB,23,madhya pradesh,1,sheopur
+~/iec/pc01/district_handbooks/,DH_23_2001_SHJ.pdf,SHJ,23,madhya pradesh,22,shajapur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_SHJ_EB.pdf,SHJ_EB,23,madhya pradesh,22,shajapur
+~/iec/pc01/district_handbooks/,DH_23_2001_SHV.pdf,SHV,23,madhya pradesh,6,shivpuri
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_SHV_EB.pdf,SHV_EB,23,madhya pradesh,6,shivpuri
+~/iec/pc01/district_handbooks/,DH_23_2001_SID.pdf,SID,23,madhya pradesh,17,sidhi
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_SID_EB.pdf,SID_EB,23,madhya pradesh,17,sidhi
+~/iec/pc01/district_handbooks/,DH_23_2001_TIK.pdf,TIK,23,madhya pradesh,8,tikamgarh
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_TIK_EB.pdf,TIK_EB,23,madhya pradesh,8,tikamgarh
+~/iec/pc01/district_handbooks/,DH_23_2001_UJI.pdf,UJI,23,madhya pradesh,21,ujjain
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_UJI_EB.pdf,UJI_EB,23,madhya pradesh,21,ujjain
+~/iec/pc01/district_handbooks/,DH_23_2001_UMA.pdf,UMA,23,madhya pradesh,15,umaria
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_UMA_EB.pdf,UMA_EB,23,madhya pradesh,15,umaria
+~/iec/pc01/district_handbooks/,DH_23_2001_VID.pdf,VID,23,madhya pradesh,31,vidisha
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_VID_EB.pdf,VID_EB,23,madhya pradesh,31,vidisha
+~/iec/pc01/district_handbooks/,DH_23_2001_WNIM.pdf,WNIM,23,madhya pradesh,27,west nimar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_23_2001_WNIM_EB.pdf,WNIM_EB,23,madhya pradesh,27,west nimar
+~/iec/pc01/district_handbooks/,DH_24_2001_AHM.pdf,AHM,24,gujarat,7,ahmadabad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_AHM_EB.pdf,AHM_EB,24,gujarat,7,ahmadabad
+~/iec/pc01/district_handbooks/,DH_24_2001_AMR.pdf,AMR,24,gujarat,13,amreli
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_AMR_EB.pdf,AMR_EB,24,gujarat,13,amreli
+~/iec/pc01/district_handbooks/,DH_24_2001_ANA.pdf,ANA,24,gujarat,15,anand
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_ANA_EB.pdf,ANA_EB,24,gujarat,15,anand
+~/iec/pc01/district_handbooks/,DH_24_2001_BHA.pdf,BHA,24,gujarat,21,bharuch
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_BHA_EB.pdf,BHA_EB,24,gujarat,21,bharuch
+~/iec/pc01/district_handbooks/,DH_24_2001_BHN.pdf,BHN,24,gujarat,14,bhavnagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_BHN_EB.pdf,BHN_EB,24,gujarat,14,bhavnagar
+~/iec/pc01/district_handbooks/,DH_24_2001_DAN.pdf,DAN,24,gujarat,23,the dangs
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_DAN_EB.pdf,DAN_EB,24,gujarat,23,the dangs
+~/iec/pc01/district_handbooks/,DH_24_2001_DOH.pdf,DOH,24,gujarat,18,dohad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_DOH_EB.pdf,DOH_EB,24,gujarat,18,dohad
+~/iec/pc01/district_handbooks/,DH_24_2001_GAN.pdf,GAN,24,gujarat,6,gandhinagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_GAN_EB.pdf,GAN_EB,24,gujarat,6,gandhinagar
+~/iec/pc01/district_handbooks/,DH_24_2001_JAM.pdf,JAM,24,gujarat,10,jamnagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_JAM_EB.pdf,JAM_EB,24,gujarat,10,jamnagar
+~/iec/pc01/district_handbooks/,DH_24_2001_JUN.pdf,JUN,24,gujarat,12,junagadh
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_JUN_EB.pdf,JUN_EB,24,gujarat,12,junagadh
+~/iec/pc01/district_handbooks/,DH_24_2001_KAC.pdf,KAC,24,gujarat,1,kachchh
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_KAC_EB.pdf,KAC_EB,24,gujarat,1,kachchh
+~/iec/pc01/district_handbooks/,DH_24_2001_KHE.pdf,KHE,24,gujarat,16,kheda
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_KHE_EB.pdf,KHE_EB,24,gujarat,16,kheda
+~/iec/pc01/district_handbooks/,DH_24_2001_MAH.pdf,MAH,24,gujarat,4,mahesana
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_MAH_EB.pdf,MAH_EB,24,gujarat,4,mahesana
+~/iec/pc01/district_handbooks/,DH_24_2001_NAR.pdf,NAR,24,gujarat,20,narmada
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_NAR_EB.pdf,NAR_EB,24,gujarat,20,narmada
+~/iec/pc01/district_handbooks/,DH_24_2001_NAV.pdf,NAV,24,gujarat,24,navsari
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_NAV_EB.pdf,NAV_EB,24,gujarat,24,navsari
+~/iec/pc01/district_handbooks/,DH_24_2001_PAN.pdf,PAN,24,gujarat,17,panch mahals
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_PAN_EB.pdf,PAN_EB,24,gujarat,17,panch mahals
+~/iec/pc01/district_handbooks/,DH_24_2001_PAT.pdf,PAT,24,gujarat,3,patan
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_PAT_EB.pdf,PAT_EB,24,gujarat,3,patan
+~/iec/pc01/district_handbooks/,DH_24_2001_POR.pdf,POR,24,gujarat,11,porbandar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_POR_EB.pdf,POR_EB,24,gujarat,11,porbandar
+~/iec/pc01/district_handbooks/,DH_24_2001_RAJ.pdf,RAJ,24,gujarat,9,rajkot
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_RAJ_EB.pdf,RAJ_EB,24,gujarat,9,rajkot
+~/iec/pc01/district_handbooks/,DH_24_2001_SAB.pdf,SAB,24,gujarat,5,sabar kantha
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_SAB_EB.pdf,SAB_EB,24,gujarat,5,sabar kantha
+~/iec/pc01/district_handbooks/,DH_24_2001_SRT.pdf,SRT,24,gujarat,22,surat
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_SRT_EB.pdf,SRT_EB,24,gujarat,22,surat
+~/iec/pc01/district_handbooks/,DH_24_2001_SUR.pdf,SUR,24,gujarat,8,surendranagar
+~/iec/pc01/district_handbooks/,DH_24_2001_VAD.pdf,VAD,24,gujarat,19,vadodara
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_VAD_EB.pdf,VAD_EB,24,gujarat,19,vadodara
+~/iec/pc01/district_handbooks/,DH_24_2001_VAL.pdf,VAL,24,gujarat,25,valsad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_24_2001_VAL_EB.pdf,VAL_EB,24,gujarat,25,valsad
+~/iec/pc01/district_handbooks/,DH_25_2001_DAM.pdf,DAM,25,daman diu,1,diu
+~/iec/pc01/district_handbooks/,DH_25_2001_DAM.pdf,DAM,25,daman diu,2,daman
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_25_2001_DAM_EB.pdf,DAM_EB,25,daman diu,1,diu
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_25_2001_DAM_EB.pdf,DAM_EB,25,daman diu,2,daman
+~/iec/pc01/district_handbooks/,DH_27_2001_AHM.pdf,AHM,27,maharashtra,26,ahmadnagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_AHM_EB.pdf,AHM_EB,27,maharashtra,26,ahmadnagar
+~/iec/pc01/district_handbooks/,DH_27_2001_AKO.pdf,AKO,27,maharashtra,5,akola
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_AKO_EB.pdf,AKO_EB,27,maharashtra,5,akola
+~/iec/pc01/district_handbooks/,DH_27_2001_AMR.pdf,AMR,27,maharashtra,7,amravati
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_AMR_EB.pdf,AMR_EB,27,maharashtra,7,amravati
+~/iec/pc01/district_handbooks/,DH_27_2001_AUR.pdf,AUR,27,maharashtra,19,aurangabad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_AUR_EB.pdf,AUR_EB,27,maharashtra,19,aurangabad
+~/iec/pc01/district_handbooks/,DH_27_2001_BHA.pdf,BHA,27,maharashtra,10,bhandara
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_BHA_EB.pdf,BHA_EB,27,maharashtra,10,bhandara
+~/iec/pc01/district_handbooks/,DH_27_2001_BID.pdf,BID,27,maharashtra,27,bid
+~/iec/pc01/district_handbooks/,DH_27_2001_BUL.pdf,BUL,27,maharashtra,4,buldana
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_BUL_EB.pdf,BUL_EB,27,maharashtra,4,buldana
+~/iec/pc01/district_handbooks/,DH_27_2001_CHA.pdf,CHA,27,maharashtra,13,chandrapur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_CHA_EB.pdf,CHA_EB,27,maharashtra,13,chandrapur
+~/iec/pc01/district_handbooks/,DH_27_2001_DHU.pdf,DHU,27,maharashtra,2,dhule
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_DHU_EB.pdf,DHU_EB,27,maharashtra,2,dhule
+~/iec/pc01/district_handbooks/,DH_27_2001_GAD.pdf,GAD,27,maharashtra,12,gadchiroli
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_GAD_EB.pdf,GAD_EB,27,maharashtra,12,gadchiroli
+~/iec/pc01/district_handbooks/,DH_27_2001_GON.pdf,GON,27,maharashtra,11,gondiya
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_GON_EB.pdf,GON_EB,27,maharashtra,11,gondiya
+~/iec/pc01/district_handbooks/,DH_27_2001_HIN.pdf,HIN,27,maharashtra,16,hingoli
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_HIN_EB.pdf,HIN_EB,27,maharashtra,16,hingoli
+~/iec/pc01/district_handbooks/,DH_27_2001_JAL.pdf,JAL,27,maharashtra,3,jalgaon
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_JAL_EB.pdf,JAL_EB,27,maharashtra,3,jalgaon
+~/iec/pc01/district_handbooks/,DH_27_2001_JLN.pdf,JLN,27,maharashtra,18,jalna
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_JLN_EB.pdf,JLN_EB,27,maharashtra,18,jalna
+~/iec/pc01/district_handbooks/,DH_27_2001_KOL.pdf,KOL,27,maharashtra,34,kolhapur
+~/iec/pc01/district_handbooks/,DH_27_2001_LAT.pdf,LAT,27,maharashtra,28,latur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_LAT_EB.pdf,LAT_EB,27,maharashtra,28,latur
+~/iec/pc01/district_handbooks/,DH_27_2001_MUM.pdf,MUM,27,maharashtra,23,mumbai
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_MUM_EB.pdf,MUM_EB,27,maharashtra,23,mumbai
+~/iec/pc01/district_handbooks/,DH_27_2001_NAD.pdf,NAD,27,maharashtra,15,nanded
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_NAD_EB.pdf,NAD_EB,27,maharashtra,15,nanded
+~/iec/pc01/district_handbooks/,DH_27_2001_NAG.pdf,NAG,27,maharashtra,9,nagpur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_NAG_EB.pdf,NAG_EB,27,maharashtra,9,nagpur
+~/iec/pc01/district_handbooks/,DH_27_2001_NAN.pdf,NAN,27,maharashtra,1,nandurbar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_NAN_EB.pdf,NAN_EB,27,maharashtra,1,nandurbar
+~/iec/pc01/district_handbooks/,DH_27_2001_NAS.pdf,NAS,27,maharashtra,20,nashik
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_NAS_EB.pdf,NAS_EB,27,maharashtra,20,nashik
+~/iec/pc01/district_handbooks/,DH_27_2001_OSM.pdf,OSM,27,maharashtra,29,osmanabad
+~/iec/pc01/district_handbooks/,DH_27_2001_PAR.pdf,PAR,27,maharashtra,17,parbhani
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_PAR_EB.pdf,PAR_EB,27,maharashtra,17,parbhani
+~/iec/pc01/district_handbooks/,DH_27_2001_PUN.pdf,PUN,27,maharashtra,25,pune
+~/iec/pc01/district_handbooks/,DH_27_2001_RAI.pdf,RAI,27,maharashtra,24,raigarh
+~/iec/pc01/district_handbooks/,DH_27_2001_RAT.pdf,RAT,27,maharashtra,32,ratnagiri
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_RAT_EB.pdf,RAT_EB,27,maharashtra,32,ratnagiri
+~/iec/pc01/district_handbooks/,DH_27_2001_SAN.pdf,SAN,27,maharashtra,35,sangli
+~/iec/pc01/district_handbooks/,DH_27_2001_SAT.pdf,SAT,27,maharashtra,31,satara
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_SAT_EB.pdf,SAT_EB,27,maharashtra,31,satara
+~/iec/pc01/district_handbooks/,DH_27_2001_SIN.pdf,SIN,27,maharashtra,33,sindhudurg
+~/iec/pc01/district_handbooks/,DH_27_2001_SOL.pdf,SOL,27,maharashtra,30,solapur
+~/iec/pc01/district_handbooks/,DH_27_2001_SUB.pdf,SUB,27,maharashtra,22,mumbai suburban
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_SUB_EB.pdf,SUB_EB,27,maharashtra,22,mumbai suburban
+~/iec/pc01/district_handbooks/,DH_27_2001_THA.pdf,THA,27,maharashtra,21,thane
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_THA_EB.pdf,THA_EB,27,maharashtra,21,thane
+~/iec/pc01/district_handbooks/,DH_27_2001_WAR.pdf,WAR,27,maharashtra,8,wardha
+~/iec/pc01/district_handbooks/,DH_27_2001_WAS.pdf,WAS,27,maharashtra,6,washim
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_WAS_EB.pdf,WAS_EB,27,maharashtra,6,washim
+~/iec/pc01/district_handbooks/,DH_27_2001_YAV.pdf,YAV,27,maharashtra,14,yavatmal
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_27_2001_YAV_EB.pdf,YAV_EB,27,maharashtra,14,yavatmal
+~/iec/pc01/district_handbooks/,DH_28_2001_ADI.pdf,ADI,28,andhra pradesh,1,adilabad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_ADI_EB.pdf,ADI_EB,28,andhra pradesh,1,adilabad
+~/iec/pc01/district_handbooks/,DH_28_2001_ANA.pdf,ANA,28,andhra pradesh,22,anantapur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_ANA_EB.pdf,ANA_EB,28,andhra pradesh,22,anantapur
+~/iec/pc01/district_handbooks/,DH_28_2001_CHI.pdf,CHI,28,andhra pradesh,23,chittoor
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_CHI_EB.pdf,CHI_EB,28,andhra pradesh,23,chittoor
+~/iec/pc01/district_handbooks/,DH_28_2001_EGOD.pdf,EGOD,28,andhra pradesh,14,east godavari
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_EGOD_EB.pdf,EGOD_EB,28,andhra pradesh,14,east godavari
+~/iec/pc01/district_handbooks/,DH_28_2001_GUN.pdf,GUN,28,andhra pradesh,17,guntur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_GUN_EB.pdf,GUN_EB,28,andhra pradesh,17,guntur
+~/iec/pc01/district_handbooks/,DH_28_2001_HYD.pdf,HYD,28,andhra pradesh,5,hyderabad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_HYD_EB.pdf,HYD_EB,28,andhra pradesh,5,hyderabad
+~/iec/pc01/district_handbooks/,DH_28_2001_KAR.pdf,KAR,28,andhra pradesh,3,karimnagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_KAR_EB.pdf,KAR_EB,28,andhra pradesh,3,karimnagar
+~/iec/pc01/district_handbooks/,DH_28_2001_KHA.pdf,KHA,28,andhra pradesh,10,khammam
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_KHA_EB.pdf,KHA_EB,28,andhra pradesh,10,khammam
+~/iec/pc01/district_handbooks/,DH_28_2001_KRI.pdf,KRI,28,andhra pradesh,16,krishna
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_KRI_EB.pdf,KRI_EB,28,andhra pradesh,16,krishna
+~/iec/pc01/district_handbooks/,DH_28_2001_KUR.pdf,KUR,28,andhra pradesh,21,kurnool
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_KUR_EB.pdf,KUR_EB,28,andhra pradesh,21,kurnool
+~/iec/pc01/district_handbooks/,DH_28_2001_MAH.pdf,MAH,28,andhra pradesh,7,mahbubnagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_MAH_EB.pdf,MAH_EB,28,andhra pradesh,7,mahbubnagar
+~/iec/pc01/district_handbooks/,DH_28_2001_MED.pdf,MED,28,andhra pradesh,4,medak
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_MED_EB.pdf,MED_EB,28,andhra pradesh,4,medak
+~/iec/pc01/district_handbooks/,DH_28_2001_NAL.pdf,NAL,28,andhra pradesh,8,nalgonda
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_NAL_EB.pdf,NAL_EB,28,andhra pradesh,8,nalgonda
+~/iec/pc01/district_handbooks/,DH_28_2001_NIZ.pdf,NIZ,28,andhra pradesh,2,nizamabad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_NIZ_EB.pdf,NIZ_EB,28,andhra pradesh,2,nizamabad
+~/iec/pc01/district_handbooks/,DH_28_2001_POT.pdf,POT,28,andhra pradesh,19,nellore
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_POT_EB.pdf,POT_EB,28,andhra pradesh,19,nellore
+~/iec/pc01/district_handbooks/,DH_28_2001_PRA.pdf,PRA,28,andhra pradesh,18,prakasam
+~/iec/pc01/district_handbooks/,DH_28_2001_RAN.pdf,RAN,28,andhra pradesh,6,rangareddi
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_RAN_EB.pdf,RAN_EB,28,andhra pradesh,6,rangareddi
+~/iec/pc01/district_handbooks/,DH_28_2001_SRI.pdf,SRI,28,andhra pradesh,11,srikakulam
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_SRI_EB.pdf,SRI_EB,28,andhra pradesh,11,srikakulam
+~/iec/pc01/district_handbooks/,DH_28_2001_VIS.pdf,VIS,28,andhra pradesh,13,visakhapatnam
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_VIS_EB.pdf,VIS_EB,28,andhra pradesh,13,visakhapatnam
+~/iec/pc01/district_handbooks/,DH_28_2001_VIZ.pdf,VIZ,28,andhra pradesh,12,vizianagaram
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_VIZ_EB.pdf,VIZ_EB,28,andhra pradesh,12,vizianagaram
+~/iec/pc01/district_handbooks/,DH_28_2001_WAR.pdf,WAR,28,andhra pradesh,9,warangal
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_WAR_EB.pdf,WAR_EB,28,andhra pradesh,9,warangal
+~/iec/pc01/district_handbooks/,DH_28_2001_WGOD.pdf,WGOD,28,andhra pradesh,15,west godavari
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_WGOD_EB.pdf,WGOD_EB,28,andhra pradesh,15,west godavari
+~/iec/pc01/district_handbooks/,DH_28_2001_YSR.pdf,YSR,28,andhra pradesh,20,cuddapah
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_28_2001_YSR_EB.pdf,YSR_EB,28,andhra pradesh,20,cuddapah
+~/iec/pc01/district_handbooks/,DH_29_2001_BAG.pdf,BAG,29,karnataka,2,bagalkot
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_BAG_EB.pdf,BAG_EB,29,karnataka,2,bagalkot
+~/iec/pc01/district_handbooks/,DH_29_2001_BAN.pdf,BAN,29,karnataka,20,bangalore
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_BAN_EB.pdf,BAN_EB,29,karnataka,20,bangalore
+~/iec/pc01/district_handbooks/,DH_29_2001_BANR.pdf,BANR,29,karnataka,21,bangalore rural
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_BANR_EB.pdf,BANR_EB,29,karnataka,21,bangalore rural
+~/iec/pc01/district_handbooks/,DH_29_2001_BEL.pdf,BEL,29,karnataka,1,belgaum
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_BEL_EB.pdf,BEL_EB,29,karnataka,1,belgaum
+~/iec/pc01/district_handbooks/,DH_29_2001_BID.pdf,BID,29,karnataka,5,bidar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_BID_EB.pdf,BID_EB,29,karnataka,5,bidar
+~/iec/pc01/district_handbooks/,DH_29_2001_BLR.pdf,BLR,29,karnataka,12,bellary
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_BLR_EB.pdf,BLR_EB,29,karnataka,12,bellary
+~/iec/pc01/district_handbooks/,DH_29_2001_CHA.pdf,CHA,29,karnataka,27,chamarajanagar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_CHA_EB.pdf,CHA_EB,29,karnataka,27,chamarajanagar
+~/iec/pc01/district_handbooks/,DH_29_2001_CHI.pdf,CHI,29,karnataka,13,chitradurga
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_CHI_EB.pdf,CHI_EB,29,karnataka,13,chitradurga
+~/iec/pc01/district_handbooks/,DH_29_2001_CHM.pdf,CHM,29,karnataka,17,chikmagalur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_CHM_EB.pdf,CHM_EB,29,karnataka,17,chikmagalur
+~/iec/pc01/district_handbooks/,DH_29_2001_DAV.pdf,DAV,29,karnataka,14,davanagere
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_DAV_EB.pdf,DAV_EB,29,karnataka,14,davanagere
+~/iec/pc01/district_handbooks/,DH_29_2001_DHA.pdf,DHA,29,karnataka,9,dharwad
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_DHA_EB.pdf,DHA_EB,29,karnataka,9,dharwad
+~/iec/pc01/district_handbooks/,DH_29_2001_DKAN.pdf,DKAN,29,karnataka,24,dakshina kannada
+~/iec/pc01/district_handbooks/,DH_29_2001_GAD.pdf,GAD,29,karnataka,8,gadag
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_GAD_EB.pdf,GAD_EB,29,karnataka,8,gadag
+~/iec/pc01/district_handbooks/,DH_29_2001_GUL.pdf,GUL,29,karnataka,4,gulbarga
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_GUL_EB.pdf,GUL_EB,29,karnataka,4,gulbarga
+~/iec/pc01/district_handbooks/,DH_29_2001_HAS.pdf,HAS,29,karnataka,23,hassan
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_HAS_EB.pdf,HAS_EB,29,karnataka,23,hassan
+~/iec/pc01/district_handbooks/,DH_29_2001_HAV.pdf,HAV,29,karnataka,11,haveri
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_HAV_EB.pdf,HAV_EB,29,karnataka,11,haveri
+~/iec/pc01/district_handbooks/,DH_29_2001_KOD.pdf,KOD,29,karnataka,25,kodagu
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_KOD_EB.pdf,KOD_EB,29,karnataka,25,kodagu
+~/iec/pc01/district_handbooks/,DH_29_2001_KOL.pdf,KOL,29,karnataka,19,kolar
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_KOL_EB.pdf,KOL_EB,29,karnataka,19,kolar
+~/iec/pc01/district_handbooks/,DH_29_2001_KOP.pdf,KOP,29,karnataka,7,koppal
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_KOP_EB.pdf,KOP_EB,29,karnataka,7,koppal
+~/iec/pc01/district_handbooks/,DH_29_2001_MAN.pdf,MAN,29,karnataka,22,mandya
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_MAN_EB.pdf,MAN_EB,29,karnataka,22,mandya
+~/iec/pc01/district_handbooks/,DH_29_2001_MYS.pdf,MYS,29,karnataka,26,mysore
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_MYS_EB.pdf,MYS_EB,29,karnataka,26,mysore
+~/iec/pc01/district_handbooks/,DH_29_2001_RAI.pdf,RAI,29,karnataka,6,raichur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_RAI_EB.pdf,RAI_EB,29,karnataka,6,raichur
+~/iec/pc01/district_handbooks/,DH_29_2001_SHI.pdf,SHI,29,karnataka,15,shimoga
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_SHI_EB.pdf,SHI_EB,29,karnataka,15,shimoga
+~/iec/pc01/district_handbooks/,DH_29_2001_TUM.pdf,TUM,29,karnataka,18,tumkur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_TUM_EB.pdf,TUM_EB,29,karnataka,18,tumkur
+~/iec/pc01/district_handbooks/,DH_29_2001_UDU.pdf,UDU,29,karnataka,16,udupi
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_UDU_EB.pdf,UDU_EB,29,karnataka,16,udupi
+~/iec/pc01/district_handbooks/,DH_29_2001_UKAN.pdf,UKAN,29,karnataka,10,uttara kannada
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_29_2001_UKAN_EB.pdf,UKAN_EB,29,karnataka,10,uttara kannada
+~/iec/pc01/district_handbooks/,DH_30_2001_NGOA.pdf,NGOA,30,goa,1,north goa
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_30_2001_NGOA_EB.pdf,NGOA_EB,30,goa,1,north goa
+~/iec/pc01/district_handbooks/,DH_30_2001_SGOA.pdf,SGOA,30,goa,2,south goa
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_30_2001_SGOA_EB.pdf,SGOA_EB,30,goa,2,south goa
+~/iec/pc01/district_handbooks/,DH_31_2001_LAK.pdf,LAK,31,lakshadweep,1,lakshadweep
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_31_2001_LAK_EB.pdf,LAK_EB,31,lakshadweep,1,lakshadweep
+~/iec/pc01/district_handbooks/,DH_33_2001_ARI.pdf,ARI,33,tamil nadu,17,ariyalur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_ARI_EB.pdf,ARI_EB,33,tamil nadu,17,ariyalur
+~/iec/pc01/district_handbooks/,DH_33_2001_CHE.pdf,CHE,33,tamil nadu,2,chennai
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_CHE_EB.pdf,CHE_EB,33,tamil nadu,2,chennai
+~/iec/pc01/district_handbooks/,DH_33_2001_COI.pdf,COI,33,tamil nadu,12,coimbatore
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_COI_EB.pdf,COI_EB,33,tamil nadu,12,coimbatore
+~/iec/pc01/district_handbooks/,DH_33_2001_CUD.pdf,CUD,33,tamil nadu,18,cuddalore
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_CUD_EB.pdf,CUD_EB,33,tamil nadu,18,cuddalore
+~/iec/pc01/district_handbooks/,DH_33_2001_DHA.pdf,DHA,33,tamil nadu,5,dharmapuri
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_DHA_EB.pdf,DHA_EB,33,tamil nadu,5,dharmapuri
+~/iec/pc01/district_handbooks/,DH_33_2001_DIN.pdf,DIN,33,tamil nadu,13,dindigul
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_DIN_EB.pdf,DIN_EB,33,tamil nadu,13,dindigul
+~/iec/pc01/district_handbooks/,DH_33_2001_ERO.pdf,ERO,33,tamil nadu,10,erode
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_ERO_EB.pdf,ERO_EB,33,tamil nadu,10,erode
+~/iec/pc01/district_handbooks/,DH_33_2001_KAN.pdf,KAN,33,tamil nadu,30,kanniyakumari
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_KAN_EB.pdf,KAN_EB,33,tamil nadu,3,kancheepuram
+~/iec/pc01/district_handbooks/,DH_33_2001_KAR.pdf,KAR,33,tamil nadu,14,karur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_KAR_EB.pdf,KAR_EB,33,tamil nadu,14,karur
+~/iec/pc01/district_handbooks/,DH_33_2001_KKU.pdf,KKU,33,tamil nadu,30,kanniyakumari
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_KKU_EB.pdf,KKU_EB,33,tamil nadu,30,kanniyakumari
+~/iec/pc01/district_handbooks/,DH_33_2001_MAD.pdf,MAD,33,tamil nadu,24,madurai
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_MAD_EB.pdf,MAD_EB,33,tamil nadu,24,madurai
+~/iec/pc01/district_handbooks/,DH_33_2001_NAG.pdf,NAG,33,tamil nadu,19,nagapattinam
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_NAG_EB.pdf,NAG_EB,33,tamil nadu,19,nagapattinam
+~/iec/pc01/district_handbooks/,DH_33_2001_NAM.pdf,NAM,33,tamil nadu,9,namakkal
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_NAM_EB.pdf,NAM_EB,33,tamil nadu,9,namakkal
+~/iec/pc01/district_handbooks/,DH_33_2001_NIL.pdf,NIL,33,tamil nadu,11,the nilgiris
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_NIL_EB.pdf,NIL_EB,33,tamil nadu,11,the nilgiris
+~/iec/pc01/district_handbooks/,DH_33_2001_PER.pdf,PER,33,tamil nadu,16,perambalur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_PER_EB.pdf,PER_EB,33,tamil nadu,16,perambalur
+~/iec/pc01/district_handbooks/,DH_33_2001_RAM.pdf,RAM,33,tamil nadu,27,ramanathapuram
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_RAM_EB.pdf,RAM_EB,33,tamil nadu,27,ramanathapuram
+~/iec/pc01/district_handbooks/,DH_33_2001_SIV.pdf,SIV,33,tamil nadu,23,sivaganga
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_SIV_EB.pdf,SIV_EB,33,tamil nadu,23,sivaganga
+~/iec/pc01/district_handbooks/,DH_33_2001_THA.pdf,THA,33,tamil nadu,21,thanjavur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_THA_EB.pdf,THA_EB,33,tamil nadu,21,thanjavur
+~/iec/pc01/district_handbooks/,DH_33_2001_THE.pdf,THE,33,tamil nadu,25,theni
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_THE_EB.pdf,THE_EB,33,tamil nadu,25,theni
+~/iec/pc01/district_handbooks/,DH_33_2001_THI.pdf,THI,33,tamil nadu,1,thiruvallur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_THI_EB.pdf,THI_EB,33,tamil nadu,1,thiruvallur
+~/iec/pc01/district_handbooks/,DH_33_2001_THO.pdf,THO,33,tamil nadu,28,thoothukkudi
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_THO_EB.pdf,THO_EB,33,tamil nadu,28,thoothukkudi
+~/iec/pc01/district_handbooks/,DH_33_2001_THR.pdf,THR,33,tamil nadu,20,thiruvarur
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_THR_EB.pdf,THR_EB,33,tamil nadu,20,thiruvarur
+~/iec/pc01/district_handbooks/,DH_33_2001_TIR.pdf,TIR,33,tamil nadu,6,tiruvannamalai
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_TIR_EB.pdf,TIR_EB,33,tamil nadu,6,tiruvannamalai
+~/iec/pc01/district_handbooks/,DH_33_2001_TIV.pdf,TIV,33,tamil nadu,29,tirunelveli
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_TIV_EB.pdf,TIV_EB,33,tamil nadu,29,tirunelveli
+~/iec/pc01/district_handbooks/,DH_33_2001_TRP.pdf,TRP,33,tamil nadu,15,tiruchirappalli
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_TRP_EB.pdf,TRP_EB,33,tamil nadu,15,tiruchirappalli
+~/iec/pc01/district_handbooks/,DH_33_2001_VEL.pdf,VEL,33,tamil nadu,4,vellore
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_VEL_EB.pdf,VEL_EB,33,tamil nadu,4,vellore
+~/iec/pc01/district_handbooks/,DH_33_2001_VIL.pdf,VIL,33,tamil nadu,7,viluppuram
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_33_2001_VIL_EB.pdf,VIL_EB,33,tamil nadu,7,viluppuram
+~/iec/pc01/district_handbooks/,DH_34_2001_PUD.pdf,PUD,34,pondicherry,2,pondicherry
+~/iec/pc01/district_handbooks/,DH_34_2001_PUD.pdf,PUD,34,pondicherry,1,yanam
+~/iec/pc01/district_handbooks/,DH_34_2001_PUD.pdf,PUD,34,pondicherry,3,mahe
+~/iec/pc01/district_handbooks/,DH_34_2001_PUD.pdf,PUD,34,pondicherry,4,karaikal
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_34_2001_PUD_EB.pdf,PUD_EB,34,pondicherry,2,pondicherry
+~/iec/pc01/district_handbooks/,DH_35_2001_AND.pdf,AND,35,andaman nicobar islands,1,andamans
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_35_2001_AND_EB.pdf,AND_EB,35,andaman nicobar islands,1,andamans
+~/iec/pc01/district_handbooks//eb_table_extracts,DH_35_2001_AND_EB.pdf,AND_EB,35,andaman nicobar islands,1,andamans
+~/iec/pc01/district_handbooks/taha_2025_09_19,48295_2001_PUD.pdf,PUD,33,tamil nadu,22,pudukkottai
+~/iec/pc01/district_handbooks/taha_2025_09_19,DH_09_2001_GHAB.pdf,GHAB,9,uttar pradesh,9,ghaziabad
+~/iec/pc01/district_handbooks/taha_2025_09_19,DH_18_2001_KAG.pdf,KAG,18,assam,22,karimganj
+~/iec/pc01/district_handbooks/taha_2025_09_19,DH_21_2001_KEN.pdf,KEND,21,orissa,10,kendrapara
+~/iec/pc01/district_handbooks/taha_2025_09_19,DH_22_2001_RAI.pdf,RAI,22,chhattisgarh,4,raigarh
+~/iec/pc01/district_handbooks/taha_2025_09_19,Idukki_2001.pdf,IDK,32,kerala,9,idukki
+~/iec/pc01/district_handbooks/taha_2025_09_19,Kannur_2001.pdf,KAN,32,kerala,2,kannur
+~/iec/pc01/district_handbooks/taha_2025_09_19,Kasaragod_2001.pdf,KAS,32,kerala,1,kasaragod
+~/iec/pc01/district_handbooks/taha_2025_09_19,Wayanad_2001.pdf,WAY,32,kerala,3,wayanad
+~/iec/pc01/district_handbooks/taha_2025_09_19,Kozhikode_2001.pdf,KOZ,32,kerala,4,kozhikode
+~/iec/pc01/district_handbooks/taha_2025_09_19,Malappuram_2001.pdf,MALA,32,kerala,5,malappuram
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village & Townwise Primary Census Abstract- Ambala- Part XII-A & B-Series-7- Haryana.pdf,AMB,6,haryana,2,ambala
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village & Townwise Primary Census Abstract- Yamunanagar- Part XII A & B Series-7- Haryana.pdf,YAM,6,haryana,3,yamunanagar
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village and Towwise Primary Census Abstract Karnal Part XII- A & B Series-7 Haryana.pdf,KAR,6,haryana,6,karnal
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village & Townwise Primary Census Abstract- Panipat-Part XII A & B-Series-7- Haryana.pdf,PANI,6,haryana,7,panipat
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village and Townwise Primary Census Abstract Sonipat Part XII A & B Series-7 Haryana.pdf,SON,6,haryana,8,sonipat
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village and Towwise Primary Census Abstract Jind Part XII-A & B Series-7 Haryana.pdf,JIN,6,haryana,9,jind
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village & Townwise Primary Census Abstract- Fatehabad-Part XII- A & B- Series-7-Haryana (1).pdf,FATE,6,haryana,10,fatehabad
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village & Townwise Primary Census Abstract- Sirsa-Part XII A & B- Series-7-Haryana.pdf,SIR,6,haryana,11,sirsa
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village and Towwise Primary Census Abstract Hisar Part XII-A & B Series-7 Haryana.pdf,HIS,6,haryana,12,hisar
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village and Townwise Primary Census Abstract Bhiwani Part XII-A & B Series-7 Haryana.pdf,BHI,6,haryana,13,bhiwani
+~/iec/pc01/district_handbooks/taha_2025_09_19,village and Townwise Primary Census Abstract Rohtak Part XII A & B Series-7 Haryana.pdf,ROH,6,haryana,14,rohtak
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village & Townwise Primary Census Abstract Jhajjar-Part XII-A & B-Series-7-Haryana.pdf,JHA,6,haryana,15,jhajjar
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village and Towwise Primary Census Abstract Mahendragarh Part XII-A & B Series-7 Haryana.pdf,MAH,6,haryana,16,mahendragarh
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village & Townwise Primary Census Abstract- Rewari- Part XII A & B- Series-7- Haryana.pdf,REW,6,haryana,17,rewari
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village & Townwise Primary Census Abstract- Gurgaon- Part XII- A & B- Series-7- Haryana.pdf,GUR,6,haryana,18,gurgaon
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village & Townwise Primary Census Abstract- Faridabad -Part XII- A & B-Series-7- Haryana.pdf,FARID,6,haryana,19,faridabad
+~/iec/pc01/district_handbooks/taha_2025_09_19,Village & Townwise Primary Census Abstract- Panchkula- Part XII- A & B-Series-7- Haryana.pdf,PANCH,6,haryana,1,panchkula
+~/iec/pc01/district_handbooks/taha_2025_09_19,Kurukshetra_2001.pdf,KUR,6,haryana,4,kurukshetra
