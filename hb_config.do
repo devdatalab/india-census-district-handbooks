@@ -1,4 +1,4 @@
-/* this do file sets up config for district handbooks */
+/* this do file sets up config for district handbooks pipelines */
 /* usage: do config.do, [series(pc01)] default is pc01 */
 
 
