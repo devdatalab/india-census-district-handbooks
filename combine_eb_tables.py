@@ -39,57 +39,80 @@ BASE_DIR = pdf_dir / f"eb_table_extracts/"
 
 out_hb  = BASE_DIR / "combined_hb" / "_file_manifest.csv"
 
-# dist_xwalk_path = code_dir / f"{args.series}_hb_pdf_keys.csv"
+dist_xwalk_path = code_dir / f"{args.series}_hb_pdf_keys.csv"
 
 ## ---------------- cell: combined handbook data  ---------------- ##
 
-hb_data = []
+# Define the constants once
+COLUMNS = ['location_code', 'town_hb', 'ward_name', 'eb_no',
+           'total_pop', 'sc_pop', 'st_pop']
+DTYPES = {
+    0: 'string', 1: 'string', 2: 'string', 3: 'string',
+    4: 'Int64', 5: 'Int64', 6: 'Int64'
+}
+EXPECTED_COL_COUNT = len(COLUMNS) # which is 7
 
+# 1. Use a list comprehension to read and process all valid CSV files
+hb_data_list = []
 for filename in os.listdir(BASE_DIR):
-    if not filename.endswith(".csv"):
-        continue
-    fp = BASE_DIR / filename
+    if filename.endswith('.csv'):
+        filepath = os.path.join(BASE_DIR, filename)
+        
+        try:
+            # Read the file with specified dtypes
+            df = pd.read_csv(filepath, dtype=DTYPES)
+            
+            # Check for correct column count and non-empty data
+            if df.shape[1] == EXPECTED_COL_COUNT and not df.empty:
+                df.columns = COLUMNS
+                df['source_file'] = filename.removesuffix(".csv")
+                hb_data_list.append(df)
+            else:
+                 # print a message for skipped files
+                 if df.shape[1] != EXPECTED_COL_COUNT:
+                     print(f"Skipping {filename}: Incorrect column count ({df.shape[1]} != {EXPECTED_COL_COUNT})")
+                 elif df.empty:
+                     print(f"Skipping {filename}: Empty file or header only")
 
-    try:
-        # Peek header to get actual column names
-        hdr = pd.read_csv(fp, nrows=0, engine="python")
-        cols = list(hdr.columns)
+        except pd.errors.EmptyDataError:
+            print(f"Skipping {filename}: File is empty or has no data to parse")
+        except Exception as e:
+             # Catch general errors like the IndexError from your previous run
+            print(f"Error reading {filename}: {e}")
 
-        # Read CSV (forgiving on bad lines)
-        df = pd.read_csv(fp, engine="python", on_bad_lines="skip")
-
-    except Exception:
-        # skip empty/malformed files quietly
-        continue
-
-    # If we got the expected 7 columns but no names, set them
-    if df.shape[1] == 7 and set(df.columns) == set(range(7)):
-        df.columns = ["location_code", "town_hb", "ward_name", "eb_no",
-                      "total_pop", "sc_pop", "st_pop"]
-
-    df = df.copy()
-    df["source_file"] = fp.stem
-    hb_data.append(df)
-
-# Combine (guard if nothing valid)
-if hb_data:
-    hb_full = pd.concat(hb_data, ignore_index=True)
+# 2. Combine the list of DataFrames into a single DataFrame
+if hb_data_list:
+    hb_full = pd.concat(hb_data_list, ignore_index=True)
+    print(f"\nSuccessfully combined {len(hb_data_list)} files into one DataFrame with {len(hb_full)} rows.")
 else:
-    hb_full = pd.DataFrame(columns=["location_code","town_hb","ward_name","eb_no",
-                                    "total_pop","sc_pop","st_pop","source_file"])
+    hb_full = pd.DataFrame() # Create an empty DataFrame if no files were processed
+    print("No valid CSV files were processed and combined.")
     
 
-# merge with crosswalk
-# dist_xwalk = pd.read_csv(dist_xwalk_path)
+# compare hb_full to the full list of pdfs in directory for coverage
+hb_pdfs_indir = sorted([
+    f for f in os.listdir(PC01)
+    if f.lower().endswith(".pdf") and os.path.isfile(os.path.join(PC01, f))
+])
 
-# dist_xwalk = (
-#     dist_xwalk.assign(source_file=dist_xwalk["filename"].astype(str).str.removesuffix(".pdf"))
-#               .drop(columns="filename")
-#               .drop_duplicates(subset="source_file", keep="first")
-# )
+hb_pdfs_parsed = hb_full["source_file"].astype(str).tolist()
+missing_inparsed = sorted(set(hb_pdfs_indir) - set(hb_pdfs_parsed))
 
-# no merge for now, write combined handbook directly to out_hb
-# hb_merged = hb_full.merge(dist_xwalk, on="source_file", how="left", indicator=True)
-# hb_merged = hb_merged.assign(town_abbr=hb_merged["town_hb"].astype(str).str[:4].str.lower())
-hb_full.to_csv(out_hb,index=False)
-# hb_merged.to_csv(out_hb, index=False)
+## ---------------------------- cell: merge with state and district name  ---------------------------- ##
+
+# Load crosswalk
+dist_xwalk = pd.read_csv(dist_xwalk_path)
+
+# remove .pdf suffix and create var that's filename (e.g., TEH_VOL-02_EB)
+dist_xwalk = dist_xwalk.assign(source_file=dist_xwalk["filename"].str.removesuffix(".pdf")).drop(columns="filename")
+
+dist_xwalk = dist_xwalk.drop_duplicates(subset = "source_file", keep = "first")
+
+# Merge: hb_full = master, xwalk = using
+hb_merged = hb_full.merge(dist_xwalk, on="source_file", how="left", indicator = True)
+
+hb_merged = hb_merged.assign(
+    town_abbr=hb_merged["town_hb"].str[:4].str.lower(),
+)
+
+hb_merged.to_csv(out_hb, index=False)
