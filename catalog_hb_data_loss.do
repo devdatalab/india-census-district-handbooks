@@ -176,7 +176,7 @@ use $tmp/`series'_data_loss_pdf_eb, clear
 /* using m:1 because data_loss table is at urban pca level and can contain multiple rows of empty filname */
 merge m:1 filename using $tmp/`series'_csv_list, gen(hb_csv_merge)
 
-/* hb_csv_merge==1 is  */
+
 keep if hb_csv_merge == 1 | hb_csv_merge == 3 // note that 2 is hb pdfs not in urban pca
 
 gen llm_csv = hb_csv_merge == 3
@@ -211,9 +211,10 @@ rename source_file filename
 replace filename = subinstr(filename, "_EB", "", .)
 
 /* create a variable set to one if filename has more than 10 rows of good data */
-gen has_eb_rows = cnt_good_rows > 10
+gen has_eb_rows = 0
+replace has_eb_rows = 1 if cnt_good_rows > 10
 
-keep filename cnt_good_rows has_eb_rows
+keep filename has_eb_rows
 
 save $tmp/`series'_row_list, replace
 
@@ -225,5 +226,9 @@ merge m:1 filename using $tmp/`series'_row_list, gen(hb_row_merge)
 /* xn: investigate why merge==2 drop by 2 */
 keep if hb_row_merge == 1 | hb_row_merge == 3
 drop hb_row_merge
+replace has_eb_rows = 0 if missing(has_eb_rows)
+
+/* output final attrition table */
+save $tmp/`series'_handbook_processing_loss.dta, replace
 
 exit
