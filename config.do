@@ -1,16 +1,17 @@
 /* this do file sets up config for district handbooks pipelines */
-/* usage: do config.do, [series(pc01)] default is pc01 */
+/* usage: do config.do
+hb_define_paths, series(pc01) */
 
 
 global hb_code "~/india-census-district-handbooks"
 
 /* Default series if none supplied (pc01, pc11, pc51, pc91) */
 global hb_series pc01
-global iec "/dartfs/rc/lab/I/IEC/"
+global iec "/dartfs/rc/lab/I/IEC"
 
 /* Set all series-dependent paths */
-capture program drop _hb_define_paths
-program define _hb_define_paths
+capture program drop hb_define_paths
+program define hb_define_paths
   syntax, [SERIES(name)] // if not specified, default is pc01
 
   /* Normalize series to lowercase */
@@ -44,6 +45,25 @@ program define _hb_define_paths
 
   global hb_eb_pages_csv $hb_pdf/urban_eb_pages.csv
 
-end
+  /* Print paths  */
+  di as txt "{hline 60}"
+  di as res "HB Config"
+  di as txt "{hline 60}"
 
-quietly _hb_define_paths, series("pc01")
+  di as res "series:           "  as txt "$hb_series"
+  di as res "hb_code:          "  as txt "$hb_code"
+
+  di as res "hb_pdf:           " ///
+      as txt "$hb_pdf" ///
+      _newline "                 (dir containing the raw handbook PDFs)"
+
+  di as res "hb_extracts:      " ///
+      as txt "$hb_extracts" ///
+      _newline "                 (dir containing identified page ranges with EB tables and LLM extracted CSVs)"
+
+  di as res "hb_eb_pages_csv:  " ///
+      as txt "$hb_eb_pages_csv" ///
+      _newline "                 (CSV containing identified page ranges for each handbook PDF)"
+
+  di as txt "{hline 60}"
+end

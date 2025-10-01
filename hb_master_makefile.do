@@ -3,47 +3,70 @@ version 14
 clear
 set more off
 
+/****************************************/
+/* Run make file of hb for a given year */
+/****************************************/
 
-/***************************/
-/* Run make for 2001 hb data */
-/***************************/
+/* 0. Define series to the year we are building and load config */
+do "~/india-census-district-handbooks/config.do"
+hb_define_paths, series("pc11") // print out relevant paths
 
-/* 0. Create a clean version of the filename <> district name correspondence */
-do $scode/b/handbooks/clean_filename_district_key.do
 
-/* 1. Report initial coverage for hb of urban pca */
-display "Running: catalog_hb.do" 
-do $scode/b/handbooks/catalog_hb.do
+/* 1. Find relevant eb pages in district handbooks */
+/* NOTE: Need to activate correct conda environment and install modules as needed */
+di "Running: find_eb_pages.py"
+python script $hb_code/find_eb_pages.py, args(`"--series $hb_series --pdf_root $hb_pdf"')
 
-/* 2. Find relevant eb pages in district handbooks */
-display "Running: pc01_find_eb_pages.py"
-shell python $scode/b/handbooks/pc01_find_eb_pages.py
 
-/* 3. Clean relevant eb pages */
-/* Sept 2025: the LLM seems to do fine without this step, so we're skipping it for now */
-// display "Running: pc01_clean_hb_info.do"
-// do $scode/b/handbooks/pc01_clean_hb_info.do
+/* 2. Save relevant eb pages */
+di "Running: extract_handbook_pages.py"
+python script $hb_code/extract_handbook_pages.py, args(`"--series $hb_series --pdf_root $hb_pdf"')
 
-/* 4. Extract relevant eb pages */
-display "extract_handbook_pages.py"
-shell python $scode/b/handbooks/extract_handbook_pages.py
 
-/* 5. LLM Extraction */
-// not running now since some path updates needed and confirmation we're not re-parsing what we've done
-// shell python $scode/b/handbooks/pc01_llm_extract/extract_pc01_tables.py
+/* 3. LLM Extraction */
+/*
+NOTE: Before running this step you must:
+   (1) Load environment.yml
+      - First time only:   conda env create -f environment.yml
+      - Then each session: conda activate <env-name>
+   (2) Export your API key in the shell used to launch Stata:
+      - export GEMINI_API_KEY="sk-...your key..."
+      - Then start Stata from that same shell
+*/
+di "Running: llm_csv_hb_extractor.py"
+python script $hb_code/llm_csv_hb_extractor.py, args(`"--series $hb_series --pdf_root $hb_pdf"')
 
-/* 6. Combine extracted csv */
-display "Running: pc01_hb_combine.py"
-do $scode/b/handbooks/pc01_hb_combine.py
+/* 4. Create a clean version of the filename <> district name correspondence */
+di "Running: clean_filename_district_key.do"
+do $hb_code/clean_filename_district_keys.do // skip for pc11 for now as filename <> district key stil wip
 
-/* 7. Merge hb town names to pca town directory */
+
+/* 5. Combine extracted csv */
+di "Running: combine_eb_tables.py"
+python script $hb_code/combine_eb_tables.py, args(`"--series $hb_series --hb_code $hb_code --pdf_root $hb_pdf"')
+
+
+/* 6. Report initial coverage for hb of urban pca throughout pipeline */
+di "Running: catalog_hb_data_loss.do" 
+do $hb_code/catalog_hb_data_loss.do // skip for pc11
+
+
+/* 7. Convert coverage report into markdown table */
+
+
+exit
+
+
+/* DEPENDENT DOWNSTREAM PROCESSES BELOW
+/* 8. Merge hb town names to pca town directory */
 display "Running: merge_handbook_towns.do"
 do $scode/b/handbooks/merge_handbook_towns.do
 
-/* 8. merge eb-lvl hb with $shrug/keys/shrug_pc01u_key to get shrid id, merge with secc 2011 to get segregation measures */
+/* 9. merge eb-lvl hb with $shrug/keys/shrug_pc01u_key to get shrid id, merge with secc 2011 to get segregation measures */
 display "Running: calc_2001_segregation.do"
 do $scode/b/calc_2001_segregation.do
 
-/* 9. Create table analysis */
+/* 10. Create table analysis */
 display "Running: analyze_seg_changes.do"
 do $scode/a/analyze_seg_changes.do
+*/

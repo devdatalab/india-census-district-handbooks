@@ -18,10 +18,12 @@ from io import StringIO
 from datetime import datetime
 from ddlpy.utils import IEC, TMP
 from dotenv import load_dotenv
-import pathlib
+from pathlib import Path
 from google import genai
 from google.genai import types
 import PyPDF2
+import sys, shlex
+import argparse
 
 # Add project directory to sys.path for imports
 sys.path.append(os.path.expanduser("~/ddl/pc01_llm_extract"))
@@ -143,8 +145,24 @@ def main():
     print("[INFO] Starting PDF table extraction process...")
     
     # Get all PDF files in the input directory
-    input_dir = IEC / f"pc11/district_handbooks_xii_b/eb_table_extracts"
-    output_dir = IEC / f"pc11/district_handbooks_xii_b/eb_table_extracts"
+    p = argparse.ArgumentParser()
+    p.add_argument("--series", required=True, choices=["pc01","pc11","pc91","pc51"])
+
+    # folder containing csv to scan
+    p.add_argument("--pdf_root", required=True)
+
+    # --- handle Stata passing a single-argument blob ---
+    argv = sys.argv[1:]
+    if len(argv) == 1 and ("--" in argv[0] or " " in argv[0]):
+        argv = shlex.split(argv[0])
+
+    args = p.parse_args(argv)
+
+
+    pdf_dir = Path(args.pdf_root)
+    input_dir  = pdf_dir / f"eb_table_extracts/"
+    output_dir = pdf_dir / f"eb_table_extracts/"
+
     print(f"[INFO] Input directory: {input_dir}")
     print(f"[INFO] Output directory: {output_dir}")
 

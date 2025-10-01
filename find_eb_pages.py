@@ -50,6 +50,8 @@ import os
 # Exit cleanly on user interruption
 import sys
 
+import argparse
+
 from ddlpy.utils import * 
 
 # ---------------------------------------------------------------------
@@ -62,13 +64,23 @@ from contextlib import suppress   # Used for graceful KeyboardInterrupt handling
 # ---------------------------------------------------------------------
 #  Configuration constants
 # ---------------------------------------------------------------------
+import sys, shlex
 
-# Folder containing the PDFs to scan
-PDF_ROOT = Path("/dartfs/rc/lab/I/IEC/pc01/district_handbooks")
+p = argparse.ArgumentParser()
+p.add_argument("--series", required=True, choices=["pc01","pc11","pc91","pc51"])
 
-# Destination CSV (expanded ~ to the user’s home directory)
-# OUT_CSV = Path.home() / "iec/pc01/district_handbooks/urban_eb_pages.csv"
-out_path = TMP 
+# folder containing csv to scan
+p.add_argument("--pdf_root", required=True)
+
+# --- handle Stata passing a single-argument blob ---
+argv = sys.argv[1:]
+if len(argv) == 1 and ("--" in argv[0] or " " in argv[0]):
+    argv = shlex.split(argv[0])
+
+args = p.parse_args(argv)
+
+
+PDF_ROOT = Path(args.pdf_root)
 OUT_CSV = PDF_ROOT / f"urban_eb_pages.csv" 
 
 # Target phrases as they appear in the documents
