@@ -87,7 +87,7 @@ if hb_data_list:
 else:
     hb_full = pd.DataFrame() # Create an empty DataFrame if no files were processed
     print("No valid CSV files were processed and combined.")
-    
+
 
 # compare hb_full to the full list of pdfs in directory for coverage
 hb_pdfs_indir = sorted([
@@ -105,6 +105,9 @@ dist_xwalk = pd.read_csv(dist_xwalk_path)
 
 # remove .pdf suffix and create var that's filename (e.g., TEH_VOL-02_EB)
 dist_xwalk = dist_xwalk.assign(source_file=dist_xwalk["filename"].str.removesuffix(".pdf")).drop(columns="filename")
+
+# if filename doesn't end in _EB then add suffix
+dist_xwalk.loc[~dist_xwalk["source_file"].str.lower().str.endswith("_eb", na=False), "source_file"] = dist_xwalk["source_file"] + "_EB"
 
 dist_xwalk = dist_xwalk.drop_duplicates(subset = "source_file", keep = "first")
 

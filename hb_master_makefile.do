@@ -9,7 +9,7 @@ set more off
 
 /* 0. Define series to the year we are building and load config */
 do "~/india-census-district-handbooks/config.do"
-hb_define_paths, series("pc01") // print out relevant paths
+hb_define_paths, series("pc11") // print out relevant paths
 
 
 /* 1. Find relevant eb pages in district handbooks */
@@ -52,6 +52,9 @@ do $hb_code/catalog_hb_data_loss.do // skip for pc11
 
 
 /* 7. Convert coverage report into markdown table */
+di "Running: make_attrition_report.py"
+local in_dir $tmp
+python script $hb_code/make_attrition_report.py, args(`"--series $hb_series --in_dir $in_dir --out_dir $hb_code"')
 
 
 exit
