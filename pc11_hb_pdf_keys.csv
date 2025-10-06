@@ -1,0 +1,635 @@
+filename,state_name,state_id,district_name,district_id
+DH_2011_2201_PART_B_DCHB_KORIYA.pdf,chhattisgarh,22,koriya,400
+DH_2011_2110_PART_B_DCHB_KENDRAPARA.pdf,odisha,21,kendrapara,379
+DH_2011_1601_PART_B_DCHB_WEST_TRIPURA.pdf,tripura,16,west tripura,289
+DH_2011_2325_PART_B_DCHB_RAJGARH.pdf,madhya pradesh,23,rajgarh,442
+DH_2011_2018_PART_B_DCHB_JAMTARA.pdf,jharkhand,20,jamtara,363
+DH_2011_0207_PART_B_DCHB_UNA.pdf,himachal pradesh,02,una,029
+DH_2011_0302_PART_B_DCHB_KAPURTHALA.pdf,punjab,03,kapurthala,036
+DH_2011_1604_PART_B_DCHB_NORTH_TRIPURA.pdf,tripura,16,north tripura,292
+DH_2011_0921_PART_B_DCHB_SHAHJAHANPUR.pdf,uttar pradesh,09,shahjahanpur,152
+DH_2011_0811_PART_B_DCHB_DAUSA.pdf,rajasthan,08,dausa,109
+DH_2011_2330_PART_B_DCHB_BETUL.pdf,madhya pradesh,23,betul,447
+DH_2011_1507_PART_B_DCHB_LAWNGTLAI.pdf,mizoram,15,lawngtlai,287
+DH_2011_1302_PART_B_DCHB_MOKOKCHUNG.pdf,nagaland,13,mokokchung,262
+DH_2011_2413_PART_B_DCHB_AMRELI.pdf,gujarat,24,amreli,480
+DH_2011_1824_PART_B_DCHB_NALBARI.pdf,assam,18,nalbari,323
+DH_2011_2410_PART_B_DCHB_JAMNAGAR.pdf,gujarat,24,jamnagar,477
+DH_2011_0962_PART_B_DCHB_BALLIA.pdf,uttar pradesh,09,ballia,193
+DH_2011_1027_PART_B_DCHB_NALANDA.pdf,bihar,10,nalanda,229
+DH_2011_3326_PART_B_DCHB_THOOTHUKKUDI.pdf,tamil nadu,33,thoothukkudi,627
+DH_2011_0616_PART_B_DCHB_MAHENDERGARH.pdf,haryana,06,mahendragarh,084
+DH_2011_2102_PART_B_DCHB_JHARSUGUDA.pdf,odisha,21,jharsuguda,371
+DH_2011_0820_PART_B_DCHB_PALI.pdf,rajasthan,08,pali,118
+DH_2011_0969_PART_B_DCHB_SONBHADRA.pdf,uttar pradesh,09,sonbhadra,200
+DH_2011_1508_PART_B_DCHB_SAIHA.pdf,mizoram,15,saiha,288
+DH_2011_2341_PART_B_DCHB_GUNA.pdf,madhya pradesh,23,guna,458
+DH_2011_0104_PART_B_DCHB_KARGIL.pdf,jammu kashmir,01,kargil,004
+DH_2011_2204_PART_B_DCHB_RAIGARH.pdf,chhattisgarh,22,raigarh,403
+DH_2011_0827_PART_B_DCHB_BANSWARA.pdf,rajasthan,08,banswara,125
+DH_2011_1919_PART_B_DCHB_PURBA_MEDINIPUR.pdf,west bengal,19,purba medinipur,345
+DH_2011_0966_PART_B_DCHB_VARANASI.pdf,uttar pradesh,09,varanasi,197
+DH_2011_0808_PART_B_DCHB_DHAULPUR.pdf,rajasthan,08,dhaulpur,106
+DH_2011_2005_PART_B_DCHB_DEOGHAR.pdf,jharkhand,20,deoghar,350
+DH_2011_0117_PART_B_DCHB_RAMBAN.pdf,jammu kashmir,01,ramban,017
+DH_2011_0825_PART_B_DCHB_RAJSAMAND.pdf,rajasthan,08,rajsamand,123
+DH_2011_3304_PART_B_DCHB_VELLORE.pdf,tamil nadu,33,vellore,605
+DH_2011_1021_PART_B_DCHB_KHAGARIA.pdf,bihar,10,khagaria,223
+DH_2011_2930_PART_B_DCHB_RAMANAGARA.pdf,karnataka,29,ramanagara,584
+DH_2011_2722_PART_B_DCHB_MUMBAI_SUBURBAN.pdf,maharashtra,27,mumbai suburban,518
+DH_2011_2423_PART_B_DCHB_NAVSARI.pdf,gujarat,24,navsari,490
+DH_2011_0306_PART_B_DCHB_FATEHGARH_SAHIB.pdf,punjab,03,fatehgarh sahib,040
+DH_2011_0122_PART_B_DCHB_SAMBA.pdf,jammu kashmir,01,samba,022
+DH_2011_0314_PART_B_DCHB_PATIALA.pdf,punjab,03,patiala,048
+DH_2011_2123_PART_B_DCHB_SUBARNAPUR.pdf,odisha,21,subarnapur,392
+DH_2011_2723_PART_B_DCHB_MUMBAI.pdf,maharashtra,27,mumbai,519
+DH_2011_1307_PART_B_DCHB_TUENSANG.pdf,nagaland,13,tuensang,267
+DH_2011_0307_PART_B_DCHB_LUDHIANA.pdf,punjab,03,ludhiana,041
+DH_2011_1034_PART_B_DCHB_GAYA.pdf,bihar,10,gaya,236
+DH_2011_2718_PART_B_DCHB_JALNA.pdf,maharashtra,27,jalna,514
+DH_2011_3331_PART_B_DCHB_COIMBATORE.pdf,tamil nadu,33,coimbatore,632
+DH_2011_1811_PART_B_DCHB_DIBRUGARH.pdf,assam,18,dibrugarh,310
+DH_2011_2408_PART_B_DCHB_SURENDRANAGAR.pdf,gujarat,24,surendranagar,475
+DH_2011_0957_PART_B_DCHB_GORAKHPUR.pdf,uttar pradesh,09,gorakhpur,188
+DH_2011_2411_PART_B_DCHB_PORBANDAR.pdf,gujarat,24,porbandar,478
+DH_2011_1015_PART_B_DCHB_GOPALGANJ.pdf,bihar,10,gopalganj,217
+DH_2011_0603_PART_B_DCHB_YAMUNANAGAR.pdf,haryana,06,yamunanagar,071
+DH_2011_0112_PART_B_DCHB_PULWAMA.pdf,jammu kashmir,01,pulwama,012
+DH_2011_2417_PART_B_DCHB_PANCH_MAHALS.pdf,gujarat,24,panch mahals,484
+DH_2011_2329_PART_B_DCHB_RAISEN.pdf,madhya pradesh,23,raisen,446
+DH_2011_2202_PART_B_DCHB_SURGUJA.pdf,chhattisgarh,22,surguja,401
+DH_2011_1821_PART_B_DCHB_CHIRANG.pdf,assam,18,chirang,320
+DH_2011_2711_PART_B_DCHB_GONDIYA.pdf,maharashtra,27,gondiya,507
+DH_2011_2217_PART_B_DCHB_DAKSHIN_BASTAR_DANTEWADA.pdf,chhattisgarh,22,dakshin bastar dantewada,416
+DH_2011_1204_PART_B_DCHB_PAPUM_PARE.pdf,arunachal pradesh,12,papum pare,248
+DH_2011_1020_PART_B_DCHB_BEGUSARAI.pdf,bihar,10,begusarai,222
+DH_2011_1603_PART_B_DCHB_DHALAI.pdf,tripura,16,dhalai,291
+DH_2011_0922_PART_B_DCHB_KHERI.pdf,uttar pradesh,09,kheri,153
+DH_2011_2315_PART_B_DCHB_NEEMUCH.pdf,madhya pradesh,23,neemuch,432
+DH_2011_2306_PART_B_DCHB_SHIVPURI.pdf,madhya pradesh,23,shivpuri,423
+DH_2011_2901_PART_B_DCHB_BELGAUM.pdf,karnataka,29,belgaum,555
+DH_2011_0809_PART_B_DCHB_KARAULI.pdf,rajasthan,08,karauli,107
+DH_2011_0935_PART_B_DCHB_JHANSI.pdf,uttar pradesh,09,jhansi,166
+DH_2011_3203_PART_B_DCHB_WAYANAD.pdf,kerala,32,wayanad,590
+DH_2011_0954_PART_B_DCHB_BASTI.pdf,uttar pradesh,09,basti,185
+DH_2011_1303_PART_B_DCHB_ZUNHEBOTO.pdf,nagaland,13,zunheboto,263
+DH_2011_2302_PART_B_DCHB_MORENA.pdf,madhya pradesh,23,morena,419
+DH_2011_2725_PART_B_DCHB_PUNE.pdf,maharashtra,27,pune,521
+DH_2011_0612_PART_B_DCHB_HISAR.pdf,haryana,06,hisar,080
+DH_2011_1011_PART_B_DCHB_MADHEPURA.pdf,bihar,10,madhepura,213
+DH_2011_2721_PART_B_DCHB_THANE.pdf,maharashtra,27,thane,517
+DH_2011_0508_PART_B_DCHB_BAGESHWAR.pdf,uttarakhand,05,bageshwar,063
+DH_2011_0202_PART_B_DCHB_KANGRA.pdf,himachal pradesh,02,kangra,024
+DH_2011_2601_PART_B_DCHB_DADRA_NAGAR_HAVELI.pdf,dadra nagar haveli,26,dadra nagar haveli,496
+DH_2011_1904_PART_B_DCHB_UTTAR_DINAJPUR.pdf,west bengal,19,uttar dinajpur,330
+DH_2011_2108_PART_B_DCHB_BALESHWAR.pdf,odisha,21,baleshwar,377
+DH_2011_0315_PART_B_DCHB_AMRITSAR.pdf,punjab,03,amritsar,049
+DH_2011_1801_PART_B_DCHB_KOKRAJHAR.pdf,assam,18,kokrajhar,300
+DH_2011_0934_PART_B_DCHB_JALAUN.pdf,uttar pradesh,09,jalaun,165
+DH_2011_0813_PART_B_DCHB_SIKAR.pdf,rajasthan,08,sikar,111
+DH_2011_0105_PART_B_DCHB_PUNCH.pdf,jammu kashmir,01,punch,005
+DH_2011_2732_PART_B_DCHB_RATNAGIRI.pdf,maharashtra,27,ratnagiri,528
+DH_2011_0619_PART_B_DCHB_MEWAT.pdf,haryana,06,mewat,087
+DH_2011_1305_PART_B_DCHB_DIMAPUR.pdf,nagaland,13,dimapur,265
+DH_2011_0605_PART_B_DCHB_KAITHAL.pdf,haryana,06,kaithal,073
+DH_2011_0937_PART_B_DCHB_HAMIRPUR.pdf,uttar pradesh,09,hamirpur,168
+DH_2011_0952_PART_B_DCHB_GONDA.pdf,uttar pradesh,09,gonda,183
+DH_2011_1504_PART_B_DCHB_CHAMPHAI.pdf,mizoram,15,champhai,284
+DH_2011_2730_PART_B_DCHB_SOLAPUR.pdf,maharashtra,27,solapur,526
+DH_2011_2710_PART_B_DCHB_BHANDARA.pdf,maharashtra,27,bhandara,506
+DH_2011_0905_PART_B_DCHB_RAMPUR.pdf,uttar pradesh,09,rampur,136
+DH_2011_2310_PART_B_DCHB_SAGAR.pdf,madhya pradesh,23,sagar,427
+DH_2011_1009_PART_B_DCHB_PURNIA.pdf,bihar,10,purnia,211
+DH_2011_3206_PART_B_DCHB_PALAKKAD.pdf,kerala,32,palakkad,593
+DH_2011_0401_PART_B_DCHB_CHANDIGARH.pdf,chandigarh,04,chandigarh,055
+DH_2011_3210_PART_B_DCHB_KOTTAYAM.pdf,kerala,32,kottayam,597
+DH_2011_0317_PART_B_DCHB_RUPNAGAR.pdf,punjab,03,rupnagar,051
+DH_2011_0916_PART_B_DCHB_FIROZABAD.pdf,uttar pradesh,09,firozabad,147
+DH_2011_0946_PART_B_DCHB_FAIZABAD.pdf,uttar pradesh,09,faizabad,177
+DH_2011_1037_PART_B_DCHB_JEHANABAD.pdf,bihar,10,jehanabad,239
+DH_2011_3322_PART_B_DCHB_MADURAI.pdf,tamil nadu,33,madurai,623
+DH_2011_2318_PART_B_DCHB_UJJAIN.pdf,madhya pradesh,23,ujjain,435
+DH_2011_0955_PART_B_DCHB_SANT_KABIR_NAGAR.pdf,uttar pradesh,09,sant kabir nagar,186
+DH_2011_2309_PART_B_DCHB_PANNA.pdf,madhya pradesh,23,panna,426
+DH_2011_0814_PART_B_DCHB_NAGAUR.pdf,rajasthan,08,nagaur,112
+DH_2011_0904_PART_B_DCHB_MORADABAD.pdf,uttar pradesh,09,moradabad,135
+DH_2011_0601_PART_B_DCHB_PANCHKULA.pdf,haryana,06,panchkula,069
+DH_2011_1813_PART_B_DCHB_JORHAT.pdf,assam,18,jorhat,312
+DH_2011_0304_PART_B_DCHB_HOSHIARPUR.pdf,punjab,03,hoshiarpur,038
+DH_2011_2416_PART_B_DCHB_KHEDA.pdf,gujarat,24,kheda,483
+DH_2011_0822_PART_B_DCHB_TONK.pdf,rajasthan,08,tonk,120
+DH_2011_0948_PART_B_DCHB_SULTANPUR.pdf,uttar pradesh,09,sultanpur,179
+DH_2011_0606_PART_B_DCHB_KARNAL.pdf,haryana,06,karnal,074
+DH_2011_2334_PART_B_DCHB_JABALPUR.pdf,madhya pradesh,23,jabalpur,451
+DH_2011_1005_PART_B_DCHB_MADHUBANI.pdf,bihar,10,madhubani,207
+DH_2011_2819_PART_B_DCHB_SRI_POTTI_SRIRAMULU_NELLORE.pdf,andhra pradesh,28,sri potti sriramulu nellore,550
+DH_2011_0940_PART_B_DCHB_CHITRAKOOT.pdf,uttar pradesh,09,chitrakoot,171
+DH_2011_1505_PART_B_DCHB_SERCHHIP.pdf,mizoram,15,serchhip,285
+DH_2011_2207_PART_B_DCHB_BILASPUR.pdf,chhattisgarh,22,bilaspur,406
+DH_2011_1405_PART_B_DCHB_THOUBAL.pdf,manipur,14,thoubal,276
+DH_2011_2928_PART_B_DCHB_CHIKKABALLAPURA.pdf,karnataka,29,chikkaballapura,582
+DH_2011_2910_PART_B_DCHB_HAVERI.pdf,karnataka,29,haveri,564
+DH_2011_0110_PART_B_DCHB_SRINAGAR.pdf,jammu kashmir,01,srinagar,010
+DH_2011_2016_PART_B_DCHB_RAMGARH.pdf,jharkhand,20,ramgarh,361
+DH_2011_2419_PART_B_DCHB_VADODARA.pdf,gujarat,24,vadodara,486
+DH_2011_2116_PART_B_DCHB_NAYAGARH.pdf,odisha,21,nayagarh,385
+DH_2011_2111_PART_B_DCHB_JAGATSINGHAPUR.pdf,odisha,21,jagatsinghapur,380
+DH_2011_0609_PART_B_DCHB_JIND.pdf,haryana,06,jind,077
+DH_2011_2319_PART_B_DCHB_SHAJAPUR.pdf,madhya pradesh,23,shajapur,436
+DH_2011_2415_PART_B_DCHB_ANAND.pdf,gujarat,24,anand,482
+DH_2011_3303_PART_B_DCHB_KANCHEEPURAM.pdf,tamil nadu,33,kancheepuram,604
+DH_2011_2109_PART_B_DCHB_BHADRAK.pdf,odisha,21,bhadrak,378
+DH_2011_0926_PART_B_DCHB_LUCKNOW.pdf,uttar pradesh,09,lucknow,157
+DH_2011_0106_PART_B_DCHB_RAJOURI.pdf,jammu kashmir,01,rajouri,006
+DH_2011_1901_PART_B_DCHB_DARJILING.pdf,west bengal,19,darjiling,327
+DH_2011_3201_PART_B_DCHB_KASARAGOD.pdf,kerala,32,kasaragod,588
+DH_2011_0316_PART_B_DCHB_TARN_TARAN.pdf,punjab,03,tarn taran,050
+DH_2011_3314_PART_B_DCHB_PERAMBALUR.pdf,tamil nadu,33,perambalur,615
+DH_2011_2922_PART_B_DCHB_KODAGU.pdf,karnataka,29,kodagu,576
+DH_2011_1409_PART_B_DCHB_CHANDEL.pdf,manipur,14,chandel,280
+DH_2011_2215_PART_B_DCHB_BASTAR.pdf,chhattisgarh,22,bastar,414
+DH_2011_1913_PART_B_DCHB_BANKURA.pdf,west bengal,19,bankura,339
+DH_2011_1704_PART_B_DCHB_WEST_KHASI_HILLS.pdf,meghalaya,17,west khasi hills,296
+DH_2011_2703_PART_B_DCHB_JALGAON.pdf,maharashtra,27,jalgaon,499
+DH_2011_0101_PART_B_DCHB_KUPWARA.pdf,jammu kashmir,01,kupwara,001
+DH_2011_1816_PART_B_DCHB_DIMA_HASAO.pdf,assam,18,dima hasao,315
+DH_2011_3315_PART_B_DCHB_ARIYALUR.pdf,tamil nadu,33,ariyalur,616
+DH_2011_0942_PART_B_DCHB_PRATAPGARH.pdf,uttar pradesh,09,pratapgarh,173
+DH_2011_1017_PART_B_DCHB_SARAN.pdf,bihar,10,saran,219
+DH_2011_3305_PART_B_DCHB_TIRUVANNAMALAI.pdf,tamil nadu,33,tiruvannamalai,606
+DH_2011_0804_PART_B_DCHB_CHURU.pdf,rajasthan,08,churu,102
+DH_2011_2802_PART_B_DCHB_NIZAMABAD.pdf,andhra pradesh,28,nizamabad,533
+DH_2011_0206_PART_B_DCHB_HAMIRPUR.pdf,himachal pradesh,02,hamirpur,028
+DH_2011_1407_PART_B_DCHB_IMPHAL_EAST.pdf,manipur,14,imphal east,278
+DH_2011_0109_PART_B_DCHB_BANDIPORE.pdf,jammu kashmir,01,bandipore,009
+DH_2011_0908_PART_B_DCHB_BAGHPAT.pdf,uttar pradesh,09,baghpat,139
+DH_2011_0810_PART_B_DCHB_SAWAI_MADHOPUR.pdf,rajasthan,08,sawai madhopur,108
+DH_2011_0107_PART_B_DCHB_KATHUA.pdf,jammu kashmir,01,kathua,007
+DH_2011_2915_PART_B_DCHB_UDUPI.pdf,karnataka,29,udupi,569
+DH_2011_0301_PART_B_DCHB_GURDASPUR.pdf,punjab,03,gurdaspur,035
+DH_2011_2124_PART_B_DCHB_BALANGIR.pdf,odisha,21,balangir,393
+DH_2011_0947_PART_B_DCHB_AMBEDKAR_NAGAR.pdf,uttar pradesh,09,ambedkar nagar,178
+DH_2011_1308_PART_B_DCHB_LONGLENG.pdf,nagaland,13,longleng,268
+DH_2011_1906_PART_B_DCHB_MALDAH.pdf,west bengal,19,maldah,332
+DH_2011_3307_PART_B_DCHB_SALEM.pdf,tamil nadu,33,salem,608
+DH_2011_1309_PART_B_DCHB_KIPHIRE.pdf,nagaland,13,kiphire,269
+DH_2011_1908_PART_B_DCHB_BIRBHUM.pdf,west bengal,19,birbhum,334
+DH_2011_2916_PART_B_DCHB_CHIKMAGALUR.pdf,karnataka,29,chikmagalur,570
+DH_2011_0944_PART_B_DCHB_ALLAHABAD.pdf,uttar pradesh,09,allahabad,175
+DH_2011_2022_PART_B_DCHB_SIMDEGA.pdf,jharkhand,20,simdega,367
+DH_2011_1902_PART_B_DCHB_JALPAIGURI.pdf,west bengal,19,jalpaiguri,328
+DH_2011_2021_PART_B_DCHB_GUMLA.pdf,jharkhand,20,gumla,366
+DH_2011_2715_PART_B_DCHB_NANDED.pdf,maharashtra,27,nanded,511
+DH_2011_2017_PART_B_DCHB_DUMKA.pdf,jharkhand,20,dumka,362
+DH_2011_1024_PART_B_DCHB_MUNGER.pdf,bihar,10,munger,226
+DH_2011_2735_PART_B_DCHB_SANGLI.pdf,maharashtra,27,sangli,531
+DH_2011_0308_PART_B_DCHB_MOGA.pdf,punjab,03,moga,042
+DH_2011_2925_PART_B_DCHB_GULBARGA.pdf,karnataka,29,gulbarga,579
+DH_2011_1023_PART_B_DCHB_BANKA.pdf,bihar,10,banka,225
+DH_2011_3202_PART_B_DCHB_KANNUR.pdf,kerala,32,kannur,589
+DH_2011_2011_PART_B_DCHB_LOHARDAGA.pdf,jharkhand,20,lohardaga,356
+DH_2011_0958_PART_B_DCHB_KUSHINAGAR.pdf,uttar pradesh,09,kushinagar,189
+DH_2011_2101_PART_B_DCHB_BARGARH.pdf,odisha,21,bargarh,370
+DH_2011_2316_PART_B_DCHB_MANDSAUR.pdf,madhya pradesh,23,mandsaur,433
+DH_2011_3320_PART_B_DCHB_PUDUKKOTTAI.pdf,tamil nadu,33,pudukkottai,621
+DH_2011_0913_PART_B_DCHB_MAHAMAYA_NAGAR.pdf,uttar pradesh,09,mahamaya nagar,144
+DH_2011_2305_PART_B_DCHB_DATIA.pdf,madhya pradesh,23,datia,422
+DH_2011_0506_PART_B_DCHB_GARHWAL.pdf,uttarakhand,05,garhwal,061
+DH_2011_2323_PART_B_DCHB_KHARGONE_WEST_NIMAR.pdf,madhya pradesh,23,west nimar,440
+DH_2011_2115_PART_B_DCHB_ANUGUL.pdf,odisha,21,anugul,384
+DH_2011_2210_PART_B_DCHB_DURG.pdf,chhattisgarh,22,durg,409
+DH_2011_0819_PART_B_DCHB_SIROHI.pdf,rajasthan,08,sirohi,117
+DH_2011_1818_PART_B_DCHB_KARIMGANJ.pdf,assam,18,karimganj,317
+DH_2011_0815_PART_B_DCHB_JODHPUR.pdf,rajasthan,08,jodhpur,113
+DH_2011_1825_PART_B_DCHB_BAKSA.pdf,assam,18,baksa,324
+DH_2011_2015_PART_B_DCHB_HAZARIBAGH.pdf,jharkhand,20,hazaribagh,360
+DH_2011_0310_PART_B_DCHB_MUKTSAR.pdf,punjab,03,muktsar,044
+DH_2011_2322_PART_B_DCHB_INDORE.pdf,madhya pradesh,23,indore,439
+DH_2011_2724_PART_B_DCHB_RAIGARH.pdf,maharashtra,27,raigarh,520
+DH_2011_2912_PART_B_DCHB_CHITRADURGA.pdf,karnataka,29,chitradurga,566
+DH_2011_0211_PART_B_DCHB_SHIMLA.pdf,himachal pradesh,02,shimla,033
+DH_2011_2811_PART_B_DCHB_SRIKAKULAM.pdf,andhra pradesh,28,srikakulam,542
+DH_2011_2119_PART_B_DCHB_GANJAM.pdf,odisha,21,ganjam,388
+DH_2011_1822_PART_B_DCHB_KAMRUP.pdf,assam,18,kamrup,321
+DH_2011_1306_PART_B_DCHB_PHEK.pdf,nagaland,13,phek,266
+DH_2011_0805_PART_B_DCHB_JHUNJHUNUN.pdf,rajasthan,08,jhunjhunun,103
+DH_2011_0501_PART_B_DCHB_UTTARKASHI.pdf,uttarakhand,05,uttarkashi,056
+DH_2011_3329_PART_B_DCHB_DHARMAPURI.pdf,tamil nadu,33,dharmapuri,630
+DH_2011_0303_PART_B_DCHB_JALANDHAR.pdf,punjab,03,jalandhar,037
+DH_2011_0621_PART_B_DCHB_PALWAL.pdf,haryana,06,palwal,089
+DH_2011_2326_PART_B_DCHB_VIDISHA.pdf,madhya pradesh,23,vidisha,443
+DH_2011_1502_PART_B_DCHB_KOLASIB.pdf,mizoram,15,kolasib,282
+DH_2011_0319_PART_B_DCHB_SANGRUR.pdf,punjab,03,sangrur,053
+DH_2011_2817_PART_B_DCHB_GUNTUR.pdf,andhra pradesh,28,guntur,548
+DH_2011_3403_PART_B_DCHB_MAHE.pdf,puducherry,34,mahe,636
+DH_2011_0927_PART_B_DCHB_RAE_BARELI.pdf,uttar pradesh,09,rae bareli,158
+DH_2011_3209_PART_B_DCHB_IDUKKI.pdf,kerala,32,idukki,596
+DH_2011_1032_PART_B_DCHB_ROHTAS.pdf,bihar,10,rohtas,234
+DH_2011_3500_PART_B_DCHB_ANDAMAN_NICOBAR_ISLANDS.pdf,andaman nicobar islands,35,south andaman,640
+DH_2011_3500_PART_B_DCHB_ANDAMAN_NICOBAR_ISLANDS.pdf,andaman nicobar islands,35,north middle andaman,639
+DH_2011_0208_PART_B_DCHB_BILASPUR.pdf,himachal pradesh,02,bilaspur,030
+DH_2011_1214_PART_B_DCHB_LOWER_DIBANG_VALLEY.pdf,arunachal pradesh,12,lower dibang valley,258
+DH_2011_0620_PART_B_DCHB_FARIDABAD.pdf,haryana,06,faridabad,088
+DH_2011_0511_PART_B_DCHB_NAINITAL.pdf,uttarakhand,05,nainital,066
+DH_2011_1909_PART_B_DCHB_BARDDHAMAN.pdf,west bengal,19,barddhaman,335
+DH_2011_1030_PART_B_DCHB_BUXAR.pdf,bihar,10,buxar,232
+DH_2011_1012_PART_B_DCHB_SAHARSA.pdf,bihar,10,saharsa,214
+DH_2011_2422_PART_B_DCHB_THE_DANGS.pdf,gujarat,24,the dangs,489
+DH_2011_2013_PART_B_DCHB_PALAMU.pdf,jharkhand,20,palamu,358
+DH_2011_0918_PART_B_DCHB_BUDAUN.pdf,uttar pradesh,09,budaun,149
+DH_2011_2130_PART_B_DCHB_MALKANGIRI.pdf,odisha,21,malkangiri,399
+DH_2011_2914_PART_B_DCHB_SHIMOGA.pdf,karnataka,29,shimoga,568
+DH_2011_0951_PART_B_DCHB_BALRAMPUR.pdf,uttar pradesh,09,balrampur,182
+DH_2011_3323_PART_B_DCHB_THENI.pdf,tamil nadu,33,theni,624
+DH_2011_2332_PART_B_DCHB_HOSHANGABAD.pdf,madhya pradesh,23,hoshangabad,449
+DH_2011_0116_PART_B_DCHB_DODA.pdf,jammu kashmir,01,doda,016
+DH_2011_0824_PART_B_DCHB_BHILWARA.pdf,rajasthan,08,bhilwara,122
+DH_2011_2205_PART_B_DCHB_KORBA.pdf,chhattisgarh,22,korba,404
+DH_2011_0909_PART_B_DCHB_GHAZIABAD.pdf,uttar pradesh,09,ghaziabad,140
+DH_2011_2019_PART_B_DCHB_RANCHI.pdf,jharkhand,20,ranchi,364
+DH_2011_2911_PART_B_DCHB_BELLARY.pdf,karnataka,29,bellary,565
+DH_2011_1809_PART_B_DCHB_DHEMAJI.pdf,assam,18,dhemaji,308
+DH_2011_0617_PART_B_DCHB_REWARI.pdf,haryana,06,rewari,085
+DH_2011_0920_PART_B_DCHB_PILIBHIT.pdf,uttar pradesh,09,pilibhit,151
+DH_2011_2129_PART_B_DCHB_KORAPUT.pdf,odisha,21,koraput,398
+DH_2011_1408_PART_B_DCHB_UKHRUL.pdf,manipur,14,ukhrul,279
+DH_2011_2815_PART_B_DCHB_WEST_GODAVARI.pdf,andhra pradesh,28,west godavari,546
+DH_2011_1008_PART_B_DCHB_KISHANGANJ.pdf,bihar,10,kishanganj,210
+DH_2011_0960_PART_B_DCHB_AZAMGARH.pdf,uttar pradesh,09,azamgarh,191
+DH_2011_2113_PART_B_DCHB_JAJAPUR.pdf,odisha,21,jajapur,382
+DH_2011_1028_PART_B_DCHB_PATNA.pdf,bihar,10,patna,230
+DH_2011_1823_PART_B_DCHB_KAMRUP_METROPOLITAN.pdf,assam,18,kamrup metropolitan,322
+DH_2011_1311_PART_B_DCHB_PEREN.pdf,nagaland,13,peren,271
+DH_2011_2810_PART_B_DCHB_KHAMMAM.pdf,andhra pradesh,28,khammam,541
+DH_2011_3001_PART_B_DCHB_NORTH_GOA.pdf,goa,30,north goa,585
+DH_2011_2125_PART_B_DCHB_NUAPADA.pdf,odisha,21,nuapada,394
+DH_2011_1705_PART_B_DCHB_RIBHOI.pdf,meghalaya,17,ribhoi,297
+DH_2011_2807_PART_B_DCHB_MAHBUBNAGAR.pdf,andhra pradesh,28,mahbubnagar,538
+DH_2011_2712_PART_B_DCHB_GADCHIROLI.pdf,maharashtra,27,gadchiroli,508
+DH_2011_0505_PART_B_DCHB_DEHRADUN.pdf,uttarakhand,05,dehradun,060
+DH_2011_1216_PART_B_DCHB_ANJAW.pdf,arunachal pradesh,12,anjaw,260
+DH_2011_1402_PART_B_DCHB_TAMENGLONG.pdf,manipur,14,tamenglong,273
+DH_2011_0949_PART_B_DCHB_BAHRAICH.pdf,uttar pradesh,09,bahraich,180
+DH_2011_0924_PART_B_DCHB_HARDOI.pdf,uttar pradesh,09,hardoi,155
+DH_2011_0513_PART_B_DCHB_HARDWAR.pdf,uttarakhand,05,hardwar,068
+DH_2011_1501_PART_B_DCHB_MAMIT.pdf,mizoram,15,mamit,281
+DH_2011_2345_PART_B_DCHB_SIDHI.pdf,madhya pradesh,23,sidhi,462
+DH_2011_2714_PART_B_DCHB_YAVATMAL.pdf,maharashtra,27,yavatmal,510
+DH_2011_1903_PART_B_DCHB_KOCH_BIHAR.pdf,west bengal,19,koch bihar,329
+DH_2011_1703_PART_B_DCHB_SOUTH_GARO_HILLS.pdf,meghalaya,17,south garo hills,295
+DH_2011_3208_PART_B_DCHB_ERNAKULAM.pdf,kerala,32,ernakulam,595
+DH_2011_1211_PART_B_DCHB_LOWER_SUBANSIRI.pdf,arunachal pradesh,12,lower subansiri,255
+DH_2011_1205_PART_B_DCHB_UPPER_SUBANSIRI.pdf,arunachal pradesh,12,upper subansiri,249
+DH_2011_2424_PART_B_DCHB_VALSAD.pdf,gujarat,24,valsad,491
+DH_2011_2118_PART_B_DCHB_PURI.pdf,odisha,21,puri,387
+DH_2011_3308_PART_B_DCHB_NAMAKKAL.pdf,tamil nadu,33,namakkal,609
+DH_2011_0504_PART_B_DCHB_TEHRI_GARHWAL.pdf,uttarakhand,05,tehri garhwal,059
+DH_2011_0305_PART_B_DCHB_SHAHID_BHAGAT_SINGH_NAGAR.pdf,punjab,03,shahid bhagat singh nagar,039
+DH_2011_0821_PART_B_DCHB_AJMER.pdf,rajasthan,08,ajmer,119
+DH_2011_1201_PART_B_DCHB_TAWANG.pdf,arunachal pradesh,12,tawang,245
+DH_2011_0610_PART_B_DCHB_FATEHABAD.pdf,haryana,06,fatehabad,078
+DH_2011_0320_PART_B_DCHB_BARNALA.pdf,punjab,03,barnala,054
+DH_2011_2426_PART_B_DCHB_TAPI.pdf,gujarat,24,tapi,493
+DH_2011_0831_PART_B_DCHB_JHALAWAR.pdf,rajasthan,08,jhalawar,129
+DH_2011_2214_PART_B_DCHB_UTTAR_BASTAR_KANKER.pdf,chhattisgarh,22,uttar bastar kanker,413
+DH_2011_1003_PART_B_DCHB_SHEOHAR.pdf,bihar,10,sheohar,205
+DH_2011_2209_PART_B_DCHB_RAJNANDGAON.pdf,chhattisgarh,22,rajnandgaon,408
+DH_2011_1004_PART_B_DCHB_SITAMARHI.pdf,bihar,10,sitamarhi,206
+DH_2011_0812_PART_B_DCHB_JAIPUR.pdf,rajasthan,08,jaipur,110
+DH_2011_2902_PART_B_DCHB_BAGALKOT.pdf,karnataka,29,bagalkot,556
+DH_2011_1209_PART_B_DCHB_CHANGLANG.pdf,arunachal pradesh,12,changlang,253
+DH_2011_3321_PART_B_DCHB_SIVAGANGA.pdf,tamil nadu,33,sivaganga,622
+DH_2011_2919_PART_B_DCHB_MANDYA.pdf,karnataka,29,mandya,573
+DH_2011_2346_PART_B_DCHB_SINGRAULI.pdf,madhya pradesh,23,singrauli,463
+DH_2011_3211_PART_B_DCHB_ALAPPUZHA.pdf,kerala,32,alappuzha,598
+DH_2011_3301_PART_B_DCHB_THIRUVALLUR.pdf,tamil nadu,33,thiruvallur,602
+DH_2011_3306_PART_B_DCHB_VILUPPURAM.pdf,tamil nadu,33,viluppuram,607
+DH_2011_2716_PART_B_DCHB_HINGOLI.pdf,maharashtra,27,hingoli,512
+DH_2011_0925_PART_B_DCHB_UNNAO.pdf,uttar pradesh,09,unnao,156
+DH_2011_1905_PART_B_DCHB_DAKSHIN_DINAJPUR.pdf,west bengal,19,dakshin dinajpur,331
+DH_2011_0929_PART_B_DCHB_KANNAUJ.pdf,uttar pradesh,09,kannauj,160
+DH_2011_1038_PART_B_DCHB_ARWAL.pdf,bihar,10,arwal,240
+DH_2011_2020_PART_B_DCHB_KHUNTI.pdf,jharkhand,20,khunti,365
+DH_2011_1404_PART_B_DCHB_BISHNUPUR.pdf,manipur,14,bishnupur,275
+DH_2011_2008_PART_B_DCHB_PAKUR.pdf,jharkhand,20,pakur,353
+DH_2011_2313_PART_B_DCHB_REWA.pdf,madhya pradesh,23,rewa,430
+DH_2011_2107_PART_B_DCHB_MAYURBHANJ.pdf,odisha,21,mayurbhanj,376
+DH_2011_1810_PART_B_DCHB_TINSUKIA.pdf,assam,18,tinsukia,309
+DH_2011_2418_PART_B_DCHB_DOHAD.pdf,gujarat,24,dohad,485
+DH_2011_0963_PART_B_DCHB_JAUNPUR.pdf,uttar pradesh,09,jaunpur,194
+DH_2011_3310_PART_B_DCHB_THE_NILGIRIS.pdf,tamil nadu,33,the nilgiris,611
+DH_2011_1820_PART_B_DCHB_BONGAIGAON.pdf,assam,18,bongaigaon,319
+DH_2011_0829_PART_B_DCHB_KOTA.pdf,rajasthan,08,kota,127
+DH_2011_0932_PART_B_DCHB_KANPUR_DEHAT.pdf,uttar pradesh,09,kanpur dehat,163
+DH_2011_1706_PART_B_DCHB_EAST_KHASI_HILLS.pdf,meghalaya,17,east khasi hills,298
+DH_2011_1403_PART_B_DCHB_CHURACHANDPUR.pdf,manipur,14,churachandpur,274
+DH_2011_2501_PART_B_DCHB_DIU.pdf,daman diu,25,diu,494
+DH_2011_0941_PART_B_DCHB_FATEHPUR.pdf,uttar pradesh,09,fatehpur,172
+DH_2011_3002_PART_B_DCHB_SOUTH_GOA.pdf,goa,30,south goa,586
+DH_2011_2333_PART_B_DCHB_KATNI.pdf,madhya pradesh,23,katni,450
+DH_2011_2007_PART_B_DCHB_SAHIBGANJ.pdf,jharkhand,20,sahibganj,352
+DH_2011_2904_PART_B_DCHB_BIDAR.pdf,karnataka,29,bidar,558
+DH_2011_0917_PART_B_DCHB_MAINPURI.pdf,uttar pradesh,09,mainpuri,148
+DH_2011_2317_PART_B_DCHB_RATLAM.pdf,madhya pradesh,23,ratlam,434
+DH_2011_2801_PART_B_DCHB_ADILABAD.pdf,andhra pradesh,28,adilabad,532
+DH_2011_2212_PART_B_DCHB_MAHASAMUND.pdf,chhattisgarh,22,mahasamund,411
+DH_2011_2905_PART_B_DCHB_RAICHUR.pdf,karnataka,29,raichur,559
+DH_2011_1019_PART_B_DCHB_SAMASTIPUR.pdf,bihar,10,samastipur,221
+DH_2011_0912_PART_B_DCHB_ALIGARH.pdf,uttar pradesh,09,aligarh,143
+DH_2011_3212_PART_B_DCHB_PATHANAMTHITTA.pdf,kerala,32,pathanamthitta,599
+DH_2011_2406_PART_B_DCHB_GANDHINAGAR.pdf,gujarat,24,gandhinagar,473
+DH_2011_2106_PART_B_DCHB_KENDUJHAR.pdf,odisha,21,kendujhar,375
+DH_2011_2014_PART_B_DCHB_LATEHAR.pdf,jharkhand,20,latehar,359
+DH_2011_0826_PART_B_DCHB_DUNGARPUR.pdf,rajasthan,08,dungarpur,124
+DH_2011_2002_PART_B_DCHB_CHATRA.pdf,jharkhand,20,chatra,347
+DH_2011_3328_PART_B_DCHB_KANNIYAKUMARI.pdf,tamil nadu,33,kanniyakumari,629
+DH_2011_1702_PART_B_DCHB_EAST_GARO_HILLS.pdf,meghalaya,17,east garo hills,294
+DH_2011_1808_PART_B_DCHB_LAKHIMPUR.pdf,assam,18,lakhimpur,307
+DH_2011_0602_PART_B_DCHB_AMBALA.pdf,haryana,06,ambala,070
+DH_2011_2324_PART_B_DCHB_BARWANI.pdf,madhya pradesh,23,barwani,441
+DH_2011_2719_PART_B_DCHB_AURANGABAD.pdf,maharashtra,27,aurangabad,515
+DH_2011_2813_PART_B_DCHB_VISAKHAPATNAM.pdf,andhra pradesh,28,visakhapatnam,544
+DH_2011_1814_PART_B_DCHB_GOLAGHAT.pdf,assam,18,golaghat,313
+DH_2011_1215_PART_B_DCHB_LOHIT.pdf,arunachal pradesh,12,lohit,259
+DH_2011_0204_PART_B_DCHB_KULLU.pdf,himachal pradesh,02,kullu,026
+DH_2011_3332_PART_B_DCHB_TIRUPPUR.pdf,tamil nadu,33,tiruppur,633
+DH_2011_3302_PART_B_DCHB_CHENNAI.pdf,tamil nadu,33,chennai,603
+DH_2011_1815_PART_B_DCHB_KARBI_ANGLONG.pdf,assam,18,karbi anglong,314
+DH_2011_2216_PART_B_DCHB_NARAYANPUR.pdf,chhattisgarh,22,narayanpur,415
+DH_2011_0816_PART_B_DCHB_JAISALMER.pdf,rajasthan,08,jaisalmer,114
+DH_2011_0120_PART_B_DCHB_REASI.pdf,jammu kashmir,01,reasi,020
+DH_2011_0950_PART_B_DCHB_SHRAWASTI.pdf,uttar pradesh,09,shrawasti,181
+DH_2011_2707_PART_B_DCHB_AMRAVATI.pdf,maharashtra,27,amravati,503
+DH_2011_0512_PART_B_DCHB_UDHAM_SINGH_NAGAR.pdf,uttarakhand,05,udham singh nagar,067
+DH_2011_3205_PART_B_DCHB_MALAPPURAM.pdf,kerala,32,malappuram,592
+DH_2011_1916_PART_B_DCHB_KOLKATA.pdf,west bengal,19,kolkata,342
+DH_2011_2708_PART_B_DCHB_WARDHA.pdf,maharashtra,27,wardha,504
+DH_2011_0212_PART_B_DCHB_KINNAUR.pdf,,,,
+DH_2011_0903_PART_B_DCHB_BIJNOR.pdf,uttar pradesh,09,bijnor,134
+DH_2011_2929_PART_B_DCHB_BANGALORE_RURAL.pdf,karnataka,29,bangalore rural,583
+DH_2011_0971_PART_B_DCHB_KANSHIRAM_NAGAR.pdf,uttar pradesh,09,kanshiram nagar,202
+DH_2011_2720_PART_B_DCHB_NASHIK.pdf,maharashtra,27,nashik,516
+DH_2011_1707_PART_B_DCHB_JAINTIA_HILLS.pdf,meghalaya,17,jaintia hills,299
+DH_2011_2213_PART_B_DCHB_DHAMTARI.pdf,chhattisgarh,22,dhamtari,412
+DH_2011_1202_PART_B_DCHB_WEST_KAMENG.pdf,arunachal pradesh,12,west kameng,246
+DH_2011_3318_PART_B_DCHB_THIRUVARUR.pdf,tamil nadu,33,thiruvarur,619
+DH_2011_0910_PART_B_DCHB_GAUTAM_BUDDHA_NAGAR.pdf,uttar pradesh,09,gautam buddha nagar,141
+DH_2011_1918_PART_B_DCHB_PASCHIM_MEDINIPUR.pdf,west bengal,19,paschim medinipur,344
+DH_2011_2713_PART_B_DCHB_CHANDRAPUR.pdf,maharashtra,27,chandrapur,509
+DH_2011_2809_PART_B_DCHB_WARANGAL.pdf,andhra pradesh,28,warangal,540
+DH_2011_2347_PART_B_DCHB_JHABUA.pdf,madhya pradesh,23,jhabua,464
+DH_2011_0817_PART_B_DCHB_BARMER.pdf,rajasthan,08,barmer,115
+DH_2011_0510_PART_B_DCHB_CHAMPAWAT.pdf,uttarakhand,05,champawat,065
+DH_2011_2311_PART_B_DCHB_DAMOH.pdf,madhya pradesh,23,damoh,428
+DH_2011_2502_PART_B_DCHB_DAMAN.pdf,daman diu,25,daman,495
+DH_2011_2331_PART_B_DCHB_HARDA.pdf,madhya pradesh,23,harda,448
+DH_2011_2414_PART_B_DCHB_BHAVNAGAR.pdf,gujarat,24,bhavnagar,481
+DH_2011_1033_PART_B_DCHB_AURANGABAD.pdf,bihar,10,aurangabad,235
+DH_2011_1910_PART_B_DCHB_NADIA.pdf,west bengal,19,nadia,336
+DH_2011_1401_PART_B_DCHB_SENAPATI.pdf,manipur,14,senapati,272
+DH_2011_0118_PART_B_DCHB_KISHTWAR.pdf,jammu kashmir,01,kishtwar,018
+DH_2011_2923_PART_B_DCHB_MYSORE.pdf,karnataka,29,mysore,577
+DH_2011_1917_PART_B_DCHB_SOUTH_TWENTY_FOUR_PARGANAS.pdf,west bengal,19,south twenty four parganas,343
+DH_2011_2734_PART_B_DCHB_KOLHAPUR.pdf,maharashtra,27,kolhapur,530
+DH_2011_2004_PART_B_DCHB_GIRIDIH.pdf,jharkhand,20,giridih,349
+DH_2011_1001_PART_B_DCHB_PASHCHIM_CHAMPARAN.pdf,bihar,10,pashchim champaran,203
+DH_2011_0907_PART_B_DCHB_MEERUT.pdf,uttar pradesh,09,meerut,138
+DH_2011_2308_PART_B_DCHB_CHHATARPUR.pdf,madhya pradesh,23,chhatarpur,425
+DH_2011_2126_PART_B_DCHB_KALAHANDI.pdf,odisha,21,kalahandi,395
+DH_2011_3324_PART_B_DCHB_VIRUDHUNAGAR.pdf,tamil nadu,33,virudhunagar,625
+DH_2011_2814_PART_B_DCHB_EAST_GODAVARI.pdf,andhra pradesh,28,east godavari,545
+DH_2011_2808_PART_B_DCHB_NALGONDA.pdf,andhra pradesh,28,nalgonda,539
+DH_2011_2328_PART_B_DCHB_SEHORE.pdf,madhya pradesh,23,sehore,445
+DH_2011_1210_PART_B_DCHB_TIRAP.pdf,arunachal pradesh,12,tirap,254
+DH_2011_2024_PART_B_DCHB_SARAIKELA_KHARSAWAN.pdf,jharkhand,20,saraikela kharsawan,369
+DH_2011_0968_PART_B_DCHB_MIRZAPUR.pdf,uttar pradesh,09,mirzapur,199
+DH_2011_3330_PART_B_DCHB_KRISHNAGIRI.pdf,tamil nadu,33,krishnagiri,631
+DH_2011_1203_PART_B_DCHB_EAST_KAMENG.pdf,arunachal pradesh,12,east kameng,247
+DH_2011_1804_PART_B_DCHB_BARPETA.pdf,assam,18,barpeta,303
+DH_2011_2927_PART_B_DCHB_KOLAR.pdf,karnataka,29,kolar,581
+DH_2011_2218_PART_B_DCHB_BIJAPUR.pdf,chhattisgarh,22,bijapur,417
+DH_2011_2349_PART_B_DCHB_KHANDWA_EAST_NIMAR.pdf,madhya pradesh,23,east nimar,466
+DH_2011_0939_PART_B_DCHB_BANDA.pdf,uttar pradesh,09,banda,170
+DH_2011_3204_PART_B_DCHB_KOZHIKODE.pdf,kerala,32,kozhikode,591
+DH_2011_2301_PART_B_DCHB_SHEOPUR.pdf,madhya pradesh,23,sheopur,418
+DH_2011_2705_PART_B_DCHB_AKOLA.pdf,maharashtra,27,akola,501
+DH_2011_1907_PART_B_DCHB_MURSHIDABAD.pdf,west bengal,19,murshidabad,333
+DH_2011_1807_PART_B_DCHB_SONITPUR.pdf,assam,18,sonitpur,306
+DH_2011_3313_PART_B_DCHB_TIRUCHIRAPPALLI.pdf,tamil nadu,33,tiruchirappalli,614
+DH_2011_1915_PART_B_DCHB_HAORA.pdf,west bengal,19,haora,341
+DH_2011_1406_PART_B_DCHB_IMPHAL_WEST.pdf,manipur,14,imphal west,277
+DH_2011_1213_PART_B_DCHB_DIBANG_VALLEY.pdf,arunachal pradesh,12,dibang valley,257
+DH_2011_2917_PART_B_DCHB_TUMKUR.pdf,karnataka,29,tumkur,571
+DH_2011_1100_PART_B_DCHB_SIKKIM.pdf,sikkim,11,north district,241
+DH_2011_1100_PART_B_DCHB_SIKKIM.pdf,sikkim,11,west district,242
+DH_2011_1100_PART_B_DCHB_SIKKIM.pdf,sikkim,11,south district,243
+DH_2011_1100_PART_B_DCHB_SIKKIM.pdf,sikkim,11,east district,244
+DH_2011_2412_PART_B_DCHB_JUNAGADH.pdf,gujarat,24,junagadh,479
+DH_2011_0823_PART_B_DCHB_BUNDI.pdf,rajasthan,08,bundi,121
+DH_2011_2903_PART_B_DCHB_BIJAPUR.pdf,karnataka,29,bijapur,557
+DH_2011_1506_PART_B_DCHB_LUNGLEI.pdf,mizoram,15,lunglei,286
+DH_2011_0108_PART_B_DCHB_BARAMULA.pdf,jammu kashmir,01,baramula,008
+DH_2011_2729_PART_B_DCHB_OSMANABAD.pdf,maharashtra,27,osmanabad,525
+DH_2011_0115_PART_B_DCHB_KULGAM.pdf,jammu kashmir,01,kulgam,015
+DH_2011_0919_PART_B_DCHB_BAREILLY.pdf,uttar pradesh,09,bareilly,150
+DH_2011_0209_PART_B_DCHB_SOLAN.pdf,himachal pradesh,02,solan,031
+DH_2011_2314_PART_B_DCHB_UMARIA.pdf,madhya pradesh,23,umaria,431
+DH_2011_1911_PART_B_DCHB_NORTH_TWENTY_FOUR_PARGANAS.pdf,west bengal,19,north twenty four parganas,337
+DH_2011_0700_PART_B_DCHB_NCT_OF_DELHI.pdf,nct of delhi,07,north west,090
+DH_2011_0700_PART_B_DCHB_NCT_OF_DELHI.pdf,nct of delhi,07,north,091
+DH_2011_0700_PART_B_DCHB_NCT_OF_DELHI.pdf,nct of delhi,07,north east,092
+DH_2011_0700_PART_B_DCHB_NCT_OF_DELHI.pdf,nct of delhi,07,east,093
+DH_2011_0700_PART_B_DCHB_NCT_OF_DELHI.pdf,nct of delhi,07,west,096
+DH_2011_0700_PART_B_DCHB_NCT_OF_DELHI.pdf,nct of delhi,07,south west,097
+DH_2011_0700_PART_B_DCHB_NCT_OF_DELHI.pdf,nct of delhi,07,south,098
+DH_2011_2336_PART_B_DCHB_DINDORI.pdf,madhya pradesh,23,dindori,453
+DH_2011_2127_PART_B_DCHB_RAYAGADA.pdf,odisha,21,rayagada,396
+DH_2011_2731_PART_B_DCHB_SATARA.pdf,maharashtra,27,satara,527
+DH_2011_2709_PART_B_DCHB_NAGPUR.pdf,maharashtra,27,nagpur,505
+DH_2011_2405_PART_B_DCHB_SABAR_KANTHA.pdf,gujarat,24,sabar kantha,472
+DH_2011_0604_PART_B_DCHB_KURUKSHETRA.pdf,haryana,06,kurukshetra,072
+DH_2011_2407_PART_B_DCHB_AHMADABAD.pdf,gujarat,24,ahmadabad,474
+DH_2011_2907_PART_B_DCHB_GADAG.pdf,karnataka,29,gadag,561
+DH_2011_0901_PART_B_DCHB_SAHARANPUR.pdf,uttar pradesh,09,saharanpur,132
+DH_2011_2303_PART_B_DCHB_BHIND.pdf,madhya pradesh,23,bhind,420
+DH_2011_3213_PART_B_DCHB_KOLLAM.pdf,kerala,32,kollam,600
+DH_2011_0938_PART_B_DCHB_MAHOBA.pdf,uttar pradesh,09,mahoba,169
+DH_2011_0119_PART_B_DCHB_UDHAMPUR.pdf,jammu kashmir,01,udhampur,019
+DH_2011_2350_PART_B_DCHB_BURHANPUR.pdf,madhya pradesh,23,burhanpur,467
+DH_2011_2128_PART_B_DCHB_NABARANGAPUR.pdf,odisha,21,nabarangapur,397
+DH_2011_1802_PART_B_DCHB_DHUBRI.pdf,assam,18,dhubri,301
+DH_2011_3401_PART_B_DCHB_YANAM.pdf,puducherry,34,yanam,634
+DH_2011_2120_PART_B_DCHB_GAJAPATI.pdf,odisha,21,gajapati,389
+DH_2011_0936_PART_B_DCHB_LALITPUR.pdf,uttar pradesh,09,lalitpur,167
+DH_2011_1827_PART_B_DCHB_UDALGURI.pdf,assam,18,udalguri,326
+DH_2011_0806_PART_B_DCHB_ALWAR.pdf,rajasthan,08,alwar,104
+DH_2011_0970_PART_B_DCHB_ETAH.pdf,uttar pradesh,09,etah,201
+DH_2011_0933_PART_B_DCHB_KANPUR_NAGAR.pdf,uttar pradesh,09,kanpur nagar,164
+DH_2011_0111_PART_B_DCHB_GANDERBAL.pdf,jammu kashmir,01,ganderbal,011
+DH_2011_2702_PART_B_DCHB_DHULE.pdf,maharashtra,27,dhule,498
+DH_2011_0313_PART_B_DCHB_MANSA.pdf,punjab,03,mansa,047
+DH_2011_2312_PART_B_DCHB_SATNA.pdf,madhya pradesh,23,satna,429
+DH_2011_1018_PART_B_DCHB_VAISHALI.pdf,bihar,10,vaishali,220
+DH_2011_1031_PART_B_DCHB_KAIMUR_BHABUA.pdf,bihar,10,kaimur bhabua,233
+DH_2011_2918_PART_B_DCHB_BANGALORE.pdf,karnataka,29,bangalore,572
+DH_2011_2340_PART_B_DCHB_BALAGHAT.pdf,madhya pradesh,23,balaghat,457
+DH_2011_3312_PART_B_DCHB_KARUR.pdf,tamil nadu,33,karur,613
+DH_2011_0608_PART_B_DCHB_SONIPAT.pdf,haryana,06,sonipat,076
+DH_2011_2401_PART_B_DCHB_KACHCHH.pdf,gujarat,24,kachchh,468
+DH_2011_2818_PART_B_DCHB_PRAKASAM.pdf,andhra pradesh,28,prakasam,549
+DH_2011_0830_PART_B_DCHB_BARAN.pdf,rajasthan,08,baran,128
+DH_2011_0833_PART_B_DCHB_PRATAPGARH.pdf,rajasthan,08,pratapgarh,131
+DH_2011_2327_PART_B_DCHB_BHOPAL.pdf,madhya pradesh,23,bhopal,444
+DH_2011_2103_PART_B_DCHB_SAMBALPUR.pdf,odisha,21,sambalpur,372
+DH_2011_2321_PART_B_DCHB_DHAR.pdf,madhya pradesh,23,dhar,438
+DH_2011_0311_PART_B_DCHB_FARIDKOT.pdf,punjab,03,faridkot,045
+DH_2011_2320_PART_B_DCHB_DEWAS.pdf,madhya pradesh,23,dewas,437
+DH_2011_3207_PART_B_DCHB_THRISSUR.pdf,kerala,32,thrissur,594
+DH_2011_0928_PART_B_DCHB_FARRUKHABAD.pdf,uttar pradesh,09,farrukhabad,159
+DH_2011_0832_PART_B_DCHB_UDAIPUR.pdf,rajasthan,08,udaipur,130
+DH_2011_0915_PART_B_DCHB_AGRA.pdf,uttar pradesh,09,agra,146
+DH_2011_1301_PART_B_DCHB_MON.pdf,nagaland,13,mon,261
+DH_2011_0615_PART_B_DCHB_JHAJJAR.pdf,haryana,06,jhajjar,083
+DH_2011_1036_PART_B_DCHB_JAMUI.pdf,bihar,10,jamui,238
+DH_2011_3316_PART_B_DCHB_CUDDALORE.pdf,tamil nadu,33,cuddalore,617
+DH_2011_0807_PART_B_DCHB_BHARATPUR.pdf,rajasthan,08,bharatpur,105
+DH_2011_0961_PART_B_DCHB_MAU.pdf,uttar pradesh,09,mau,192
+DH_2011_3311_PART_B_DCHB_DINDIGUL.pdf,tamil nadu,33,dindigul,612
+DH_2011_0309_PART_B_DCHB_FIROZPUR.pdf,punjab,03,firozpur,043
+DH_2011_2421_PART_B_DCHB_BHARUCH.pdf,gujarat,24,bharuch,488
+DH_2011_2304_PART_B_DCHB_GWALIOR.pdf,madhya pradesh,23,gwalior,421
+DH_2011_2823_PART_B_DCHB_CHITTOOR.pdf,andhra pradesh,28,chittoor,554
+DH_2011_1914_PART_B_DCHB_PURULIYA.pdf,west bengal,19,puruliya,340
+DH_2011_1826_PART_B_DCHB_DARRANG.pdf,assam,18,darrang,325
+DH_2011_0906_PART_B_DCHB_JYOTIBA_PHULE_NAGAR.pdf,uttar pradesh,09,jyotiba phule nagar,137
+DH_2011_2208_PART_B_DCHB_KABEERDHAM.pdf,chhattisgarh,22,kabeerdham,407
+DH_2011_0930_PART_B_DCHB_ETAWAH.pdf,uttar pradesh,09,etawah,161
+DH_2011_2404_PART_B_DCHB_MAHESANA.pdf,gujarat,24,mahesana,471
+DH_2011_1304_PART_B_DCHB_WOKHA.pdf,nagaland,13,wokha,264
+DH_2011_3325_PART_B_DCHB_RAMANATHAPURAM.pdf,tamil nadu,33,ramanathapuram,626
+DH_2011_2920_PART_B_DCHB_HASSAN.pdf,karnataka,29,hassan,574
+DH_2011_1022_PART_B_DCHB_BHAGALPUR.pdf,bihar,10,bhagalpur,224
+DH_2011_0312_PART_B_DCHB_BATHINDA.pdf,punjab,03,bathinda,046
+DH_2011_2009_PART_B_DCHB_DHANBAD.pdf,jharkhand,20,dhanbad,354
+DH_2011_2342_PART_B_DCHB_ASHOKNAGAR.pdf,madhya pradesh,23,ashoknagar,459
+DH_2011_2804_PART_B_DCHB_MEDAK.pdf,andhra pradesh,28,medak,535
+DH_2011_1007_PART_B_DCHB_ARARIA.pdf,bihar,10,araria,209
+DH_2011_0967_PART_B_DCHB_SANT_RAVIDAS_NAGAR_BHADOHI.pdf,uttar pradesh,09,sant ravidas nagar bhadohi,198
+DH_2011_1805_PART_B_DCHB_MORIGAON.pdf,assam,18,morigaon,304
+DH_2011_2706_PART_B_DCHB_WASHIM.pdf,maharashtra,27,washim,502
+DH_2011_2909_PART_B_DCHB_UTTARA_KANNADA.pdf,karnataka,29,uttara kannada,563
+DH_2011_2307_PART_B_DCHB_TIKAMGARH.pdf,madhya pradesh,23,tikamgarh,424
+DH_2011_2409_PART_B_DCHB_RAJKOT.pdf,gujarat,24,rajkot,476
+DH_2011_0205_PART_B_DCHB_MANDI.pdf,himachal pradesh,02,mandi,027
+DH_2011_2812_PART_B_DCHB_VIZIANAGARAM.pdf,andhra pradesh,28,vizianagaram,543
+DH_2011_0509_PART_B_DCHB_ALMORA.pdf,uttarakhand,05,almora,064
+DH_2011_1026_PART_B_DCHB_SHEIKHPURA.pdf,bihar,10,sheikhpura,228
+DH_2011_1208_PART_B_DCHB_UPPER_SIANG.pdf,arunachal pradesh,12,upper siang,252
+DH_2011_2122_PART_B_DCHB_BAUDH.pdf,odisha,21,baudh,391
+DH_2011_0902_PART_B_DCHB_MUZAFFARNAGAR.pdf,uttar pradesh,09,muzaffarnagar,133
+DH_2011_2726_PART_B_DCHB_AHMADNAGAR.pdf,maharashtra,27,ahmadnagar,522
+DH_2011_0203_PART_B_DCHB_LAHUL_SPITI.pdf,,,,
+DH_2011_2816_PART_B_DCHB_KRISHNA.pdf,andhra pradesh,28,krishna,547
+DH_2011_0965_PART_B_DCHB_CHANDAULI.pdf,uttar pradesh,09,chandauli,196
+DH_2011_0828_PART_B_DCHB_CHITTAURGARH.pdf,rajasthan,08,chittaurgarh,126
+DH_2011_2105_PART_B_DCHB_SUNDARGARH.pdf,odisha,21,sundargarh,374
+DH_2011_2006_PART_B_DCHB_GODDA.pdf,jharkhand,20,godda,351
+DH_2011_1819_PART_B_DCHB_HAILAKANDI.pdf,assam,18,hailakandi,318
+DH_2011_2348_PART_B_DCHB_ALIRAJPUR.pdf,madhya pradesh,23,alirajpur,465
+DH_2011_2402_PART_B_DCHB_BANAS_KANTHA.pdf,gujarat,24,banas kantha,469
+DH_2011_2701_PART_B_DCHB_NANDURBAR.pdf,maharashtra,27,nandurbar,497
+DH_2011_2121_PART_B_DCHB_KANDHAMAL.pdf,odisha,21,kandhamal,390
+DH_2011_2820_PART_B_DCHB_YSR.pdf,andhra pradesh,28,ysr kadapa,551
+DH_2011_0964_PART_B_DCHB_GHAZIPUR.pdf,uttar pradesh,09,ghazipur,195
+DH_2011_0953_PART_B_DCHB_SIDDHARTHNAGAR.pdf,uttar pradesh,09,siddharthnagar,184
+DH_2011_2908_PART_B_DCHB_DHARWAD.pdf,karnataka,29,dharwad,562
+DH_2011_1025_PART_B_DCHB_LAKHISARAI.pdf,bihar,10,lakhisarai,227
+DH_2011_3327_PART_B_DCHB_TIRUNELVELI.pdf,tamil nadu,33,tirunelveli,628
+DH_2011_2425_PART_B_DCHB_SURAT.pdf,gujarat,24,surat,492
+DH_2011_1035_PART_B_DCHB_NAWADA.pdf,bihar,10,nawada,237
+DH_2011_2335_PART_B_DCHB_NARSIMHAPUR.pdf,madhya pradesh,23,narsimhapur,452
+DH_2011_2805_PART_B_DCHB_HYDERABAD.pdf,andhra pradesh,28,hyderabad,536
+DH_2011_2339_PART_B_DCHB_SEONI.pdf,madhya pradesh,23,seoni,456
+DH_2011_0803_PART_B_DCHB_BIKANER.pdf,rajasthan,08,bikaner,101
+DH_2011_2821_PART_B_DCHB_KURNOOL.pdf,andhra pradesh,28,kurnool,552
+DH_2011_0318_PART_B_DCHB_SAHIBZADA_AJIT_SINGH_NAGAR.pdf,punjab,03,sahibzada ajit singh nagar,052
+DH_2011_1701_PART_B_DCHB_WEST_GARO_HILLS.pdf,meghalaya,17,west garo hills,293
+DH_2011_2337_PART_B_DCHB_MANDLA.pdf,madhya pradesh,23,mandla,454
+DH_2011_2344_PART_B_DCHB_ANUPPUR.pdf,madhya pradesh,23,anuppur,461
+DH_2011_2924_PART_B_DCHB_CHAMARAJANAGAR.pdf,karnataka,29,chamarajanagar,578
+DH_2011_2728_PART_B_DCHB_LATUR.pdf,maharashtra,27,latur,524
+DH_2011_0818_PART_B_DCHB_JALOR.pdf,rajasthan,08,jalor,116
+DH_2011_0959_PART_B_DCHB_DEORIA.pdf,uttar pradesh,09,deoria,190
+DH_2011_2921_PART_B_DCHB_DAKSHINA_KANNADA.pdf,karnataka,29,dakshina kannada,575
+DH_2011_2010_PART_B_DCHB_BOKARO.pdf,jharkhand,20,bokaro,355
+DH_2011_0103_PART_B_DCHB_LEH.pdf,jammu kashmir,01,leh ladakh,003
+DH_2011_0945_PART_B_DCHB_BARA_BANKI.pdf,uttar pradesh,09,bara banki,176
+DH_2011_2717_PART_B_DCHB_PARBHANI.pdf,maharashtra,27,parbhani,513
+DH_2011_0607_PART_B_DCHB_PANIPAT.pdf,haryana,06,panipat,075
+DH_2011_2104_PART_B_DCHB_DEBAGARH.pdf,odisha,21,debagarh,373
+DH_2011_0801_PART_B_DCHB_GANGANAGAR.pdf,rajasthan,08,ganganagar,099
+DH_2011_1803_PART_B_DCHB_GOALPARA.pdf,assam,18,goalpara,302
+DH_2011_3319_PART_B_DCHB_THANJAVUR.pdf,tamil nadu,33,thanjavur,620
+DH_2011_2704_PART_B_DCHB_BULDANA.pdf,maharashtra,27,buldana,500
+DH_2011_2117_PART_B_DCHB_KHORDHA.pdf,odisha,21,khordha,386
+DH_2011_0507_PART_B_DCHB_PITHORAGARH.pdf,uttarakhand,05,pithoragarh,062
+DH_2011_1310_PART_B_DCHB_KOHIMA.pdf,nagaland,13,kohima,270
+DH_2011_3214_PART_B_DCHB_THIRUVANANTHAPURAM.pdf,kerala,32,thiruvananthapuram,601
+DH_2011_0618_PART_B_DCHB_GURGAON.pdf,haryana,06,gurgaon,086
+DH_2011_2403_PART_B_DCHB_PATAN.pdf,gujarat,24,patan,470
+DH_2011_1912_PART_B_DCHB_HUGLI.pdf,west bengal,19,hugli,338
+DH_2011_2112_PART_B_DCHB_CUTTACK.pdf,odisha,21,cuttack,381
+DH_2011_1013_PART_B_DCHB_DARBHANGA.pdf,bihar,10,darbhanga,215
+DH_2011_0931_PART_B_DCHB_AURAIYA.pdf,uttar pradesh,09,auraiya,162
+DH_2011_2803_PART_B_DCHB_KARIMNAGAR.pdf,andhra pradesh,28,karimnagar,534
+DH_2011_0121_PART_B_DCHB_JAMMU.pdf,jammu kashmir,01,jammu,021
+DH_2011_0102_PART_B_DCHB_BADGAM.pdf,jammu kashmir,01,badgam,002
+DH_2011_1817_PART_B_DCHB_CACHAR.pdf,assam,18,cachar,316
+DH_2011_2114_PART_B_DCHB_DHENKANAL.pdf,odisha,21,dhenkanal,383
+DH_2011_0956_PART_B_DCHB_MAHRAJGANJ.pdf,uttar pradesh,09,mahrajganj,187
+DH_2011_1029_PART_B_DCHB_BHOJPUR.pdf,bihar,10,bhojpur,231
+DH_2011_1503_PART_B_DCHB_AIZAWL.pdf,mizoram,15,aizawl,283
+DH_2011_0911_PART_B_DCHB_BULANDSHAHR.pdf,uttar pradesh,09,bulandshahr,142
+DH_2011_2906_PART_B_DCHB_KOPPAL.pdf,karnataka,29,koppal,560
+DH_2011_2926_PART_B_DCHB_YADGIR.pdf,karnataka,29,yadgir,580
+DH_2011_2012_PART_B_DCHB_PURBI_SINGHBHUM.pdf,jharkhand,20,purbi singhbhum,357
+DH_2011_0502_PART_B_DCHB_CHAMOLI.pdf,uttarakhand,05,chamoli,057
+DH_2011_2913_PART_B_DCHB_DAVANAGERE.pdf,karnataka,29,davanagere,567
+DH_2011_0611_PART_B_DCHB_SIRSA.pdf,haryana,06,sirsa,079
+DH_2011_1010_PART_B_DCHB_KATIHAR.pdf,bihar,10,katihar,212
+DH_2011_0114_PART_B_DCHB_ANANTNAG.pdf,jammu kashmir,01,anantnag,014
+DH_2011_1006_PART_B_DCHB_SUPAUL.pdf,bihar,10,supaul,208
+DH_2011_3317_PART_B_DCHB_NAGAPATTINAM.pdf,tamil nadu,33,nagapattinam,618
+DH_2011_1207_PART_B_DCHB_EAST_SIANG.pdf,arunachal pradesh,12,east siang,251
+DH_2011_2727_PART_B_DCHB_BID.pdf,maharashtra,27,bid,523
+DH_2011_1016_PART_B_DCHB_SIWAN.pdf,bihar,10,siwan,218
+DH_2011_1602_PART_B_DCHB_SOUTH_TRIPURA.pdf,tripura,16,south tripura,290
+DH_2011_2338_PART_B_DCHB_CHHINDWARA.pdf,madhya pradesh,23,chhindwara,455
+DH_2011_0113_PART_B_DCHB_SUPHIYAN.pdf,jammu kashmir,01,shupiyan,013
+DH_2011_0802_PART_B_DCHB_HANUMANGARH.pdf,rajasthan,08,hanumangarh,100
+DH_2011_0503_PART_B_DCHB_RUDRAPRAYAG.pdf,uttarakhand,05,rudraprayag,058
+DH_2011_0201_PART_B_DCHB_CHAMBA.pdf,himachal pradesh,02,chamba,023
+DH_2011_0943_PART_B_DCHB_KAUSHAMBI.pdf,uttar pradesh,09,kaushambi,174
+DH_2011_2343_PART_B_DCHB_SHAHDOL.pdf,madhya pradesh,23,shahdol,460
+DH_2011_2003_PART_B_DCHB_KODARMA.pdf,jharkhand,20,kodarma,348
+DH_2011_3309_PART_B_DCHB_ERODE.pdf,tamil nadu,33,erode,610
+DH_2011_3101_PART_B_DCHB_LAKSHADWEEP.pdf,lakshadweep,31,lakshadweep,587
+DH_2011_0914_PART_B_DCHB_MATHURA.pdf,uttar pradesh,09,mathura,145
+DH_2011_3404_PART_B_DCHB_KARAIKAL.pdf,puducherry,34,karaikal,637
+DH_2011_0614_PART_B_DCHB_ROHTAK.pdf,haryana,06,rohtak,082
+DH_2011_1206_PART_B_DCHB_WEST_SIANG.pdf,arunachal pradesh,12,west siang,250
+DH_2011_1806_PART_B_DCHB_NAGAON.pdf,assam,18,nagaon,305
+DH_2011_2023_PART_B_DCHB_PASHCHIMI_SINGHBHUM.pdf,jharkhand,20,pashchimi singhbhum,368
+DH_2011_2806_PART_B_DCHB_RANGAREDDY.pdf,andhra pradesh,28,rangareddy,537
+DH_2011_3402_PART_B_DCHB_PUDUCHERRY.pdf,puducherry,34,puducherry,635
+DH_2011_0210_PART_B_DCHB_SIRMAUR.pdf,himachal pradesh,02,sirmaur,032
+DH_2011_1014_PART_B_DCHB_MUZAFFARPUR.pdf,bihar,10,muzaffarpur,216
+DH_2011_0923_PART_B_DCHB_SITAPUR.pdf,uttar pradesh,09,sitapur,154
+DH_2011_1212_PART_B_DCHB_KURUNG_KUMEY.pdf,arunachal pradesh,12,kurung kumey,256
+DH_2011_2420_PART_B_DCHB_NARMADA.pdf,gujarat,24,narmada,487
+DH_2011_2733_PART_B_DCHB_SINDHUDURG.pdf,maharashtra,27,sindhudurg,529
+DH_2011_2203_PART_B_DCHB_JASHPUR.pdf,chhattisgarh,22,jashpur,402
+DH_2011_2211_PART_B_DCHB_RAIPUR.pdf,chhattisgarh,22,raipur,410
+DH_2011_2822_PART_B_DCHB_ANANTAPUR.pdf,andhra pradesh,28,anantapur,553
+DH_2011_0613_PART_B_DCHB_BHIWANI.pdf,haryana,06,bhiwani,081
+DH_2011_1812_PART_B_DCHB_SIVASAGAR.pdf,assam,18,sivasagar,311
