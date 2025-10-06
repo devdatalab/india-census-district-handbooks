@@ -53,9 +53,9 @@ do $hb_code/catalog_hb_data_loss.do // skip for pc11
 
 /* 7. Convert coverage report into markdown table */
 di "Running: make_attrition_report.py"
-local in_dir $tmp
-python script $hb_code/make_attrition_report.py, args(`"--series $hb_series --in_dir $in_dir --out_dir $hb_code"')
+local in_dir "/dartfs-hpc/scratch/xinyu"
 
+python script $hb_code/make_attrition_report.py, args(`"--series $hb_series --in_dir `in_dir' --out_dir $hb_code"')
 
 exit
 

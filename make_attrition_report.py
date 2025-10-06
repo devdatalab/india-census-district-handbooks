@@ -6,6 +6,7 @@
 import argparse
 from pathlib import Path
 import pandas as pd
+import sys, shlex
 
 # ---- helpers (shortened) ----
 def detect_columns(df, series):
@@ -46,12 +47,23 @@ def funnel_counts(df, stages):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--series", required=True, choices=["pc01","pc11","pc91","pc51"])
-    ap.add_argument("--in_dir", default=".", help="Directory containing <series>_handbook_processing_loss.dta")
-    ap.add_argument("--out_dir", default=".", help="Directory to write <series>_hb_processing_report.md")
-    args = ap.parse_args()
+    ap.add_argument("--in_dir", required=True, help="Directory containing <series>_handbook_processing_loss.dta")
+    ap.add_argument("--out_dir", required=True, help="Directory to write <series>_hb_processing_report.md")
 
-    in_path  = Path(args.in_dir)  / f"{args.series}_handbook_processing_loss.dta"
-    out_path = Path(args.out_dir) / f"{args.series}_hb_processing_report.md"
+    # -- handle Stata passing a single-argument blob
+    argv = sys.argv[1:]
+    if len(argv) == 1 and ("--" in argv[0] or " " in argv[0]):
+        argv = shlex.split(argv[0])
+
+    args = ap.parse_args(argv)
+
+    in_path  = Path(args.in_dir).expanduser().resolve()  / f"{args.series}_handbook_processing_loss.dta"
+    out_path = Path(args.out_dir).expanduser().resolve() / f"{args.series}_hb_processing_report.md"
+
+    if not in_path.exists():
+        raise FileNotFoundError(f"Input not found: {in_path}")
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
 
     df = pd.read_stata(in_path)
     cols = detect_columns(df, args.series)
