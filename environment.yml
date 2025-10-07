@@ -1,4 +1,4 @@
-name: pc51
+name: district-handbooks
 channels:
   - conda-forge
   - defaults

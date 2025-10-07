@@ -1,16 +1,16 @@
-# PC01 Handbook Processing — Minimal Data Loss Report
+# PC01 Handbook Processing — Markdown Report
 
 _Input_: `/dartfs-hpc/scratch/xinyu/pc01_handbook_processing_loss.dta`  
 _Output_: `/dartfs-hpc/rc/home/w/f0083xw/india-census-district-handbooks/pc01_hb_processing_report.md`
 
-## Drop Between Stages
+## Overall Attrition Funnel
 
-| Between Stages | Dropped |
-|---|---:|
-| total → PDF present | 76 |
-| PDF present → EB pages found | 113 |
-| EB pages found → CSV extracted | 5 |
-| CSV extracted → Reliable EB rows | 15 |
+| Stage | Kept | % of Total | Dropped from Prev |
+|---|---:|---:|---:|
+| 1. PDF present | 507 | 86.96% | 76 |
+| 2. EB pages found | 394 | 67.58% | 113 |
+| 3. CSV extracted | 389 | 66.72% | 5 |
+| 4. Reliable EB rows | 374 | 64.15% | 15 |
 
 ## Missing PDFs
 
