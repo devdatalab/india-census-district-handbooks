@@ -1,16 +1,10 @@
-# PC11 Handbook Processing — Data Loss Report
+# PC11 Handbook Processing — Minimal Data Loss Report
+
 _Input_: `/dartfs-hpc/scratch/xinyu/pc11_handbook_processing_loss.dta`  
 _Output_: `/dartfs-hpc/rc/home/w/f0083xw/india-census-district-handbooks/pc11_hb_processing_report.md`
 
-## Overall Attrition Funnel
-| Stage | Kept | % of Total | Dropped from Prev |
-|---|---:|---:|---:|
-| 1. PDF present | 533 | 83.67% | 104 |
-| 2. EB pages found | 532 | 83.52% | 1 |
-| 3. CSV extracted | 522 | 81.95% | 10 |
-| 4. Reliable EB rows | 517 | 81.16% | 5 |
+## Drop Between Stages
 
-### Drop-offs by Stage
 | Between Stages | Dropped |
 |---|---:|
 | total → PDF present | 104 |
@@ -18,8 +12,8 @@ _Output_: `/dartfs-hpc/rc/home/w/f0083xw/india-census-district-handbooks/pc11_hb
 | EB pages found → CSV extracted | 10 |
 | CSV extracted → Reliable EB rows | 5 |
 
-## Failure Drill-down (overall)
-### Missing PDF
+## Missing PDFs
+
 | pc11_state_id | pc11_state_name | pc11_district_id | pc11_district_name | filename |
 |---|---|---|---|---|
 | 01 | jammu kashmir | 001 | kupwara |  |
@@ -127,12 +121,14 @@ _Output_: `/dartfs-hpc/rc/home/w/f0083xw/india-census-district-handbooks/pc11_hb
 | 22 | chhattisgarh | 405 | janjgir champa |  |
 | 35 | andaman nicobar islands | 639 | north middle andaman |  |
 
-### No EB pages (given PDF)
+## No EB pages (given PDFs)
+
 | pc11_state_id | pc11_state_name | pc11_district_id | pc11_district_name | filename |
 |---|---|---|---|---|
 | 17 | meghalaya | 295 | south garo hills | DH_2011_1703_PART_B_DCHB_SOUTH_GARO_HILLS |
 
-### No CSV (given EB pages)
+## No CSV (given EB pages)
+
 | pc11_state_id | pc11_state_name | pc11_district_id | pc11_district_name | filename |
 |---|---|---|---|---|
 | 09 | uttar pradesh | 132 | saharanpur | DH_2011_0901_PART_B_DCHB_SAHARANPUR |
@@ -146,7 +142,8 @@ _Output_: `/dartfs-hpc/rc/home/w/f0083xw/india-census-district-handbooks/pc11_hb
 | 29 | karnataka | 572 | bangalore | DH_2011_2918_PART_B_DCHB_BANGALORE |
 | 32 | kerala | 601 | thiruvananthapuram | DH_2011_3214_PART_B_DCHB_THIRUVANANTHAPURAM |
 
-### No reliable EB rows (given CSV)
+## No reliable EB rows (given CSV)
+
 | pc11_state_id | pc11_state_name | pc11_district_id | pc11_district_name | filename |
 |---|---|---|---|---|
 | 12 | arunachal pradesh | 256 | kurung kumey | DH_2011_1212_PART_B_DCHB_KURUNG_KUMEY |
@@ -154,42 +151,3 @@ _Output_: `/dartfs-hpc/rc/home/w/f0083xw/india-census-district-handbooks/pc11_hb
 | 12 | arunachal pradesh | 260 | anjaw | DH_2011_1216_PART_B_DCHB_ANJAW |
 | 29 | karnataka | 561 | gadag | DH_2011_2907_PART_B_DCHB_GADAG |
 | 33 | tamil nadu | 617 | cuddalore | DH_2011_3316_PART_B_DCHB_CUDDALORE |
-
-## State-level Funnels
-| State ID | State | Total | PDF kept | EB pages kept | CSV kept | Reliable rows kept |
-|---:|---|---:|---:|---:|---:|---:|
-| 01 | jammu kashmir | 22 | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) |
-| 02 | himachal pradesh | 10 | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) |
-| 03 | punjab | 20 | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) |
-| 04 | chandigarh | 1 | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) |
-| 05 | uttarakhand | 13 | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) |
-| 06 | haryana | 21 | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) |
-| 07 | nct of delhi | 9 | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) |
-| 08 | rajasthan | 33 | 32 (96.97%) | 32 (96.97%) | 32 (96.97%) | 32 (96.97%) |
-| 09 | uttar pradesh | 71 | 71 (100.00%) | 71 (100.00%) | 69 (97.18%) | 69 (97.18%) |
-| 10 | bihar | 38 | 37 (97.37%) | 37 (97.37%) | 37 (97.37%) | 37 (97.37%) |
-| 11 | sikkim | 4 | 1 (25.00%) | 1 (25.00%) | 1 (25.00%) | 1 (25.00%) |
-| 12 | arunachal pradesh | 16 | 16 (100.00%) | 16 (100.00%) | 16 (100.00%) | 13 (81.25%) |
-| 13 | nagaland | 11 | 11 (100.00%) | 11 (100.00%) | 11 (100.00%) | 11 (100.00%) |
-| 14 | manipur | 9 | 9 (100.00%) | 9 (100.00%) | 9 (100.00%) | 9 (100.00%) |
-| 15 | mizoram | 8 | 8 (100.00%) | 8 (100.00%) | 8 (100.00%) | 8 (100.00%) |
-| 16 | tripura | 4 | 4 (100.00%) | 4 (100.00%) | 4 (100.00%) | 4 (100.00%) |
-| 17 | meghalaya | 7 | 7 (100.00%) | 6 (85.71%) | 6 (85.71%) | 6 (85.71%) |
-| 18 | assam | 27 | 27 (100.00%) | 27 (100.00%) | 27 (100.00%) | 27 (100.00%) |
-| 19 | west bengal | 19 | 19 (100.00%) | 19 (100.00%) | 19 (100.00%) | 19 (100.00%) |
-| 20 | jharkhand | 24 | 23 (95.83%) | 23 (95.83%) | 23 (95.83%) | 23 (95.83%) |
-| 21 | odisha | 30 | 30 (100.00%) | 30 (100.00%) | 30 (100.00%) | 30 (100.00%) |
-| 22 | chhattisgarh | 18 | 17 (94.44%) | 17 (94.44%) | 16 (88.89%) | 16 (88.89%) |
-| 23 | madhya pradesh | 50 | 50 (100.00%) | 50 (100.00%) | 50 (100.00%) | 50 (100.00%) |
-| 24 | gujarat | 26 | 26 (100.00%) | 26 (100.00%) | 26 (100.00%) | 26 (100.00%) |
-| 25 | daman diu | 2 | 2 (100.00%) | 2 (100.00%) | 2 (100.00%) | 2 (100.00%) |
-| 26 | dadra nagar haveli | 1 | 1 (100.00%) | 1 (100.00%) | 1 (100.00%) | 1 (100.00%) |
-| 27 | maharashtra | 35 | 35 (100.00%) | 35 (100.00%) | 32 (91.43%) | 32 (91.43%) |
-| 28 | andhra pradesh | 23 | 23 (100.00%) | 23 (100.00%) | 21 (91.30%) | 21 (91.30%) |
-| 29 | karnataka | 30 | 30 (100.00%) | 30 (100.00%) | 29 (96.67%) | 28 (93.33%) |
-| 30 | goa | 2 | 2 (100.00%) | 2 (100.00%) | 2 (100.00%) | 2 (100.00%) |
-| 31 | lakshadweep | 1 | 1 (100.00%) | 1 (100.00%) | 1 (100.00%) | 1 (100.00%) |
-| 32 | kerala | 14 | 14 (100.00%) | 14 (100.00%) | 13 (92.86%) | 13 (92.86%) |
-| 33 | tamil nadu | 32 | 32 (100.00%) | 32 (100.00%) | 32 (100.00%) | 31 (96.88%) |
-| 34 | puducherry | 4 | 4 (100.00%) | 4 (100.00%) | 4 (100.00%) | 4 (100.00%) |
-| 35 | andaman nicobar islands | 2 | 1 (50.00%) | 1 (50.00%) | 1 (50.00%) | 1 (50.00%) |

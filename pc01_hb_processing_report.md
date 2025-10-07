@@ -1,16 +1,10 @@
-# PC01 Handbook Processing — Data Loss Report
+# PC01 Handbook Processing — Minimal Data Loss Report
+
 _Input_: `/dartfs-hpc/scratch/xinyu/pc01_handbook_processing_loss.dta`  
 _Output_: `/dartfs-hpc/rc/home/w/f0083xw/india-census-district-handbooks/pc01_hb_processing_report.md`
 
-## Overall Attrition Funnel
-| Stage | Kept | % of Total | Dropped from Prev |
-|---|---:|---:|---:|
-| 1. PDF present | 507 | 86.96% | 76 |
-| 2. EB pages found | 394 | 67.58% | 113 |
-| 3. CSV extracted | 389 | 66.72% | 5 |
-| 4. Reliable EB rows | 374 | 64.15% | 15 |
+## Drop Between Stages
 
-### Drop-offs by Stage
 | Between Stages | Dropped |
 |---|---:|
 | total → PDF present | 76 |
@@ -18,8 +12,8 @@ _Output_: `/dartfs-hpc/rc/home/w/f0083xw/india-census-district-handbooks/pc01_hb
 | EB pages found → CSV extracted | 5 |
 | CSV extracted → Reliable EB rows | 15 |
 
-## Failure Drill-down (overall)
-### Missing PDF
+## Missing PDFs
+
 | pc01_state_id | pc01_state_name | pc01_district_id | pc01_district_name | filename |
 |---|---|---|---|---|
 | 01 | jammu kashmir | 01 | kupwara |  |
@@ -99,7 +93,8 @@ _Output_: `/dartfs-hpc/rc/home/w/f0083xw/india-census-district-handbooks/pc01_hb
 | 34 | pondicherry | 03 | mahe |  |
 | 34 | pondicherry | 04 | karaikal |  |
 
-### No EB pages (given PDF)
+## No EB pages (given PDFs)
+
 | pc01_state_id | pc01_state_name | pc01_district_id | pc01_district_name | filename |
 |---|---|---|---|---|
 | 02 | himachal pradesh | 06 | hamirpur | DH_02_2001_HAM |
@@ -216,7 +211,8 @@ _Output_: `/dartfs-hpc/rc/home/w/f0083xw/india-census-district-handbooks/pc01_hb
 | 33 | tamil nadu | 03 | kancheepuram | DH_33_2001_KAN_EB |
 | 33 | tamil nadu | 22 | pudukkottai | 48295_2001_PUD |
 
-### No CSV (given EB pages)
+## No CSV (given EB pages)
+
 | pc01_state_id | pc01_state_name | pc01_district_id | pc01_district_name | filename |
 |---|---|---|---|---|
 | 09 | uttar pradesh | 22 | shahjahanpur | DH_09_2001_SHA_VOL-01 |
@@ -225,7 +221,8 @@ _Output_: `/dartfs-hpc/rc/home/w/f0083xw/india-census-district-handbooks/pc01_hb
 | 09 | uttar pradesh | 62 | mau | DH_09_2001_MAU_VOL-01 |
 | 09 | uttar pradesh | 65 | ghazipur | DH_09_2001_GHA |
 
-### No reliable EB rows (given CSV)
+## No reliable EB rows (given CSV)
+
 | pc01_state_id | pc01_state_name | pc01_district_id | pc01_district_name | filename |
 |---|---|---|---|---|
 | 09 | uttar pradesh | 04 | moradabad | DH_09_2001_MOR_VOL-01 |
@@ -243,42 +240,3 @@ _Output_: `/dartfs-hpc/rc/home/w/f0083xw/india-census-district-handbooks/pc01_hb
 | 16 | tripura | 04 | north tripura | DH_16_2001_NTRI |
 | 22 | chhattisgarh | 14 | kanker | DH_22_2001_KAN |
 | 23 | madhya pradesh | 41 | dindori | DH_23_2001_DIN |
-
-## State-level Funnels
-| State ID | State | Total | PDF kept | EB pages kept | CSV kept | Reliable rows kept |
-|---:|---|---:|---:|---:|---:|---:|
-| 01 | jammu kashmir | 14 | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) |
-| 02 | himachal pradesh | 10 | 9 (90.00%) | 6 (60.00%) | 6 (60.00%) | 6 (60.00%) |
-| 03 | punjab | 17 | 16 (94.12%) | 13 (76.47%) | 13 (76.47%) | 13 (76.47%) |
-| 04 | chandigarh | 1 | 1 (100.00%) | 1 (100.00%) | 1 (100.00%) | 1 (100.00%) |
-| 05 | uttarakhand | 13 | 7 (53.85%) | 4 (30.77%) | 4 (30.77%) | 4 (30.77%) |
-| 06 | haryana | 19 | 18 (94.74%) | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) |
-| 07 | delhi | 9 | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) |
-| 08 | rajasthan | 32 | 32 (100.00%) | 21 (65.62%) | 21 (65.62%) | 21 (65.62%) |
-| 09 | uttar pradesh | 70 | 58 (82.86%) | 49 (70.00%) | 44 (62.86%) | 40 (57.14%) |
-| 10 | bihar | 37 | 36 (97.30%) | 34 (91.89%) | 34 (91.89%) | 34 (91.89%) |
-| 11 | sikkim | 4 | 1 (25.00%) | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) |
-| 12 | arunachal pradesh | 12 | 12 (100.00%) | 11 (91.67%) | 11 (91.67%) | 5 (41.67%) |
-| 13 | nagaland | 8 | 8 (100.00%) | 8 (100.00%) | 8 (100.00%) | 8 (100.00%) |
-| 14 | manipur | 5 | 5 (100.00%) | 1 (20.00%) | 1 (20.00%) | 1 (20.00%) |
-| 15 | mizoram | 7 | 7 (100.00%) | 7 (100.00%) | 7 (100.00%) | 7 (100.00%) |
-| 16 | tripura | 4 | 4 (100.00%) | 4 (100.00%) | 4 (100.00%) | 1 (25.00%) |
-| 17 | meghalaya | 7 | 7 (100.00%) | 6 (85.71%) | 6 (85.71%) | 6 (85.71%) |
-| 18 | assam | 23 | 22 (95.65%) | 22 (95.65%) | 22 (95.65%) | 22 (95.65%) |
-| 19 | west bengal | 18 | 18 (100.00%) | 17 (94.44%) | 17 (94.44%) | 17 (94.44%) |
-| 20 | jharkhand | 18 | 13 (72.22%) | 6 (33.33%) | 6 (33.33%) | 6 (33.33%) |
-| 21 | orissa | 30 | 27 (90.00%) | 2 (6.67%) | 2 (6.67%) | 2 (6.67%) |
-| 22 | chhattisgarh | 16 | 14 (87.50%) | 10 (62.50%) | 10 (62.50%) | 9 (56.25%) |
-| 23 | madhya pradesh | 45 | 45 (100.00%) | 45 (100.00%) | 45 (100.00%) | 44 (97.78%) |
-| 24 | gujarat | 24 | 23 (95.83%) | 22 (91.67%) | 22 (91.67%) | 22 (91.67%) |
-| 25 | daman diu | 2 | 1 (50.00%) | 1 (50.00%) | 1 (50.00%) | 1 (50.00%) |
-| 26 | dadra nagar haveli | 1 | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) |
-| 27 | maharashtra | 35 | 35 (100.00%) | 26 (74.29%) | 26 (74.29%) | 26 (74.29%) |
-| 28 | andhra pradesh | 23 | 23 (100.00%) | 22 (95.65%) | 22 (95.65%) | 22 (95.65%) |
-| 29 | karnataka | 27 | 26 (96.30%) | 25 (92.59%) | 25 (92.59%) | 25 (92.59%) |
-| 30 | goa | 2 | 2 (100.00%) | 2 (100.00%) | 2 (100.00%) | 2 (100.00%) |
-| 31 | lakshadweep | 1 | 1 (100.00%) | 1 (100.00%) | 1 (100.00%) | 1 (100.00%) |
-| 32 | kerala | 14 | 6 (42.86%) | 0 (0.00%) | 0 (0.00%) | 0 (0.00%) |
-| 33 | tamil nadu | 30 | 28 (93.33%) | 26 (86.67%) | 26 (86.67%) | 26 (86.67%) |
-| 34 | pondicherry | 4 | 1 (25.00%) | 1 (25.00%) | 1 (25.00%) | 1 (25.00%) |
-| 35 | andaman nicobar islands | 1 | 1 (100.00%) | 1 (100.00%) | 1 (100.00%) | 1 (100.00%) |

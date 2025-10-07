@@ -9,7 +9,7 @@ set more off
 
 /* 0. Define series to the year we are building and load config */
 do "~/india-census-district-handbooks/config.do"
-hb_define_paths, series("pc01") // print out relevant paths
+hb_define_paths, series("pc11") // print out relevant paths
 
 
 /* 1. Find relevant eb pages in district handbooks */
