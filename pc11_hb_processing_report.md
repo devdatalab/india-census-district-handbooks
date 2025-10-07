@@ -1,8 +1,5 @@
 # PC11 Handbook Processing — Markdown Report
 
-_Input_: `/dartfs-hpc/scratch/xinyu/pc11_handbook_processing_loss.dta`  
-_Output_: `/dartfs-hpc/rc/home/w/f0083xw/india-census-district-handbooks/pc11_hb_processing_report.md`
-
 ## Overall Attrition Funnel
 
 | Stage | Kept | % of Total | Dropped from Prev |

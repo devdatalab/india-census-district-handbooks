@@ -80,7 +80,6 @@ def main():
 
     lines = []
     lines.append(f"# {series.upper()} Handbook Processing — Markdown Report\n")
-    lines.append(f"_Input_: `{in_path}`  \n_Output_: `{out_path}`\n")
 
     lines.append("## Overall Attrition Funnel\n")
     lines.append("| Stage | Kept | % of Total | Dropped from Prev |")
