@@ -2,215 +2,167 @@
 """
 find_pages.py
 
-Scans every PDF in:
+Scans every PDF in a given directory for pages that likely contain urban EB tables,
+using whitespace-insensitive phrase matching. Results stream to a CSV so you can
+monitor progress with `tail -f`.
 
-    /dartfs/rc/lab/I/IEC/pc01/district_handbooks
+Key features:
+  - Skip-by-default: if a PDF already has rows in the output CSV, it is not re-scanned.
+  - Reprocess option: `--reprocess 1` recreates the CSV and re-scans all PDFs.
 
-for either of the (spacing-agnostic) phrases:
-
-    "APPENDIX TO DISTRICT PRIMARY"
-    "URBAN BLOCK WISE"
-    "TOTAL, SCHEDULED CASTES AND SCHEDULED TRIBES POPULATION - URBAN BLOCK WISE"
-
-Every matching page is streamed to
-
-    ~/iec/pc01/district_handbooks/urban_eb_pages.csv
-
-as:
-
-    filename,page_number
-
-The CSV is flushed and fsync’d continuously so you can watch progress
-with `tail -f`.  The script first tries the lenient parser in `pypdf`;
-if that fails on a malformed file it falls back to the more tolerant
-`PyMuPDF` parser.
+Examples:
+  python find_pages.py --series pc01 --pdf_root /dartfs/rc/lab/I/IEC/pc01/district_handbooks
+  python find_pages.py --series pc01 --pdf_root /dartfs/rc/lab/I/IEC/pc01/district_handbooks --reprocess 1
 
 Dependencies (install/upgrade in your conda env):
-    pip install --upgrade pypdf "pymupdf>=1.24" tqdm
-
-Note: this is GPT-o3 code, untouched other than some output verification.
+  pip install --upgrade pypdf "pymupdf>=1.24" tqdm
 """
 
 # ---------------------------------------------------------------------
-#  Standard-library imports
+# Standard library
 # ---------------------------------------------------------------------
-
-# Provides filesystem-path objects with helpful methods
 from pathlib import Path
-
-# Regular expressions for whitespace-agnostic phrase matching
 import re
-
-# CSV writing utilities
 import csv
-
-# Access to low-level OS calls (fsync)
 import os
-
-# Exit cleanly on user interruption
 import sys
-
+import shlex
 import argparse
 
-from ddlpy.utils import * 
+# ---------------------------------------------------------------------
+# Optional project utils (left as-is from your original)
+# ---------------------------------------------------------------------
+from ddlpy.utils import *  # noqa: F401,F403
 
 # ---------------------------------------------------------------------
-#  Third-party imports (loaded lazily where practical)
+# Third-party (imported lazily where sensible)
 # ---------------------------------------------------------------------
-
-# tqdm is only used for progress bars; import later to avoid startup cost
-from contextlib import suppress   # Used for graceful KeyboardInterrupt handling
+from contextlib import suppress  # noqa: F401  (kept for parity with original)
 
 # ---------------------------------------------------------------------
-#  Configuration constants
+# Arguments
 # ---------------------------------------------------------------------
-import sys, shlex
+p = argparse.ArgumentParser(description="Scan PDFs for urban EB pages and stream results to CSV.")
+p.add_argument("--series", required=True, choices=["pc01", "pc11", "pc91", "pc51"],
+               help="Handbook series identifier (affects only validation/logging here).")
+p.add_argument("--pdf_root", required=True,
+               help="Directory containing the PDFs. Output CSV will be written here as 'urban_eb_pages.csv'.")
+p.add_argument("--reprocess", type=int, choices=[0, 1], default=0,
+               help="0=default: skip files already present in CSV; 1=recreate CSV and re-scan all PDFs.")
 
-p = argparse.ArgumentParser()
-p.add_argument("--series", required=True, choices=["pc01","pc11","pc91","pc51"])
-
-# folder containing csv to scan
-p.add_argument("--pdf_root", required=True)
-
-# --- handle Stata passing a single-argument blob ---
+# Handle Stata passing a single-argument blob (e.g., one long quoted string).
 argv = sys.argv[1:]
 if len(argv) == 1 and ("--" in argv[0] or " " in argv[0]):
     argv = shlex.split(argv[0])
-
 args = p.parse_args(argv)
 
-
+# Paths
 PDF_ROOT = Path(args.pdf_root)
-OUT_CSV = PDF_ROOT / f"urban_eb_pages.csv" 
+OUT_CSV = PDF_ROOT / "urban_eb_pages.csv"
 
-# Target phrases as they appear in the documents
+# ---------------------------------------------------------------------
+# Detection phrases / hints
+#   - PHRASES are matched in a whitespace-insensitive way (normalized).
+#   - EB_COLUMN_HINTS are matched as plain uppercase substrings.
+# ---------------------------------------------------------------------
 PHRASES = [
     "APPENDIX TO DISTRICT PRIMARY",
     "URBAN BLOCK WISE",
     "TOTAL, SCHEDULED CASTES AND SCHEDULED TRIBES POPULATION",
 ]
-
-EB_COLUMN_HINTS = [
-    "LOCATION CODE", "NAME OF TOWN", "NAME OF WARD", 
-]
-
-# ---------------------------------------------------------------------
-#  Helper functions
-# ---------------------------------------------------------------------
-# Check if already have a path name in file and skip it if so
-# Comment out if trying to run again from the beginning 
-def _load_already_processed(out_csv_path):
-    """
-    Load the set of filenames already written to the CSV so we can skip them.
-    """
-    if not Path(out_csv_path).exists():
-        return set()
-
-    with open(out_csv_path, newline="") as f:
-        reader = csv.reader(f)
-        next(reader)  # Skip header
-        return set(row[0] for row in reader) 
+EB_COLUMN_HINTS = ["LOCATION CODE", "NAME OF TOWN", "NAME OF WARD"]
 
 
-# Normalise a string: remove all whitespace and force upper-case
 def _normalise(txt: str) -> str:
-    """
-    Collapse whitespace and capitalise so that
-    line breaks / multiple spaces are ignored.
-    """
+    """Remove all whitespace and uppercase for whitespace-insensitive matching."""
     return re.sub(r"\s+", "", txt.upper())
 
 
-# Pre-normalise the target phrases once so we don’t repeat work per page
 PHRASES_NORM = [_normalise(p) for p in PHRASES]
 
 
-# Convert a list of page numbers into a compact human-readable string
 def _pages_to_ranges(pages):
     """
-    [3,4,5,9,11,12] -> '3-5, 9, 11-12'
+    Convert [3,4,5,9,11,12] -> '3-5, 9, 11-12' for nicer logging.
     """
-    # itertools imported inline to keep global namespace tidy
     import itertools
-
-    # List that will accumulate range strings
     ranges = []
-
-    # Group consecutive pages together
     for _, group in itertools.groupby(enumerate(pages), lambda t: t[0] - t[1]):
         seq = [x for _, x in group]
-        # Use 'start-end' for ranges, single number otherwise
         ranges.append(f"{seq[0]}-{seq[-1]}" if len(seq) > 1 else f"{seq[0]}")
-
-    # Comma-separated string ready for printing
     return ", ".join(ranges)
 
 
 # ---------------------------------------------------------------------
-#  PDF-scanning back-ends
+# CSV helpers (skip-by-default support)
 # ---------------------------------------------------------------------
+def _load_already_processed_filenames(out_csv_path: Path) -> set[str]:
+    """
+    Return a set of filenames that already have at least one row in OUT_CSV.
+    We only need filenames (not pages) to decide whether to skip a file.
+    """
+    if not out_csv_path.exists():
+        return set()
+    done = set()
+    with out_csv_path.open(newline="") as f:
+        r = csv.reader(f)
+        header = next(r, None)
+        for row in r:
+            if not row:
+                continue
+            # row = [filename, page_number]
+            done.add(row[0])
+    return done
 
-# Attempt to scan a PDF with pypdf; return list of hits or None on failure
+
+# ---------------------------------------------------------------------
+# PDF scanners
+# ---------------------------------------------------------------------
 def _scan_with_pypdf(path, pbar):
     """
-    Primary parser: pypdf (strict=False) tolerates many malformed PDFs.
+    Primary parser using pypdf (strict=False) – fast and works for many PDFs.
+    Returns a list of 1-based page numbers containing matches, or None on failure.
     """
-    # Import locally to avoid cost when module is absent
-    from pypdf import PdfReader, errors
-
+    from pypdf import PdfReader
     try:
-        # strict=False disables many validity checks
         reader = PdfReader(path, strict=False)
         hits = []
-
-        # Enumerate pages starting at 1
         for pno, page in enumerate(reader.pages, 1):
             text = page.extract_text() or ""
-            if (any(ph in _normalise(text) for ph in PHRASES_NORM) and
-                any(hint in text.upper() for hint in EB_COLUMN_HINTS)
-            ):
-                hits.append(pno) 
-            pbar.update(1)    # Tick the progress bar
-
+            # Match if any target phrase (normalized) appears AND any EB column hint is visible.
+            if (any(ph in _normalise(text) for ph in PHRASES_NORM)
+                    and any(h in text.upper() for h in EB_COLUMN_HINTS)):
+                hits.append(pno)
+            pbar.update(1)
         return hits
-
-    # If pypdf chokes, return None so caller knows to fall back
-    #except errors.PdfReadError:
     except Exception as e:
-        print(f"pypdf failed on {path.name} with error: {type(e).__name__}: {e}") 
+        print(f"pypdf failed on {path.name} with error: {type(e).__name__}: {e}")
         return None
-    
 
 
-# Fallback parser: PyMuPDF (fitz) – slower but extremely tolerant
 def _scan_with_pymupdf(path, pbar):
     """
-    Secondary parser: handles badly broken PDFs that pypdf rejects.
+    Fallback parser using PyMuPDF (fitz) – slower but very tolerant.
+    Returns a list of 1-based page numbers containing matches.
     """
-    import fitz  # PyMuPDF
-
+    import fitz
     hits = []
-
-    # Open the document; context manager auto-closes
     with fitz.open(path) as doc:
         for pno in range(doc.page_count):
             text = doc.load_page(pno).get_text("text")
-            if (any(ph in _normalise(text) for ph in PHRASES_NORM) and
-                any(hint in text.upper() for hint in EB_COLUMN_HINTS)
-            ):
-                hits.append(pno + 1)   # PyMuPDF is 0-based; convert to 1-based
+            if (any(ph in _normalise(text) for ph in PHRASES_NORM)
+                    and any(h in text.upper() for h in EB_COLUMN_HINTS)):
+                hits.append(pno + 1)
             pbar.update(1)
-
     return hits
 
 
-# Wrapper that chooses the right parser and returns page numbers
-def _scan_pdf(path):
+def _scan_pdf(path: Path) -> list[int]:
     """
-    Try pypdf first; if it returns None, retry with PyMuPDF.
-    Shows a per-file tqdm bar that ticks once per page scanned.
+    Determine number of pages (for progress bar), try pypdf first, then fall back to PyMuPDF.
+    Return a list of 1-based page numbers with hits (possibly empty list).
     """
-    # Need total pages to size the progress bar
+    # Determine page count for progress bar
     try:
         from pypdf import PdfReader
         n_pages = len(PdfReader(path, strict=False).pages)
@@ -218,22 +170,13 @@ def _scan_pdf(path):
         import fitz
         n_pages = fitz.open(path).page_count
 
-    # Lazy import tqdm only when needed
+    # Progress bar scoped to this file
     from tqdm import tqdm
+    with tqdm(total=n_pages,
+              desc=f"processing {path.name}",
+              unit="pg", ncols=80, leave=False) as pbar:
 
-    # Create the progress bar (leave=False keeps console clean)
-    with tqdm(
-        total=n_pages,
-        desc=f"processing {path.name}",
-        unit="pg",
-        ncols=80,
-        leave=False,
-    ) as pbar:
-
-        # First attempt with pypdf
         pages = _scan_with_pypdf(path, pbar)
-
-        # If pypdf failed, reset bar and retry with PyMuPDF
         if pages is None:
             pbar.reset()
             pages = _scan_with_pymupdf(path, pbar)
@@ -242,104 +185,102 @@ def _scan_pdf(path):
 
 
 # ---------------------------------------------------------------------
-#  Main execution routine
+# Main
 # ---------------------------------------------------------------------
-
 def main():
     """
-    Walk PDF_ROOT, scan each PDF, stream results to OUT_CSV,
-    and print a summary line per file.
+    Walk PDF_ROOT, scan each PDF, and stream results to OUT_CSV as (filename, page_number).
+    - If --reprocess 0 (default): append mode; skip files already present in CSV.
+    - If --reprocess 1: recreate CSV and re-scan everything.
     """
     # Ensure output directory exists
     OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
 
-    # Detect whether we need to write the CSV header
-    first_run = not OUT_CSV.exists()
+    # Known-bad PDFs to skip entirely (customize as needed)
+    error_files = {"DH_19_2001_NTFP.pdf"}
 
-    error_files = ["DH_19_2001_NTFP.pdf", ]
-    
-    # Open CSV in append mode, line-buffered (buffering=1)
-    with OUT_CSV.open("a", newline="", buffering=1) as fh:
+    # Choose mode based on reprocess
+    recreate = (args.reprocess == 1)
+    mode = "w" if recreate else "a"
+    first_run = True if recreate else (not OUT_CSV.exists())
+
+    # Open output and write header if needed
+    with OUT_CSV.open(mode, newline="", buffering=1) as fh:
         writer = csv.writer(fh)
-
-        # Write header once if file is new
         if first_run:
             writer.writerow(["filename", "page_number"])
             fh.flush()
             os.fsync(fh.fileno())
 
-        # Iterate over PDFs in deterministic order
-        already_processed = _load_already_processed(OUT_CSV)
+        # Build skip set unless we are recreating from scratch
+        already_processed = set() if recreate else _load_already_processed_filenames(OUT_CSV)
+
+        # Mode banner
+        if recreate:
+            print("[MODE] reprocess=1 → recreating CSV and re-scanning all PDFs.")
+        else:
+            print(f"[MODE] reprocess=0 → skipping {len(already_processed)} PDFs already present in CSV.")
+
+        # Gather PDFs in deterministic order
         all_pdfs = sorted(PDF_ROOT.glob("*.pdf"))
 
-        # --- ADDED: simple counters for a summary ---
+        # Counters
         total = len(all_pdfs)
         scanned_ok = 0
         with_hits = 0
         no_hits = 0
         failed = 0
         rows_written = 0
-        # -------------------------------------------
+        skipped = 0
 
         for pdf in all_pdfs:
-            
+            # Quick guards
             if pdf.name in error_files:
-                print(f"{pdf.name}: Getting error for this file")
+                print(f"{pdf.name}: Skipping (known error)")
                 continue
-             
-            # Include if not making any changes to how pages parsed 
-            # and don't want to research papers have pages for
-            """ 
-            if pdf.name in already_processed:
-                print(f"{pdf.name}: Skipping already-processed file")
+            if not pdf.exists():
+                print(f"{pdf.name}: Skipping missing file")
                 continue
-            """
-            
-            if not pdf.exists(): 
-                print(f"{pdf.name}: Skipping missing file") 
-                continue 
-            if not os.access(pdf, os.R_OK): 
-                print(f"{pdf.name}: Skipping unreadable file") 
-                continue 
+            if not os.access(pdf, os.R_OK):
+                print(f"{pdf.name}: Skipping unreadable file")
+                continue
+            if not recreate and pdf.name in already_processed:
+                skipped += 1
+                print(f"{pdf.name}: already in CSV → skip")
+                continue
 
-            # Allow user to Ctrl-C without ugly traceback
+            # Scan and stream rows
             try:
                 pages = _scan_pdf(pdf)
-                scanned_ok += 1  # ADDED: parsed successfully
-
+                scanned_ok += 1
                 if pages:
                     for p in pages:
                         writer.writerow([pdf.name, p])
-                        fh.flush()        # Make row visible immediately
-                        rows_written += 1 # ADDED: count output rows
-                    os.fsync(fh.fileno()) # Force data to disk after each file
-                    with_hits += 1        # ADDED: pdfs with at least one hit
+                        fh.flush()          # show progress immediately
+                        rows_written += 1
+                    os.fsync(fh.fileno())   # ensure durability per file
+                    with_hits += 1
                     print(f"{pdf.name}: {_pages_to_ranges(pages)}")
                 else:
-                    no_hits += 1          # ADDED: pdfs with zero hits
+                    no_hits += 1
                     print(f"{pdf.name}: no hits")
-
-            # Clean exit on interruption
             except KeyboardInterrupt:
                 sys.exit("\nInterrupted by user")
             except Exception as e:
-                failed += 1               # ADDED: pdfs that raised errors
+                failed += 1
                 print(f"{pdf.name}: ERROR {type(e).__name__}: {e}")
 
-    # --- ADDED: end-of-run summary ---
+    # Summary
     print("\n[SUMMARY]")
-    print(f"  PDFs total:        {total}")
-    print(f"  Parsed OK:         {scanned_ok}/{total}")
-    print(f"  With hits:         {with_hits} (rows written: {rows_written})")
-    print(f"  No hits:           {no_hits}")
-    print(f"  Failed to parse:   {failed}")
-    print(f"  Output CSV:        {OUT_CSV} ({'created' if first_run else 'appended'})")
-    # ---------------------------------
+    print(f"  PDFs total:         {total}")
+    print(f"  Parsed OK:          {scanned_ok}/{total}")
+    print(f"  Skipped (existing): {skipped}")
+    print(f"  With hits:          {with_hits} (rows written this run: {rows_written})")
+    print(f"  No hits:            {no_hits}")
+    print(f"  Failed to parse:    {failed}")
+    print(f"  Output CSV:         {OUT_CSV} ({'created' if (recreate or first_run) else 'appended'})")
 
 
-# ---------------------------------------------------------------------
-#  Entry-point guard (so the file can be imported without side effects)
-# ---------------------------------------------------------------------
-
+# Entry point
 if __name__ == "__main__":
     main()

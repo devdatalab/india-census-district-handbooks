@@ -14,6 +14,7 @@ import json
 import numpy as np
 import pandas as pd
 import time
+from pathlib import Path
 from io import StringIO
 from datetime import datetime
 from ddlpy.utils import IEC, TMP
@@ -53,8 +54,8 @@ def extract_pdf_tables(pdf_path, output_dir):
         prompt_template = f.read()
     print(f"[DEBUG] Loaded prompt template from {prompt_template_path}")
 
-    pdf_filepath = pathlib.Path(pdf_path)
-    
+    pdf_filepath = Path(pdf_path)
+
     # Read PDF and determine number of pages
     with open(pdf_filepath, 'rb') as pdf_file:
         reader = PyPDF2.PdfReader(pdf_file)
