@@ -44,7 +44,7 @@ The pipeline performs the following steps:
 | File | Description |
 |------|--------------|
 | `config.do` | Defines global macros used by downstream scripts for file operations.<br>**Usage:** `do config.do hb_define_paths, series(pc11)` |
-| `find_eb_pages.py` | Scans all District Handbook PDFs to locate pages containing Urban EB tables. Outputs a CSV with two columns (`filename`, `page_number`). Searches for phrases such as “URBAN BLOCK WISE” and “APPENDIX TO DISTRICT PRIMARY,” combined with column header hints such as “LOCATION CODE” or “NAME OF TOWN.” |
+| `find_eb_pages.py` | Scans all District Handbook PDFs to locate pages containing Urban EB tables. Outputs a CSV with two columns (`filename`, `page_number`). Searches for phrases such as “URBAN BLOCK WISE” and “APPENDIX TO DISTRICT PRIMARY,” combined with column header hints such as “LOCATION CODE” or “NAME OF TOWN.”<br>**Usage:** args(`"--series --pdf_root --reprocess)  |
 | `extract_handbook_pages.py` | Reads the identified page numbers and extracts the longest consecutive range of EB pages to create a focused PDF. Outputs are saved in `eb_table_extracts/` within the input directory, with `_EB` appended to filenames. |
 | `llm_csv_hb_extractor.py` | Uses Gemini 2.5 Flash to extract clean, concatenated CSVs from EB-page PDFs. Requires `prompt_template.txt` (for prompt formatting) and `extract_log.csv` (for progress tracking and checkpointing). |
 | `clean_filename_district_key.do` | Generates a standardized mapping between handbook filenames and corresponding PCA districts, saved as a `.dta` key file. |
