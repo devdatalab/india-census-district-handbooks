@@ -947,4 +947,13 @@ dirname,filename,filename_abb,state_id,state_name,district_id,district_name
 ~/iec/pc01/district_handbooks/taha_2025_09_19,Village & Townwise Primary Census Abstract- Panchkula- Part XII- A & B-Series-7- Haryana.pdf,PANCH,6,haryana,1,panchkula
 ~/iec/pc01/district_handbooks/taha_2025_09_19,Kurukshetra_2001.pdf,KUR,6,haryana,4,kurukshetra
 ~iec/pc01/district_handbooks/taha_2025_09_19,kaithal_EB.pdf,KAI_EB,6,haryana,5,kaithal
+~iec/pc01/district_handbooks/taha_2025_09_19,almora_EB.xls,ALMORA_EB,5,uttarakhand,9,almora
+~iec/pc01/district_handbooks/taha_2025_09_19,chamoli_EB.xls,CHA_EB,5,uttarakhand,2,chamoli
+~iec/pc01/district_handbooks/taha_2025_09_19,dehradun_EB.xls,DEH_EB,5,uttarakhand,5,dehradun
+~iec/pc01/district_handbooks/taha_2025_09_19,Pithoragarh_EB.xls,PIT_EB,5,uttarakhand,7,pithoragarh
+~iec/pc01/district_handbooks/taha_2025_09_19,Champawat_EB.xls,CHAM_EB,5,uttarakhand,10,champawat
+~iec/pc01/district_handbooks/taha_2025_09_19,Nainital_EB.xls,NAI_EB,5,uttarakhand,11,nainital
+~iec/pc01/district_handbooks/taha_2025_09_19,gurdaspur_EB.xls,GUR_EB,3,punjab,1,gurdaspur
+~iec/pc01/district_handbooks/taha_2025_09_19,solan_EB.xls,2,himachal pradesh,9,solan
+
 
