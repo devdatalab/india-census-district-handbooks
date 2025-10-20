@@ -4,8 +4,8 @@
 
 | Stage | Kept | % of Total | Dropped from Prev |
 |---|---:|---:|---:|
-| 1. PDF present | 508 | 87.14% | 75 |
-| 2. EB pages found | 394 | 67.58% | 114 |
+| 1. PDF present | 516 | 88.51% | 67 |
+| 2. EB pages found | 394 | 67.58% | 122 |
 | 3. CSV extracted | 394 | 67.58% | 0 |
 | 4. Reliable EB rows | 375 | 64.32% | 19 |
 
@@ -27,14 +27,6 @@
 | 01 | jammu kashmir | 12 | rajauri |  |
 | 01 | jammu kashmir | 13 | jammu |  |
 | 01 | jammu kashmir | 14 | kathua |  |
-| 02 | himachal pradesh | 09 | solan |  |
-| 03 | punjab | 01 | gurdaspur |  |
-| 05 | uttarakhand | 02 | chamoli |  |
-| 05 | uttarakhand | 05 | dehradun |  |
-| 05 | uttarakhand | 07 | pithoragarh |  |
-| 05 | uttarakhand | 09 | almora |  |
-| 05 | uttarakhand | 10 | champawat |  |
-| 05 | uttarakhand | 11 | nainital |  |
 | 07 | delhi | 01 | north west |  |
 | 07 | delhi | 02 | north |  |
 | 07 | delhi | 03 | north east |  |
@@ -95,13 +87,21 @@
 |---|---|---|---|---|
 | 02 | himachal pradesh | 06 | hamirpur | DH_02_2001_HAM |
 | 02 | himachal pradesh | 08 | bilaspur | DH_02_2001_BIL |
+| 02 | himachal pradesh | 09 | solan | solan_EB |
 | 02 | himachal pradesh | 11 | shimla | DH_02_2001_B_SHI |
+| 03 | punjab | 01 | gurdaspur | gurdaspur_EB |
 | 03 | punjab | 07 | rupnagar | DH_03_2001_RUP |
 | 03 | punjab | 11 | firozpur | DH_03_2001_FIR |
 | 03 | punjab | 17 | patiala | DH_03_2001_PAT |
 | 05 | uttarakhand | 01 | uttarkashi | DH_05_2001_UTT |
+| 05 | uttarakhand | 02 | chamoli | chamoli_EB |
 | 05 | uttarakhand | 04 | tehri garhwal | DH_05_2001_TEH_VOL-01 |
+| 05 | uttarakhand | 05 | dehradun | dehradun_EB |
+| 05 | uttarakhand | 07 | pithoragarh | Pithoragarh_EB |
 | 05 | uttarakhand | 08 | bageshwar | DH_05_2001_BAG |
+| 05 | uttarakhand | 09 | almora | almora_EB |
+| 05 | uttarakhand | 10 | champawat | Champawat_EB |
+| 05 | uttarakhand | 11 | nainital | Nainital_EB |
 | 06 | haryana | 01 | panchkula | Village & Townwise Primary Census Abstract- Panchkula- Part XII- A & B-Series-7- Haryana |
 | 06 | haryana | 02 | ambala | Village & Townwise Primary Census Abstract- Ambala- Part XII-A & B-Series-7- Haryana |
 | 06 | haryana | 03 | yamunanagar | Village & Townwise Primary Census Abstract- Yamunanagar- Part XII A & B Series-7- Haryana |
