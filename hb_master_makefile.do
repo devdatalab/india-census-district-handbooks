@@ -8,23 +8,19 @@
       - Then start Stata from that same shell
 */
 
-version 14
-clear
-set more off
-
 /****************************************/
 /* Run make file of hb for a given year */
 /****************************************/
 
 /* 0. Define series to the year we are building and load config */
 do "~/india-census-district-handbooks/config.do"
-hb_define_paths, series("pc11") // print out relevant paths
+hb_define_paths, series("pc01") // print out relevant paths
 
 
 /* 1. Find relevant eb pages in district handbooks */
 /* NOTE: Need to activate correct conda environment and install modules as needed */
 di "Running: find_eb_pages.py"
-python script $hb_code/find_eb_pages.py, args(`"--series $hb_series --pdf_root $hb_pdf"')
+python script $hb_code/find_eb_pages.py, args(`"--series $hb_series --pdf_root $hb_pdf --reprocess 0"')
 
 
 /* 2. Save relevant eb pages */

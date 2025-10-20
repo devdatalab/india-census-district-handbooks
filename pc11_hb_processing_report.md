@@ -6,8 +6,8 @@
 |---|---:|---:|---:|
 | 1. PDF present | 533 | 83.67% | 104 |
 | 2. EB pages found | 532 | 83.52% | 1 |
-| 3. CSV extracted | 522 | 81.95% | 10 |
-| 4. Reliable EB rows | 517 | 81.16% | 5 |
+| 3. CSV extracted | 524 | 82.26% | 8 |
+| 4. Reliable EB rows | 517 | 81.16% | 7 |
 
 ## Missing PDFs
 
@@ -130,11 +130,9 @@
 |---|---|---|---|---|
 | 09 | uttar pradesh | 132 | saharanpur | DH_2011_0901_PART_B_DCHB_SAHARANPUR |
 | 09 | uttar pradesh | 183 | gonda | DH_2011_0952_PART_B_DCHB_GONDA |
-| 22 | chhattisgarh | 403 | raigarh | DH_2011_2204_PART_B_DCHB_RAIGARH |
 | 27 | maharashtra | 515 | aurangabad | DH_2011_2719_PART_B_DCHB_AURANGABAD |
 | 27 | maharashtra | 518 | mumbai suburban | DH_2011_2722_PART_B_DCHB_MUMBAI_SUBURBAN |
 | 27 | maharashtra | 521 | pune | DH_2011_2725_PART_B_DCHB_PUNE |
-| 28 | andhra pradesh | 538 | mahbubnagar | DH_2011_2807_PART_B_DCHB_MAHBUBNAGAR |
 | 28 | andhra pradesh | 554 | chittoor | DH_2011_2823_PART_B_DCHB_CHITTOOR |
 | 29 | karnataka | 572 | bangalore | DH_2011_2918_PART_B_DCHB_BANGALORE |
 | 32 | kerala | 601 | thiruvananthapuram | DH_2011_3214_PART_B_DCHB_THIRUVANANTHAPURAM |
@@ -146,5 +144,7 @@
 | 12 | arunachal pradesh | 256 | kurung kumey | DH_2011_1212_PART_B_DCHB_KURUNG_KUMEY |
 | 12 | arunachal pradesh | 257 | dibang valley | DH_2011_1213_PART_B_DCHB_DIBANG_VALLEY |
 | 12 | arunachal pradesh | 260 | anjaw | DH_2011_1216_PART_B_DCHB_ANJAW |
+| 22 | chhattisgarh | 403 | raigarh | DH_2011_2204_PART_B_DCHB_RAIGARH |
+| 28 | andhra pradesh | 538 | mahbubnagar | DH_2011_2807_PART_B_DCHB_MAHBUBNAGAR |
 | 29 | karnataka | 561 | gadag | DH_2011_2907_PART_B_DCHB_GADAG |
 | 33 | tamil nadu | 617 | cuddalore | DH_2011_3316_PART_B_DCHB_CUDDALORE |

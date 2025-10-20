@@ -39,7 +39,7 @@ BASE_DIR = pdf_dir / f"eb_table_extracts/"
 
 out_hb  = BASE_DIR / "combined_hb" / "_file_manifest.csv"
 
-dist_xwalk_path = code_dir / f"{args.series}_hb_pdf_keys.csv"
+dist_xwalk_path = code_dir / "data" / f"{args.series}_hb_pdf_keys.csv"
 
 ## ---------------- cell: combined handbook data  ---------------- ##
 

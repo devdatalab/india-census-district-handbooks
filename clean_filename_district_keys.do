@@ -2,7 +2,7 @@
 
 
 /* import the raw district key */
-import delimited using $hb_code/${hb_series}_hb_pdf_keys.csv, varnames(1) stringcols(_all) clear
+import delimited using $hb_code/data/${hb_series}_hb_pdf_keys.csv, varnames(1) stringcols(_all) clear
 
 replace district_name = lower(district_name)
 replace filename = substr(filename, 1, length(filename)-4)

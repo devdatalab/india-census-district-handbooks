@@ -16,6 +16,8 @@ Examples:
 
 Dependencies (install/upgrade in your conda env):
   pip install --upgrade pypdf "pymupdf>=1.24" tqdm
+
+Note: this is largely GPT-o4 code, untouched except for verifications.
 """
 
 # ---------------------------------------------------------------------
@@ -29,16 +31,12 @@ import sys
 import shlex
 import argparse
 
-# ---------------------------------------------------------------------
-# Optional project utils (left as-is from your original)
-# ---------------------------------------------------------------------
-from ddlpy.utils import *  # noqa: F401,F403
+from ddlpy.utils import *
 
 # ---------------------------------------------------------------------
 # Third-party (imported lazily where sensible)
 # ---------------------------------------------------------------------
-from contextlib import suppress  # noqa: F401  (kept for parity with original)
-
+from contextlib import suppress
 # ---------------------------------------------------------------------
 # Arguments
 # ---------------------------------------------------------------------

@@ -4,10 +4,10 @@
 
 | Stage | Kept | % of Total | Dropped from Prev |
 |---|---:|---:|---:|
-| 1. PDF present | 507 | 86.96% | 76 |
-| 2. EB pages found | 394 | 67.58% | 113 |
-| 3. CSV extracted | 389 | 66.72% | 5 |
-| 4. Reliable EB rows | 374 | 64.15% | 15 |
+| 1. PDF present | 508 | 87.14% | 75 |
+| 2. EB pages found | 394 | 67.58% | 114 |
+| 3. CSV extracted | 394 | 67.58% | 0 |
+| 4. Reliable EB rows | 375 | 64.32% | 19 |
 
 ## Missing PDFs
 
@@ -35,7 +35,6 @@
 | 05 | uttarakhand | 09 | almora |  |
 | 05 | uttarakhand | 10 | champawat |  |
 | 05 | uttarakhand | 11 | nainital |  |
-| 06 | haryana | 05 | kaithal |  |
 | 07 | delhi | 01 | north west |  |
 | 07 | delhi | 02 | north |  |
 | 07 | delhi | 03 | north east |  |
@@ -107,6 +106,7 @@
 | 06 | haryana | 02 | ambala | Village & Townwise Primary Census Abstract- Ambala- Part XII-A & B-Series-7- Haryana |
 | 06 | haryana | 03 | yamunanagar | Village & Townwise Primary Census Abstract- Yamunanagar- Part XII A & B Series-7- Haryana |
 | 06 | haryana | 04 | kurukshetra | Kurukshetra_2001 |
+| 06 | haryana | 05 | kaithal | kaithal_EB |
 | 06 | haryana | 06 | karnal | Village and Towwise Primary Census Abstract Karnal Part XII- A & B Series-7 Haryana |
 | 06 | haryana | 07 | panipat | Village & Townwise Primary Census Abstract- Panipat-Part XII A & B-Series-7- Haryana |
 | 06 | haryana | 08 | sonipat | Village and Townwise Primary Census Abstract Sonipat Part XII A & B Series-7 Haryana |
@@ -210,21 +210,19 @@
 
 ## No CSV (given EB pages)
 
-| pc01_state_id | pc01_state_name | pc01_district_id | pc01_district_name | filename |
-|---|---|---|---|---|
-| 09 | uttar pradesh | 22 | shahjahanpur | DH_09_2001_SHA_VOL-01 |
-| 09 | uttar pradesh | 25 | hardoi | DH_09_2001_HAR_VOL-01 |
-| 09 | uttar pradesh | 53 | gonda | DH_09_2001_GOD_VOL-01 |
-| 09 | uttar pradesh | 62 | mau | DH_09_2001_MAU_VOL-01 |
-| 09 | uttar pradesh | 65 | ghazipur | DH_09_2001_GHA |
+_None_
 
 ## No reliable EB rows (given CSV)
 
 | pc01_state_id | pc01_state_name | pc01_district_id | pc01_district_name | filename |
 |---|---|---|---|---|
 | 09 | uttar pradesh | 04 | moradabad | DH_09_2001_MOR_VOL-01 |
+| 09 | uttar pradesh | 22 | shahjahanpur | DH_09_2001_SHA_VOL-01 |
+| 09 | uttar pradesh | 25 | hardoi | DH_09_2001_HAR_VOL-01 |
+| 09 | uttar pradesh | 53 | gonda | DH_09_2001_GOD_VOL-01 |
 | 09 | uttar pradesh | 59 | kushinagar | DH_09_2001_KUS |
 | 09 | uttar pradesh | 60 | deoria | DH_09_2001_DEO_VOL-01 |
+| 09 | uttar pradesh | 62 | mau | DH_09_2001_MAU_VOL-01 |
 | 09 | uttar pradesh | 63 | ballia | DH_09_2001_BLA_VOL-01 |
 | 12 | arunachal pradesh | 01 | tawang | DH_12_2001_TAW |
 | 12 | arunachal pradesh | 02 | west kameng | DH_12_2001_WKAM |
