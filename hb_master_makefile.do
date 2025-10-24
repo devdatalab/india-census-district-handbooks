@@ -22,29 +22,32 @@ hb_define_paths, series("pc01") // print out relevant paths
 di "Running: find_eb_pages.py"
 python script $hb_code/find_eb_pages.py, args(`"--series $hb_series --pdf_root $hb_pdf --reprocess 0"')
 
-
 /* 2. Save relevant eb pages */
 di "Running: extract_handbook_pages.py"
-python script $hb_code/extract_handbook_pages.py, args(`"--series $hb_series --pdf_root $hb_pdf"')
+python script $hb_code/extract_handbook_pages.py, args(`"--series $hb_series --pdf_root $hb_pdf --pdf_source_dir taha_2025_09_19"')
 
 
 /* 3. LLM Extraction */
 di "Running: llm_csv_hb_extractor.py"
 python script $hb_code/llm_csv_hb_extractor.py, args(`"--series $hb_series --pdf_root $hb_pdf"')
 
-/* 4. Create a clean version of the filename <> district name correspondence */
+/* 4. clean xls formatted handbooks into eb_table_extracts*/
+di "Running process_xls_hb.py"
+python script $hb_code/process_xls_hb.py, args(`"--series $hb_series --pdf_root $hb_pdf --xls_source_directory taha_2025_09_19 "')
+
+/* 5. Create a clean version of the filename <> district name correspondence */
 di "Running: clean_filename_district_key.do"
 do $hb_code/clean_filename_district_keys.do
 
-/* 5. Combine extracted csv */
+/* 6. Combine extracted csv */
 di "Running: combine_eb_tables.py"
 python script $hb_code/combine_eb_tables.py, args(`"--series $hb_series --hb_code $hb_code --pdf_root $hb_pdf"')
 
-/* 6. Report initial coverage for hb of urban pca throughout pipeline */
+/* 7. Report initial coverage for hb of urban pca throughout pipeline */
 di "Running: catalog_hb_data_loss.do" 
 do $hb_code/catalog_hb_data_loss.do
 
-/* 7. Convert coverage report into markdown table */
+/* 8. Convert coverage report into markdown table */
 di "Running: make_attrition_report.py"
 local in_dir "/dartfs-hpc/scratch/xinyu"
 

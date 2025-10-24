@@ -56,7 +56,7 @@ args = p.parse_args(argv)
 
 # Paths
 PDF_ROOT = Path(args.pdf_root)
-OUT_CSV = PDF_ROOT / "urban_eb_pages.csv"
+OUT_CSV = Path(args.pdf_root) / "urban_eb_pages.csv"
 
 # ---------------------------------------------------------------------
 # Detection phrases / hints

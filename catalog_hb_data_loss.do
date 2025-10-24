@@ -32,7 +32,7 @@ else if "`series'"=="pc91" local pcaroot "$pc91"
 /* get a list of pdfs, nonrecursive so we don't look in subdirectories */
 filelist, dir("`pdfdir'") pattern("*.pdf") norecursive
 /* keep only files whose names start with "DH_" for now */
-keep if regexm(filename, "^DH_")
+// keep if regexm(filename, "^DH_")
 
 keep filename
 sort filename
@@ -128,7 +128,7 @@ di as txt "`series' Handbooks cover " as res %6.2f `covpct' "% of pca urban dist
 /* Stage 2 attrition: out of handbook pdfs, which ones have eb pages identified */
 /********************************************************************************/
 /* import ebpages which is the csv with page ranges identified by find_eb_pages */
-import delimited "`ebpages'", varnames(nonames) clear
+import delimited "`ebpages'", varnames(nonames) bindquote(strict) clear
 
 rename v1 filename
 rename v2 page_number
