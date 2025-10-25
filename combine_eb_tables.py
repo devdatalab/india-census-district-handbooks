@@ -46,10 +46,12 @@ dist_xwalk_path = code_dir / "data" / f"{args.series}_hb_pdf_keys.csv"
 # Define the constants once
 COLUMNS = ['location_code', 'town_hb', 'ward_name', 'eb_no',
            'total_pop', 'sc_pop', 'st_pop']
+
 DTYPES = {
     0: 'string', 1: 'string', 2: 'string', 3: 'string',
     4: 'Int64', 5: 'Int64', 6: 'Int64'
 }
+
 EXPECTED_COL_COUNT = len(COLUMNS) # which is 7
 
 # 1. Use a list comprehension to read and process all valid CSV files
@@ -98,24 +100,4 @@ hb_pdfs_indir = sorted([
 hb_pdfs_parsed = hb_full["source_file"].astype(str).tolist()
 missing_inparsed = sorted(set(hb_pdfs_indir) - set(hb_pdfs_parsed))
 
-## ---------------------------- cell: merge with state and district name  ---------------------------- ##
-
-# Load crosswalk
-dist_xwalk = pd.read_csv(dist_xwalk_path)
-
-# remove .pdf suffix and create var that's filename (e.g., TEH_VOL-02_EB)
-dist_xwalk = dist_xwalk.assign(source_file=dist_xwalk["filename"].str.removesuffix(".pdf")).drop(columns="filename")
-
-# if filename doesn't end in _EB then add suffix
-dist_xwalk.loc[~dist_xwalk["source_file"].str.lower().str.endswith("_eb", na=False), "source_file"] = dist_xwalk["source_file"] + "_EB"
-
-dist_xwalk = dist_xwalk.drop_duplicates(subset = "source_file", keep = "first")
-
-# Merge: hb_full = master, xwalk = using
-hb_merged = hb_full.merge(dist_xwalk, on="source_file", how="left", indicator = True)
-
-hb_merged = hb_merged.assign(
-    town_abbr=hb_merged["town_hb"].str[:4].str.lower(),
-)
-
-hb_merged.to_csv(out_hb, index=False)
+hb_full.to_csv(out_hb, index=False)

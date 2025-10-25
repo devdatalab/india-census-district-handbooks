@@ -7,17 +7,19 @@ using whitespace-insensitive phrase matching. Results stream to a CSV so you can
 monitor progress with `tail -f`.
 
 Key features:
+  - Optional subfolder scanning: --pdf_source_directory <name> makes the scanner
+    look in --pdf_root/<name>, while still writing the output CSV to --pdf_root.
   - Skip-by-default: if a PDF already has rows in the output CSV, it is not re-scanned.
   - Reprocess option: `--reprocess 1` recreates the CSV and re-scans all PDFs.
+  - Page range summary: After scanning, generates a summary CSV with start/end page ranges.
 
 Examples:
-  python find_pages.py --series pc01 --pdf_root /dartfs/rc/lab/I/IEC/pc01/district_handbooks
-  python find_pages.py --series pc01 --pdf_root /dartfs/rc/lab/I/IEC/pc01/district_handbooks --reprocess 1
+  python find_pages.py --series pc01 --pdf_root /path/to/district_handbooks
+  python find_pages.py --series pc01 --pdf_root /path/to/district_handbooks --pdf_source_directory taha_2025_09_19
+  python find_pages.py --series pc01 --pdf_root /path/to/district_handbooks --reprocess 1
 
 Dependencies (install/upgrade in your conda env):
-  pip install --upgrade pypdf "pymupdf>=1.24" tqdm
-
-Note: this is largely GPT-o4 code, untouched except for verifications.
+  pip install --upgrade pypdf "pymupdf>=1.24" tqdm pandas
 """
 
 # ---------------------------------------------------------------------
@@ -37,6 +39,7 @@ from ddlpy.utils import *
 # Third-party (imported lazily where sensible)
 # ---------------------------------------------------------------------
 from contextlib import suppress
+
 # ---------------------------------------------------------------------
 # Arguments
 # ---------------------------------------------------------------------
@@ -44,7 +47,9 @@ p = argparse.ArgumentParser(description="Scan PDFs for urban EB pages and stream
 p.add_argument("--series", required=True, choices=["pc01", "pc11", "pc91", "pc51"],
                help="Handbook series identifier (affects only validation/logging here).")
 p.add_argument("--pdf_root", required=True,
-               help="Directory containing the PDFs. Output CSV will be written here as 'urban_eb_pages.csv'.")
+               help="Root directory containing the PDFs. Output CSV will be written here as 'urban_eb_pages.csv'.")
+p.add_argument("--pdf_source_directory", default="",
+               help="Optional subfolder under --pdf_root to scan PDFs from. If empty, scans --pdf_root.")
 p.add_argument("--reprocess", type=int, choices=[0, 1], default=0,
                help="0=default: skip files already present in CSV; 1=recreate CSV and re-scan all PDFs.")
 
@@ -55,8 +60,9 @@ if len(argv) == 1 and ("--" in argv[0] or " " in argv[0]):
 args = p.parse_args(argv)
 
 # Paths
-PDF_ROOT = Path(args.pdf_root)
-OUT_CSV = Path(args.pdf_root) / "urban_eb_pages.csv"
+ROOT_DIR = Path(args.pdf_root)
+SCAN_DIR = ROOT_DIR / args.pdf_source_directory if args.pdf_source_directory.strip() else ROOT_DIR
+OUT_CSV = ROOT_DIR / "urban_eb_pages.csv"   # keep in root, unchanged
 
 # ---------------------------------------------------------------------
 # Detection phrases / hints
@@ -182,14 +188,95 @@ def _scan_pdf(path: Path) -> list[int]:
     return pages
 
 
+def find_longest_consecutive_sequence(pages):
+    """Find the longest consecutive sequence of page numbers."""
+    pages = sorted(set(int(p) for p in pages))
+    if not pages:
+        return []
+    longest, current = [], [pages[0]]
+    for i in range(1, len(pages)):
+        if pages[i] == pages[i-1] + 1:
+            current.append(pages[i])
+        else:
+            if len(current) > len(longest):
+                longest = current
+            current = [pages[i]]
+    if len(current) > len(longest):
+        longest = current
+    return longest
+
+
+def generate_page_range_summary():
+    """
+    Read urban_eb_pages.csv and generate a summary CSV with page ranges.
+    Creates {series}_page_ranges_for_review.csv in ROOT_DIR.
+    """
+    import pandas as pd
+    
+    if not OUT_CSV.exists():
+        print(f"\n[WARNING] Cannot generate summary: {OUT_CSV} does not exist")
+        return
+    
+    print(f"\n[GENERATING PAGE RANGE SUMMARY]")
+    
+    # Load the pages CSV
+    try:
+        df = pd.read_csv(OUT_CSV)
+        df.columns = [c.strip().lower() for c in df.columns]
+    except Exception as e:
+        print(f"Error reading {OUT_CSV}: {e}")
+        return
+    
+    # Analyze page ranges per file
+    results = []
+    
+    for filename, group in df.groupby("filename", sort=False):
+        pages = (
+            pd.to_numeric(group["page_number"], errors="coerce")
+              .dropna()
+              .astype(int)
+              .tolist()
+        )
+        
+        if not pages:
+            continue
+        
+        best_seq = find_longest_consecutive_sequence(pages)
+        
+        if not best_seq:
+            continue
+        
+        start_page = best_seq[0]
+        end_page = best_seq[-1]
+        
+        results.append({
+            'filename': filename,
+            'start_page': start_page,
+            'end_page': end_page
+        })
+    
+    # Save results
+    if results:
+        results_df = pd.DataFrame(results)
+        summary_csv = ROOT_DIR / f"{args.series}_page_ranges_for_review.csv"
+        results_df.to_csv(summary_csv, index=False)
+        
+        print(f"  Page ranges saved to: {summary_csv}")
+        print(f"  Total files with ranges: {len(results)}")
+        print(f"  Review and edit this file, then run the extraction script.")
+    else:
+        print(f"  No valid page ranges found to create summary.")
+
+
 # ---------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------
 def main():
     """
-    Walk PDF_ROOT, scan each PDF, and stream results to OUT_CSV as (filename, page_number).
+    Walk SCAN_DIR, scan each PDF, and stream results to OUT_CSV as (filename, page_number).
     - If --reprocess 0 (default): append mode; skip files already present in CSV.
     - If --reprocess 1: recreate CSV and re-scan everything.
+    After scanning, generate a page range summary CSV.
     """
     # Ensure output directory exists
     OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
@@ -214,13 +301,14 @@ def main():
         already_processed = set() if recreate else _load_already_processed_filenames(OUT_CSV)
 
         # Mode banner
+        src_display = str(SCAN_DIR.relative_to(ROOT_DIR)) if SCAN_DIR != ROOT_DIR else "."
         if recreate:
-            print("[MODE] reprocess=1 → recreating CSV and re-scanning all PDFs.")
+            print(f"[MODE] reprocess=1 → recreating CSV and re-scanning PDFs in {src_display}")
         else:
-            print(f"[MODE] reprocess=0 → skipping {len(already_processed)} PDFs already present in CSV.")
+            print(f"[MODE] reprocess=0 → skipping {len(already_processed)} PDFs already present in CSV; scanning {src_display}")
 
         # Gather PDFs in deterministic order
-        all_pdfs = sorted(PDF_ROOT.glob("*.pdf"))
+        all_pdfs = sorted(SCAN_DIR.glob("*.pdf"))
 
         # Counters
         total = len(all_pdfs)
@@ -270,15 +358,19 @@ def main():
 
     # Summary
     print("\n[SUMMARY]")
-    print(f"  PDFs total:         {total}")
+    print(f"  PDFs total (in {src_display}): {total}")
     print(f"  Parsed OK:          {scanned_ok}/{total}")
     print(f"  Skipped (existing): {skipped}")
     print(f"  With hits:          {with_hits} (rows written this run: {rows_written})")
     print(f"  No hits:            {no_hits}")
     print(f"  Failed to parse:    {failed}")
     print(f"  Output CSV:         {OUT_CSV} ({'created' if (recreate or first_run) else 'appended'})")
+    
+    # Generate page range summary
+    generate_page_range_summary()
 
 
 # Entry point
 if __name__ == "__main__":
     main()
+    

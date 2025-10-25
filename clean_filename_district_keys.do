@@ -9,5 +9,12 @@ replace filename = substr(filename, 1, length(filename)-4)
 
 recast str244 filename
 
+/* drop _EB suffix */
+replace filename = regexr(filename, "_EB\.(pdf|xls)$", "")
+
 duplicates drop filename, force
+
+rename (state_*) (`series'_state_*)
+rename (district_*) (`series'_district_*)
+
 save $tmp/${hb_series}_hb_pdf_key.dta, replace
