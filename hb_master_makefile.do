@@ -65,8 +65,8 @@ di "Running: hb_merge_pca_coverage.do"
 do $hb_code/hb_merge_pca_coverage.do
 
 /* 7. Report initial coverage for hb of urban pca throughout pipeline */
-di "Running: catalog_hb_data_loss.do" 
-do $hb_code/catalog_hb_data_loss.do
+/* di "Running: catalog_hb_data_loss.do"  */
+/* do $hb_code/catalog_hb_data_loss.do */
 
 /* 8. Convert coverage report into markdown table */
 di "Running: make_attrition_report.py"
