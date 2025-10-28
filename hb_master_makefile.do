@@ -41,7 +41,7 @@ export delimited "$hb_pdf/${hb_series}_page_ranges_for_review.csv", replace
 
 /* 2. Save relevant eb pages */
 di "Running: extract_handbook_pages.py"
-python script $hb_code/extract_handbook_pages.py, args(`"--series $hb_series --pdf_root $hb_pdf --pdf_source_dir taha_2025_09_19"')
+python script $hb_code/extract_handbook_pages.py, args(`"--series $hb_series --pdf_root $hb_pdf"')
 // optional arg: --pdf_source_dir taha_2025_09_19
 
 /* 3. LLM Extraction */
