@@ -14,10 +14,11 @@ set more off
 
 /* Pull series/paths from config.do */
 local series "$hb_series"
-if "`series'"=="" local series "pc01"   // default if not set
-local pdfdir "$hb_pdf"                  // directory containing district handbook PDFs
-local extracts "$hb_extracts"           // .../eb_table_extracts directory containing extracted CSVs
-local ebpages "$hb_eb_pages_csv"        // urban_eb_pages.csv path
+if "`series'"=="" local series "pc01" // default if not set
+local pdfdir "$hb_pdf" // directory containing district handbook PDFs
+
+local extracts "$hb_extracts" // .../eb_table_extracts directory containing extracted CSVs
+local ebpages "$hb_eb_pages_csv" // urban_eb_pages.csv path
 
 /* Map series to PCA root macros if you already have $pc01/$pc11/$pc91 set elsewhere */
 local pcaroot ""
@@ -34,10 +35,21 @@ filelist, dir("`pdfdir'") pattern("*.pdf") norecursive
 /* keep only files whose names start with "DH_" for now */
 // keep if regexm(filename, "^DH_")
 
+save $tmp/`series'_og_pdf_names.dta, replace
+
+filelist, dir("`pdfdir'/taha_2025_09_19") pattern("*.pdf")
+save $tmp/`series'_added_pdf_names.dta, replace
+
+filelist, dir("`pdfdir'/taha_2025_09_19") pattern("*.xls")
+
+append using $tmp/`series'_og_pdf_names.dta
+append using $tmp/`series'_added_pdf_names.dta
+
 keep filename
 sort filename
 duplicates drop filename, force
-/* save to tmp a list of pdfs */
+
+
 save $tmp/`series'_pdf_names.dta, replace
 
 /* ---------------------------- cell ---------------------------- */
@@ -57,15 +69,15 @@ rename (district_*) (`series'_district_*)
 preserve
 keep if hb_key_merge == 1
 sort filename
+list
 export delimited using $tmp/`series'_keys_to_update.csv, replace // if not empty, this means your keys need updating
+// nope that Orissa, Kendujhar has one duplicates, so safe to drop
 restore
-
-duplicates drop `series'_*, force
-duplicates list `series'_state_id `series'_district_id
 
 /* Clean whitespace in state and district id */
 replace `series'_state_id = trim(`series'_state_id)
 replace `series'_district_id = trim(`series'_district_id)
+
 
 /* Standardize state IDs to two digits */
 gen long _st = real(`series'_state_id)
@@ -74,6 +86,9 @@ drop _st
 gen long _dist = real(`series'_district_id)
 replace `series'_district_id = string(_dist, "%02.0f") if _dist < .
 drop _dist
+
+duplicates drop `series'_*, force
+duplicates list `series'_state_id `series'_district_id
 
 /* save in tmp a list of unique handbook districts */
 save $tmp/`series'_hb_districts.dta, replace
@@ -128,7 +143,7 @@ di as txt "`series' Handbooks cover " as res %6.2f `covpct' "% of pca urban dist
 /* Stage 2 attrition: out of handbook pdfs, which ones have eb pages identified */
 /********************************************************************************/
 /* import ebpages which is the csv with page ranges identified by find_eb_pages */
-import delimited "`ebpages'", varnames(nonames) bindquote(strict) clear
+import delimited "`ebpages'", varnames(nonames) bindquote(strict) xclear
 
 rename v1 filename
 rename v2 page_number
