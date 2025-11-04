@@ -5,9 +5,9 @@
 | Stage | Kept | % of Total | Dropped from Prev |
 |---|---:|---:|---:|
 | 1. PDF present | 516 | 88.51% | 67 |
-| 2. EB pages found | 394 | 67.58% | 122 |
-| 3. CSV extracted | 394 | 67.58% | 0 |
-| 4. Reliable EB rows | 375 | 64.32% | 19 |
+| 2. EB pages found | 403 | 69.13% | 113 |
+| 3. CSV extracted | 385 | 66.04% | 18 |
+| 4. Reliable EB rows | 374 | 64.15% | 11 |
 
 ## Missing PDFs
 
@@ -102,25 +102,8 @@
 | 05 | uttarakhand | 09 | almora | almora_EB |
 | 05 | uttarakhand | 10 | champawat | Champawat_EB |
 | 05 | uttarakhand | 11 | nainital | Nainital_EB |
-| 06 | haryana | 01 | panchkula | Village & Townwise Primary Census Abstract- Panchkula- Part XII- A & B-Series-7- Haryana |
-| 06 | haryana | 02 | ambala | Village & Townwise Primary Census Abstract- Ambala- Part XII-A & B-Series-7- Haryana |
-| 06 | haryana | 03 | yamunanagar | Village & Townwise Primary Census Abstract- Yamunanagar- Part XII A & B Series-7- Haryana |
-| 06 | haryana | 04 | kurukshetra | Kurukshetra_2001 |
 | 06 | haryana | 05 | kaithal | kaithal_EB |
-| 06 | haryana | 06 | karnal | Village and Towwise Primary Census Abstract Karnal Part XII- A & B Series-7 Haryana |
-| 06 | haryana | 07 | panipat | Village & Townwise Primary Census Abstract- Panipat-Part XII A & B-Series-7- Haryana |
-| 06 | haryana | 08 | sonipat | Village and Townwise Primary Census Abstract Sonipat Part XII A & B Series-7 Haryana |
-| 06 | haryana | 09 | jind | Village and Towwise Primary Census Abstract Jind Part XII-A & B Series-7 Haryana |
-| 06 | haryana | 10 | fatehabad | Village & Townwise Primary Census Abstract- Fatehabad-Part XII- A & B- Series-7-Haryana (1) |
-| 06 | haryana | 11 | sirsa | Village & Townwise Primary Census Abstract- Sirsa-Part XII A & B- Series-7-Haryana |
-| 06 | haryana | 12 | hisar | Village and Towwise Primary Census Abstract Hisar Part XII-A & B Series-7 Haryana |
-| 06 | haryana | 13 | bhiwani | Village and Townwise Primary Census Abstract Bhiwani Part XII-A & B Series-7 Haryana |
-| 06 | haryana | 14 | rohtak | village and Townwise Primary Census Abstract Rohtak Part XII A & B Series-7 Haryana |
-| 06 | haryana | 15 | jhajjar | Village & Townwise Primary Census Abstract Jhajjar-Part XII-A & B-Series-7-Haryana |
 | 06 | haryana | 16 | mahendragarh | Village and Towwise Primary Census Abstract Mahendragarh Part XII-A & B Series-7 Haryana |
-| 06 | haryana | 17 | rewari | Village & Townwise Primary Census Abstract- Rewari- Part XII A & B- Series-7- Haryana |
-| 06 | haryana | 18 | gurgaon | Village & Townwise Primary Census Abstract- Gurgaon- Part XII- A & B- Series-7- Haryana |
-| 06 | haryana | 19 | faridabad | Village & Townwise Primary Census Abstract- Faridabad -Part XII- A & B-Series-7- Haryana |
 | 08 | rajasthan | 06 | alwar | DH_08_2001_ALW |
 | 08 | rajasthan | 08 | dhaulpur | DH_08_2001_DHA |
 | 08 | rajasthan | 11 | dausa | DH_08_2001_DAU |
@@ -132,15 +115,24 @@
 | 08 | rajasthan | 25 | rajsamand | DH_08_2001_RAJ |
 | 08 | rajasthan | 29 | chittaurgarh | DH_08_2001_CHI |
 | 08 | rajasthan | 32 | jhalawar | DH_08_2001_JHA |
+| 09 | uttar pradesh | 04 | moradabad | DH_09_2001_MOR_VOL-01 |
 | 09 | uttar pradesh | 06 | jyotiba phule nagar | DH_09_2001_JYO |
 | 09 | uttar pradesh | 09 | ghaziabad | DH_09_2001_GHAB |
 | 09 | uttar pradesh | 10 | gautam buddha nagar | DH_09_2001_GAU |
 | 09 | uttar pradesh | 17 | etah | DH_09_2001_ETA_VOL-01 |
 | 09 | uttar pradesh | 19 | budaun | DH_09_2001_BUD_VOL-01 |
+| 09 | uttar pradesh | 22 | shahjahanpur | DH_09_2001_SHA_VOL-01 |
+| 09 | uttar pradesh | 25 | hardoi | DH_09_2001_HAR_VOL-01 |
 | 09 | uttar pradesh | 32 | auraiya | DH_09_2001_AUR |
 | 09 | uttar pradesh | 36 | jhansi | DH_09_2001_JHA |
 | 09 | uttar pradesh | 49 | sultanpur | DH_09_2001_SUL_VOL-02 |
 | 09 | uttar pradesh | 52 | balrampur | DH_09_2001_BAL |
+| 09 | uttar pradesh | 53 | gonda | DH_09_2001_GOD_VOL-01 |
+| 09 | uttar pradesh | 59 | kushinagar | DH_09_2001_KUS |
+| 09 | uttar pradesh | 60 | deoria | DH_09_2001_DEO_VOL-01 |
+| 09 | uttar pradesh | 62 | mau | DH_09_2001_MAU_VOL-01 |
+| 09 | uttar pradesh | 63 | ballia | DH_09_2001_BLA_VOL-01 |
+| 09 | uttar pradesh | 65 | ghazipur | DH_09_2001_GHA |
 | 10 | bihar | 16 | siwan | DH_10_2001_SIW |
 | 10 | bihar | 17 | saran | DH_10_2001_SAR |
 | 11 | sikkim | 01 | north | DH_11_2001_SIK |
@@ -203,27 +195,37 @@
 | 32 | kerala | 02 | kannur | Kannur_2001 |
 | 32 | kerala | 03 | wayanad | Wayanad_2001 |
 | 32 | kerala | 04 | kozhikode | Kozhikode_2001 |
-| 32 | kerala | 05 | malappuram | Malappuram_2001 |
 | 32 | kerala | 09 | idukki | Idukki_2001 |
 | 33 | tamil nadu | 03 | kancheepuram | DH_33_2001_KAN_EB |
 | 33 | tamil nadu | 22 | pudukkottai | 48295_2001_PUD |
 
 ## No CSV (given EB pages)
 
-_None_
+| pc01_state_id | pc01_state_name | pc01_district_id | pc01_district_name | filename |
+|---|---|---|---|---|
+| 06 | haryana | 01 | panchkula | Village & Townwise Primary Census Abstract- Panchkula- Part XII- A & B-Series-7- Haryana |
+| 06 | haryana | 02 | ambala | Village & Townwise Primary Census Abstract- Ambala- Part XII-A & B-Series-7- Haryana |
+| 06 | haryana | 03 | yamunanagar | Village & Townwise Primary Census Abstract- Yamunanagar- Part XII A & B Series-7- Haryana |
+| 06 | haryana | 04 | kurukshetra | Kurukshetra_2001 |
+| 06 | haryana | 06 | karnal | Village and Towwise Primary Census Abstract Karnal Part XII- A & B Series-7 Haryana |
+| 06 | haryana | 07 | panipat | Village & Townwise Primary Census Abstract- Panipat-Part XII A & B-Series-7- Haryana |
+| 06 | haryana | 08 | sonipat | Village and Townwise Primary Census Abstract Sonipat Part XII A & B Series-7 Haryana |
+| 06 | haryana | 09 | jind | Village and Towwise Primary Census Abstract Jind Part XII-A & B Series-7 Haryana |
+| 06 | haryana | 10 | fatehabad | Village & Townwise Primary Census Abstract- Fatehabad-Part XII- A & B- Series-7-Haryana (1) |
+| 06 | haryana | 11 | sirsa | Village & Townwise Primary Census Abstract- Sirsa-Part XII A & B- Series-7-Haryana |
+| 06 | haryana | 12 | hisar | Village and Towwise Primary Census Abstract Hisar Part XII-A & B Series-7 Haryana |
+| 06 | haryana | 13 | bhiwani | Village and Townwise Primary Census Abstract Bhiwani Part XII-A & B Series-7 Haryana |
+| 06 | haryana | 14 | rohtak | village and Townwise Primary Census Abstract Rohtak Part XII A & B Series-7 Haryana |
+| 06 | haryana | 15 | jhajjar | Village & Townwise Primary Census Abstract Jhajjar-Part XII-A & B-Series-7-Haryana |
+| 06 | haryana | 17 | rewari | Village & Townwise Primary Census Abstract- Rewari- Part XII A & B- Series-7- Haryana |
+| 06 | haryana | 18 | gurgaon | Village & Townwise Primary Census Abstract- Gurgaon- Part XII- A & B- Series-7- Haryana |
+| 06 | haryana | 19 | faridabad | Village & Townwise Primary Census Abstract- Faridabad -Part XII- A & B-Series-7- Haryana |
+| 32 | kerala | 05 | malappuram | Malappuram_2001 |
 
 ## No reliable EB rows (given CSV)
 
 | pc01_state_id | pc01_state_name | pc01_district_id | pc01_district_name | filename |
 |---|---|---|---|---|
-| 09 | uttar pradesh | 04 | moradabad | DH_09_2001_MOR_VOL-01 |
-| 09 | uttar pradesh | 22 | shahjahanpur | DH_09_2001_SHA_VOL-01 |
-| 09 | uttar pradesh | 25 | hardoi | DH_09_2001_HAR_VOL-01 |
-| 09 | uttar pradesh | 53 | gonda | DH_09_2001_GOD_VOL-01 |
-| 09 | uttar pradesh | 59 | kushinagar | DH_09_2001_KUS |
-| 09 | uttar pradesh | 60 | deoria | DH_09_2001_DEO_VOL-01 |
-| 09 | uttar pradesh | 62 | mau | DH_09_2001_MAU_VOL-01 |
-| 09 | uttar pradesh | 63 | ballia | DH_09_2001_BLA_VOL-01 |
 | 12 | arunachal pradesh | 01 | tawang | DH_12_2001_TAW |
 | 12 | arunachal pradesh | 02 | west kameng | DH_12_2001_WKAM |
 | 12 | arunachal pradesh | 03 | east kameng | DH_12_2001_EKAM |
