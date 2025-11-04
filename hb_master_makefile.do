@@ -14,7 +14,7 @@
 
 /* 0. Define series to the year we are building and load config */
 do "~/india-census-district-handbooks/config.do"
-hb_define_paths, series("pc01") // print out relevant paths
+hb_define_paths, series("pc11") // print out relevant paths
 
 /* [Optional] Move the handbook pdfs we know that are (1) broken (2) have no table into archive subfolder */
 di "Running: archive_broken_hb.py"
@@ -23,7 +23,7 @@ python script $hb_code/archive_broken_hb.py, args(`"--series $hb_series --pdf_ro
 /* 1. Find relevant eb pages in district handbooks */
 /* NOTE: Need to activate correct conda environment and install modules as needed */
 di "Running: find_eb_pages.py"
-python script $hb_code/find_eb_pages.py, args(`"--series $hb_series --pdf_root $hb_pdf --reprocess 0"')
+python script $hb_code/find_eb_pages.py, args(`"--series $hb_series --pdf_root $hb_pdf --reprocess 0 --pdf_source_dir taha_2025_09_19"')
 //optional arg: --pdf_source_dir
 
 /* [Optional] Manually adjust summary csv for ranges not correctly identified */
@@ -69,10 +69,15 @@ do $hb_code/hb_merge_pca_coverage.do
 /* do $hb_code/catalog_hb_data_loss.do */
 
 /* 8. Convert coverage report into markdown table */
-di "Running: make_attrition_report.py"
-local in_dir "/dartfs-hpc/scratch/xinyu"
+local pca_dir "$tmp/${hb_series}u_pca_clean.dta"
+local hb_dir  "$tmp/${hb_series}_hb_uniq_state_dist_w_key.dta"
+local out_dir "$hb_code/${hb_series}_coverage_report.md"
 
-python script $hb_code/make_attrition_report.py, args(`"--series $hb_series --in_dir `in_dir' --out_dir $hb_code"')
+local pyargs `"--series $hb_series --pca `pca_dir' --hb `hb_dir' --out `out_dir'"'
+
+python script "$hb_code/generate_report.py", args(`pyargs')
+
+
 
 exit
 

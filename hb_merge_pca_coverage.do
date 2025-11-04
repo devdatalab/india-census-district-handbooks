@@ -14,7 +14,7 @@ import delimited using "`csvdir'/combined_hb/_file_manifest.csv", clear
 rename source_file filename
 recast str filename, force
 
-/* keep only part of the filename before _EB suffix to match pattern of key */
+/* keep only the part of filename before _EB suffix to match pattern of key */
 replace filename = regexr(filename, "_EB$", "")
 
 /* clean var name */
@@ -83,7 +83,7 @@ keep if tag & has_big_town
 keep ${series}_state_name ${series}_state_id ${series}_district_name ${series}_district_id
 duplicates drop
 
-/* merge with state-district level handbooks to assess coverage */
+/* merge with state-district level handbooks to assess coverage of pca districts */
 merge 1:m ${series}_state_id ${series}_district_id using $tmp/${series}_hb_uniq_state_dist_w_key.dta, gen(_pca_merge)
 
 /* calculate coverage stats */
@@ -102,7 +102,7 @@ drop _pca_merge
 /* now merge back into pca town lists to prep for fuzzy match 1:m since master is district level */
 merge 1:m ${series}_state_id ${series}_district_id using $tmp/${series}u_pca_clean.dta, gen(_town_merge)
 
-keep if _town_merge
+keep if _town_merge == 3
 drop _town_merge
 
 keep ${series}_state_name ${series}_state_id ${series}_district_name ${series}_district_id ${series}_town_id ${series}_town_name
@@ -131,7 +131,6 @@ replace ${series}_town_hb = ${series}_town_hb[_n-1] if missing(${series}_town_hb
 
 /* collapse to town-level */
 keep ${series}_state_name ${series}_district_name ${series}_state_id ${series}_district_id ${series}_town_hb
-
 duplicates drop
 
 /* make unified var name */
@@ -167,7 +166,10 @@ use ~/iec/frozen_data/shrug/v2.1.pakora/pc-keys/native/${series}u_shrid_key.dta,
 
 destring ${series}_state_id ${series}_district_id, replace
 
-duplicates drop ${series}_state_id ${series}_district_id ${series}_town_id, force // this only works if not multiple shrids map to the same town, make sure this is the case
+duplicates list ${series}_state_id ${series}_district_id ${series}_town_id shrid2
+
+duplicates drop ${series}_state_id ${series}_district_id ${series}_town_id, force
+// this only works if not multiple shrids map to the same town, make sure this is the case
 
 save $tmp/${series}u_shrid_key.dta, replace
 
@@ -292,10 +294,57 @@ graph combine g1 g2, cols(1) ///
        ysize(8) xsize(6)
 graphout iso_scatter_combined, pdf
 
+/* make histogram of segregation change */
+gen change_dis = d_sc_pc11 - d_sc_pc01
+gen change_iso = iso_sc_pc11 - iso_sc_pc01
+
+list if abs(change_dis > 0.4)
+list if abs(change_iso > 0.4)
+
+/* Histograms (save each graph by name) */
+histogram change_dis, ///
+    percent bin(30) normal ///
+    xtitle("Change in Dissimilarity (2001-2011)") ///
+    ytitle("Percent") ///
+    name(g_dis, replace)
+
+histogram change_iso, ///
+    percent bin(30) normal ///
+    xtitle("Change in Isolation (2001-2011)") ///
+    ytitle("Percent") ///
+    name(g_iso, replace)
+
+/* Combine side-by-side */
+graph combine g_dis g_iso, ///
+    col(2) iscale(1) imargin(2 2 2 2) ///
+    title("Distribution of Segregation Changes")
+graphout seg_change_combined, pdf
 
 
 
+/* segregation change versus city size */
+twoway (scatter change_dis pct_sc_pop_shrid_pc01,  mcolor(gs8%60) msymbol(o) msize(small) mlcolor(none)) ///
+    (lfit change_dis pct_sc_pop_shrid_pc01, lcolor(gs4)), ///
+       name(g1, replace) ///
+       ytitle("Dissimilarity Index (2001-2011)") ///
+       xtitle("SC Population as % of Total Shrid Population (2001)") ///
+       title("Change in Dissimilarity Index (2001-2011)")
 
+twoway (scatter change_iso pct_sc_pop_shrid_pc11,  mcolor(gs8%60) msymbol(o) msize(small) mlcolor(none)) ///
+    (lfit change_iso pct_sc_pop_shrid_pc11, lcolor(gs4)), ///
+       name(g2, replace) ///
+       ytitle("Isolation Index (2001-2011)") ///
+       xtitle("SC Population as % of Total Shrid Population (2011)") ///
+       title("Change in Isolation Index (2001-2011)")
+
+graph combine g1 g2, cols(1) ///
+    title("Scheduled Castes Segregation Changes by Population Share") ///
+    ysize(8) xsize(6)
+
+graphout change_combined, pdf
+
+
+/*
 twoway (scatter d_sc_pc01 sc_pop_shrid_pc01, mcolor(navy%60) msize(small)) ///
        (scatter iso_sc_pc01 sc_pop_shrid_pc01, mcolor(maroon%60) msize(small) yaxis(2)), ///
        ytitle("Dissimilarity Index", axis(1)) ///
@@ -339,7 +388,7 @@ scatter iso_sc_pc11 ln_sc_pop_shrid_pc11, ///
     ylab(0(0.2)2) ///
     msize(small) mcolor(maroon%60)
 graphout scatter_iso_sc_pc11, pdf
-
+*/
 
 /* make a scatter plot that has sc_pop_shrid_pc01 on the x axis and d_sc_pc01 on the y axis */
 

@@ -45,9 +45,9 @@ def main():
     args = ap.parse_args()
 
     series = args.series
-    pca_path = Path(args.pca)
-    hb_path  = Path(args.hb)
-    out_path = Path(args.out)
+    pca_path = Path(args.pca).expanduser().resolve()
+    hb_path  = Path(args.hb).expanduser().resolve()
+    out_path = Path(args.out).expanduser().resolve()
 
     # Column stems that depend on series
     state_id_col      = f"{series}_state_id"
