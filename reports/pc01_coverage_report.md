@@ -1,23 +1,14 @@
 # Districts NOT Covered by Handbooks — PC01
 
-**Coverage:** 424 / 582 districts (72.9%) of PCA districts with ≥1 town ≥1,000 people are covered by handbooks.
-_Uncovered states: 26 • Uncovered districts: 158_
+**Coverage:** 464 / 582 districts (79.7%) of PCA districts with ≥1 town ≥1,000 people are covered by handbooks.
+_Uncovered states: 24 • Uncovered districts: 118_
 
-
-## andhra pradesh
-- prakasam  (state_id=28, district_id=18)
 
 ## bihar
 - gaya  (state_id=10, district_id=35)
-- saran  (state_id=10, district_id=17)
-- siwan  (state_id=10, district_id=16)
 
 ## chhattisgarh
-- bastar  (state_id=22, district_id=15)
-- dantewada  (state_id=22, district_id=16)
 - kanker  (state_id=22, district_id=14)
-- korba  (state_id=22, district_id=5)
-- mahasamund  (state_id=22, district_id=12)
 - raigarh  (state_id=22, district_id=4)
 - surguja  (state_id=22, district_id=2)
 
@@ -42,11 +33,6 @@ _Uncovered states: 26 • Uncovered districts: 158_
 - banas kantha  (state_id=24, district_id=2)
 - surendranagar  (state_id=24, district_id=8)
 
-## himachal pradesh
-- bilaspur  (state_id=2, district_id=8)
-- hamirpur  (state_id=2, district_id=6)
-- shimla  (state_id=2, district_id=11)
-
 ## jammu kashmir
 - anantnag  (state_id=1, district_id=6)
 - badgam  (state_id=1, district_id=4)
@@ -64,13 +50,10 @@ _Uncovered states: 26 • Uncovered districts: 158_
 - udhampur  (state_id=1, district_id=10)
 
 ## jharkhand
-- bokaro  (state_id=20, district_id=13)
 - deoghar  (state_id=20, district_id=7)
 - dhanbad  (state_id=20, district_id=12)
 - dumka  (state_id=20, district_id=11)
-- gumla  (state_id=20, district_id=16)
 - hazaribag  (state_id=20, district_id=4)
-- kodarma  (state_id=20, district_id=5)
 - palamu  (state_id=20, district_id=2)
 - pashchimi singhbhum  (state_id=20, district_id=17)
 - purbi singhbhum  (state_id=20, district_id=18)
@@ -99,14 +82,7 @@ _Uncovered states: 26 • Uncovered districts: 158_
 - dindori  (state_id=23, district_id=41)
 
 ## maharashtra
-- bid  (state_id=27, district_id=27)
-- kolhapur  (state_id=27, district_id=34)
-- osmanabad  (state_id=27, district_id=29)
-- pune  (state_id=27, district_id=25)
 - raigarh  (state_id=27, district_id=24)
-- sangli  (state_id=27, district_id=35)
-- sindhudurg  (state_id=27, district_id=33)
-- solapur  (state_id=27, district_id=30)
 - wardha  (state_id=27, district_id=8)
 
 ## manipur
@@ -127,7 +103,6 @@ _Uncovered states: 26 • Uncovered districts: 158_
 - bhadrak  (state_id=21, district_id=9)
 - cuttack  (state_id=21, district_id=12)
 - debagarh  (state_id=21, district_id=4)
-- dhenkanal  (state_id=21, district_id=14)
 - gajapati  (state_id=21, district_id=20)
 - ganjam  (state_id=21, district_id=19)
 - jagatsinghapur  (state_id=21, district_id=11)
@@ -154,26 +129,14 @@ _Uncovered states: 26 • Uncovered districts: 158_
 - yanam  (state_id=34, district_id=1)
 
 ## punjab
-- firozpur  (state_id=3, district_id=11)
-- patiala  (state_id=3, district_id=17)
 - rupnagar  (state_id=3, district_id=7)
 
 ## rajasthan
-- alwar  (state_id=8, district_id=6)
 - bhilwara  (state_id=8, district_id=24)
-- bundi  (state_id=8, district_id=23)
 - chittaurgarh  (state_id=8, district_id=29)
-- dausa  (state_id=8, district_id=11)
-- dhaulpur  (state_id=8, district_id=8)
-- jaipur  (state_id=8, district_id=12)
-- jhalawar  (state_id=8, district_id=32)
-- pali  (state_id=8, district_id=20)
-- rajsamand  (state_id=8, district_id=25)
-- sikar  (state_id=8, district_id=13)
 
 ## sikkim
 - east  (state_id=11, district_id=4)
-- north  (state_id=11, district_id=1)
 - south  (state_id=11, district_id=3)
 
 ## tamil nadu
@@ -188,24 +151,17 @@ _Uncovered states: 26 • Uncovered districts: 158_
 ## uttar pradesh
 - allahabad  (state_id=9, district_id=45)
 - ambedkar nagar  (state_id=9, district_id=48)
-- auraiya  (state_id=9, district_id=32)
 - azamgarh  (state_id=9, district_id=61)
-- balrampur  (state_id=9, district_id=52)
 - barabanki  (state_id=9, district_id=46)
 - bareilly  (state_id=9, district_id=20)
 - chandauli  (state_id=9, district_id=66)
-- deoria  (state_id=9, district_id=60)
 - faizabad  (state_id=9, district_id=47)
 - fatehpur  (state_id=9, district_id=42)
-- gautam buddha nagar  (state_id=9, district_id=10)
 - jaunpur  (state_id=9, district_id=64)
-- jhansi  (state_id=9, district_id=36)
-- jyotiba phule nagar  (state_id=9, district_id=6)
 - kheri  (state_id=9, district_id=23)
 - kushinagar  (state_id=9, district_id=59)
 - mirzapur  (state_id=9, district_id=69)
 - saharanpur  (state_id=9, district_id=1)
-- sultanpur  (state_id=9, district_id=49)
 
 ## uttarakhand
 - bageshwar  (state_id=5, district_id=8)

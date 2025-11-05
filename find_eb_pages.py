@@ -319,6 +319,10 @@ def main():
         rows_written = 0
         skipped = 0
 
+        # Minimal additions: track filenames for no-hits and failures
+        no_hit_files = []
+        failed_files = []
+
         for pdf in all_pdfs:
             # Quick guards
             if pdf.name in error_files:
@@ -349,11 +353,13 @@ def main():
                     print(f"{pdf.name}: {_pages_to_ranges(pages)}")
                 else:
                     no_hits += 1
+                    no_hit_files.append(pdf.name)  # <— minimal change
                     print(f"{pdf.name}: no hits")
             except KeyboardInterrupt:
                 sys.exit("\nInterrupted by user")
             except Exception as e:
                 failed += 1
+                failed_files.append(pdf.name)      # <— minimal change
                 print(f"{pdf.name}: ERROR {type(e).__name__}: {e}")
 
     # Summary
@@ -365,6 +371,16 @@ def main():
     print(f"  No hits:            {no_hits}")
     print(f"  Failed to parse:    {failed}")
     print(f"  Output CSV:         {OUT_CSV} ({'created' if (recreate or first_run) else 'appended'})")
+
+    # Minimal additions: print the filenames for no hits / failures
+    if no_hit_files:
+        print("\n[NO HITS — filenames]")
+        for name in no_hit_files:
+            print(f"  - {name}")
+    if failed_files:
+        print("\n[FAILED TO PARSE — filenames]")
+        for name in failed_files:
+            print(f"  - {name}")
     
     # Generate page range summary
     generate_page_range_summary()
@@ -373,4 +389,3 @@ def main():
 # Entry point
 if __name__ == "__main__":
     main()
-    

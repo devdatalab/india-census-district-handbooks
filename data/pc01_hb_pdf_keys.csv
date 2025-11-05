@@ -959,3 +959,95 @@ dirname,filename,filename_abb,state_id,state_name,district_id,district_name
 ~/iec/pc01/district_handbooks/taha_2025_09_19,DH_21_2001_KEND.pdf,KEND,21,orissa,06,kendujhar
 ~/iec/pc01/district_handbooks/taha_2025_09_19,Pathanamthitta_2001.pdf,Pathanamthitta,32,kerala,12,pathanamthitta
 ~/iec/pc01/district_handbooks/taha_2025_09_19,Village and Towwise Primary Census Abstract Mahendragarh Part XII-A & B Series-7 Haryana.pdf,mahendragarh,06,haryana,16,mahendragarh
+~/iec/pc01/district_handbooks,DH_28_2001_PRA.pdf,PRA,28,andhra pradesh,18,prakasam
+~/iec/pc01/district_handbooks,DH_10_2001_GAY.pdf,GAY,10,bihar,35,gaya
+~/iec/pc01/district_handbooks,DH_10_2001_SAR.pdf,SAR,10,bihar,17,saran
+~/iec/pc01/district_handbooks,DH_10_2001_SIW.pdf,SIW,10,bihar,16,siwan
+~/iec/pc01/district_handbooks,DH_22_2001_BAS.pdf,BAS,22,chhattisgarh,15,bastar
+~/iec/pc01/district_handbooks,DH_22_2001_DAN.pdf,DAN,22,chhattisgarh,16,dantewada
+~/iec/pc01/district_handbooks,DH_22_2001_KAN.pdf,KAN,22,chhattisgarh,14,kanker
+~/iec/pc01/district_handbooks,DH_22_2001_KOR.pdf,KOR,22,chhattisgarh,5,korba
+~/iec/pc01/district_handbooks,DH_22_2001_MAH.pdf,MAH,22,chhattisgarh,12,mahasamund
+~/iec/pc01/district_handbooks,DH_22_2001_RAI.pdf,RAI,22,chhattisgarh,4,raigarh
+~/iec/pc01/district_handbooks,DH_26_2001_DAD.pdf,DAD,26,dadra nagar haveli,1,dadra nagar haveli
+~/iec/pc01/district_handbooks,DH_25_2001_DAM.pdf,DAM,25,daman diu,2,daman
+~/iec/pc01/district_handbooks,DH_24_2001_SUR.pdf,SUR,24,gujarat,8,surendranagar
+~/iec/pc01/district_handbooks,DH_02_2001_BIL.pdf,BIL,2,himachal pradesh,8,bilaspur
+~/iec/pc01/district_handbooks,DH_02_2001_HAM.pdf,HAM,2,himachal pradesh,6,hamirpur
+~/iec/pc01/district_handbooks,DH_02_2001_B_SHI.pdf,SHI,2,himachal pradesh,11,shimla
+~/iec/pc01/district_handbooks,DH_20_2001_BOK.pdf,BOK,20,jharkhand,13,bokaro
+~/iec/pc01/district_handbooks,DH_20_2001_DEO.pdf,DEO,20,jharkhand,7,deoghar
+~/iec/pc01/district_handbooks,DH_20_2001_GUM.pdf,GUM,20,jharkhand,16,gumla
+~/iec/pc01/district_handbooks,DH_20_2001_KOD.pdf,KOD,20,jharkhand,5,kodarma
+~/iec/pc01/district_handbooks,DH_20_2001_PAL.pdf,PAL,20,jharkhand,2,palamu
+~/iec/pc01/district_handbooks,DH_20_2001_PUR.pdf,PUR,20,jharkhand,18,purbi singhbhum
+~/iec/pc01/district_handbooks,DH_29_2001_DKAN.pdf,DKAN,29,karnataka,24,dakshina kannada
+~/iec/pc01/district_handbooks,DH_23_2001_DIN.pdf,DIN,23,madhya pradesh,41,dindori
+~/iec/pc01/district_handbooks,DH_27_2001_BID.pdf,BID,27,maharashtra,27,bid
+~/iec/pc01/district_handbooks,DH_27_2001_KOL.pdf,KOL,27,maharashtra,34,kolhapur
+~/iec/pc01/district_handbooks,DH_27_2001_OSM.pdf,OSM,27,maharashtra,29,osmanabad
+~/iec/pc01/district_handbooks,DH_27_2001_PUN.pdf,PUN,27,maharashtra,25,pune
+~/iec/pc01/district_handbooks,DH_27_2001_RAI.pdf,RAI,27,maharashtra,24,raigarh
+~/iec/pc01/district_handbooks,DH_27_2001_SAN.pdf,SAN,27,maharashtra,35,sangli
+~/iec/pc01/district_handbooks,DH_27_2001_SIN.pdf,SIN,27,maharashtra,33,sindhudurg
+~/iec/pc01/district_handbooks,DH_27_2001_SOL.pdf,SOL,27,maharashtra,30,solapur
+~/iec/pc01/district_handbooks,DH_14_2001_BIS.pdf,BIS,14,manipur,4,bishnupur
+~/iec/pc01/district_handbooks,DH_14_2001_CHA.pdf,CHA,14,manipur,9,chandel
+~/iec/pc01/district_handbooks,DH_14_2001_IME.pdf,IME,14,manipur,7,imphal east
+~/iec/pc01/district_handbooks,DH_14_2001_IMW.pdf,IMW,14,manipur,6,imphal west
+~/iec/pc01/district_handbooks,DH_17_2001_SGAR.pdf,SGAR,17,meghalaya,3,south garo hills
+~/iec/pc01/district_handbooks,DH_21_2001_ANU.pdf,ANU,21,orissa,15,anugul
+~/iec/pc01/district_handbooks,DH_21_2001_BLN.pdf,BLN,21,orissa,24,balangir
+~/iec/pc01/district_handbooks,DH_21_2001_BAL.pdf,BAL,21,orissa,8,baleshwar
+~/iec/pc01/district_handbooks,DH_21_2001_BAR.pdf,BAR,21,orissa,1,bargarh
+~/iec/pc01/district_handbooks,DH_21_2001_BAU.pdf,BAU,21,orissa,22,baudh
+~/iec/pc01/district_handbooks,DH_21_2001_BHA.pdf,BHA,21,orissa,9,bhadrak
+~/iec/pc01/district_handbooks,DH_21_2001_CUT.pdf,CUT,21,orissa,12,cuttack
+~/iec/pc01/district_handbooks,DH_21_2001_DEB.pdf,DEB,21,orissa,4,debagarh
+~/iec/pc01/district_handbooks,DH_21_2001_DHE.pdf,DHE,21,orissa,14,dhenkanal
+~/iec/pc01/district_handbooks,DH_21_2001_GAN.pdf,GAN,21,orissa,19,ganjam
+~/iec/pc01/district_handbooks,DH_21_2001_JAG.pdf,JAG,21,orissa,11,jagatsinghapur
+~/iec/pc01/district_handbooks,DH_21_2001_JHA.pdf,JHA,21,orissa,2,jharsuguda
+~/iec/pc01/district_handbooks,DH_21_2001_KAL.pdf,KAL,21,orissa,26,kalahandi
+~/iec/pc01/district_handbooks,DH_21_2001_KAN.pdf,KAN,21,orissa,21,kandhamal
+~/iec/pc01/district_handbooks,DH_21_2001_KEN.pdf,KEN,21,orissa,10,kendrapara
+~/iec/pc01/district_handbooks,DH_21_2001_KHO.pdf,KHO,21,orissa,17,khordha
+~/iec/pc01/district_handbooks,DH_21_2001_KOR.pdf,KOR,21,orissa,29,koraput
+~/iec/pc01/district_handbooks,DH_21_2001_MAL.pdf,MAL,21,orissa,30,malkangiri
+~/iec/pc01/district_handbooks,DH_21_2001_MAY.pdf,MAY,21,orissa,7,mayurbhanj
+~/iec/pc01/district_handbooks,DH_21_2001_NAY.pdf,NAY,21,orissa,16,nayagarh
+~/iec/pc01/district_handbooks,DH_21_2001_PUR.pdf,PUR,21,orissa,18,puri
+~/iec/pc01/district_handbooks,DH_21_2001_RAY.pdf,RAY,21,orissa,27,rayagada
+~/iec/pc01/district_handbooks,DH_21_2001_SAM.pdf,SAM,21,orissa,3,sambalpur
+~/iec/pc01/district_handbooks,DH_21_2001_SON.pdf,SON,21,orissa,23,sonapur
+~/iec/pc01/district_handbooks,DH_21_2001_SUN.pdf,SUN,21,orissa,5,sundargarh
+~/iec/pc01/district_handbooks,DH_34_2001_PUD.pdf,PUD,34,pondicherry,4,karaikal
+~/iec/pc01/district_handbooks,DH_03_2001_FIR.pdf,FIR,3,punjab,11,firozpur
+~/iec/pc01/district_handbooks,DH_03_2001_PAT.pdf,PAT,3,punjab,17,patiala
+~/iec/pc01/district_handbooks,DH_03_2001_RUP.pdf,RUP,3,punjab,7,rupnagar
+~/iec/pc01/district_handbooks,DH_08_2001_ALW.pdf,ALW,8,rajasthan,6,alwar
+~/iec/pc01/district_handbooks,DH_08_2001_BHI.pdf,BHI,8,rajasthan,24,bhilwara
+~/iec/pc01/district_handbooks,DH_08_2001_BUN.pdf,BUN,8,rajasthan,23,bundi
+~/iec/pc01/district_handbooks,DH_08_2001_CHI.pdf,CHI,8,rajasthan,29,chittaurgarh
+~/iec/pc01/district_handbooks,DH_08_2001_DAU.pdf,DAU,8,rajasthan,11,dausa
+~/iec/pc01/district_handbooks,DH_08_2001_DHA.pdf,DHA,8,rajasthan,8,dhaulpur
+~/iec/pc01/district_handbooks,DH_08_2001_JAI.pdf,JAI,8,rajasthan,12,jaipur
+~/iec/pc01/district_handbooks,DH_08_2001_JHA.pdf,JHA,8,rajasthan,32,jhalawar
+~/iec/pc01/district_handbooks,DH_08_2001_PAL.pdf,PAL,8,rajasthan,20,pali
+~/iec/pc01/district_handbooks,DH_08_2001_RAJ.pdf,RAJ,8,rajasthan,25,rajsamand
+~/iec/pc01/district_handbooks,DH_08_2001_SIK.pdf,SIK,8,rajasthan,13,sikar
+~/iec/pc01/district_handbooks,DH_11_2001_SIK.pdf,SIK,11,sikkim,4,east
+~/iec/pc01/district_handbooks,DH_33_2001_PUD.pdf,PUD,33,tamil nadu,22,pudukkottai
+~/iec/pc01/district_handbooks,DH_33_2001_SAL.pdf,SAL,33,tamil nadu,8,salem
+~/iec/pc01/district_handbooks,DH_33_2001_VIR.pdf,VIR,33,tamil nadu,26,virudhunagar
+~/iec/pc01/district_handbooks,DH_16_2001_NTRI.pdf,NTRI,16,tripura,4,north tripura
+~/iec/pc01/district_handbooks,DH_16_2001_STRI.pdf,STRI,16,tripura,2,south tripura
+~/iec/pc01/district_handbooks,DH_09_2001_AUR.pdf,AUR,9,uttar pradesh,32,auraiya
+~/iec/pc01/district_handbooks,DH_09_2001_BAL.pdf,BAL,9,uttar pradesh,52,balrampur
+~/iec/pc01/district_handbooks,DH_09_2001_DEO_VOL-02.pdf,DEO,9,uttar pradesh,60,deoria
+~/iec/pc01/district_handbooks,DH_09_2001_GAU.pdf,GAU,9,uttar pradesh,10,gautam buddha nagar
+~/iec/pc01/district_handbooks,DH_09_2001_JHA.pdf,JHA,9,uttar pradesh,36,jhansi
+~/iec/pc01/district_handbooks,DH_09_2001_JYO.pdf,JYO,9,uttar pradesh,6,jyotiba phule nagar
+~/iec/pc01/district_handbooks,DH_09_2001_SAH.pdf,SAH,9,uttar pradesh,1,saharanpur
+~/iec/pc01/district_handbooks,DH_09_2001_SUL_VOL-02.pdf,SUL,9,uttar pradesh,49,sultanpur
+~/iec/pc01/district_handbooks,DH_19_2001_NTFP.pdf,NTFP,19,west bengal,11,north twenty four parganas
