@@ -4,7 +4,7 @@ hb_define_paths, series(pc01) */
 
 
 /* Define code repo root */
-global hb_code "~/india-census-district-handbooks"
+global hb_code "~/ddl/india-census-district-handbooks"
 
 /* Default series if none supplied (pc01, pc11, pc51, pc91) */
 global hb_series pc01
