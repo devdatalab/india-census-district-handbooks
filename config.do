@@ -4,7 +4,7 @@ hb_define_paths, series(pc01) */
 
 
 /* Define code repo root */
-global hb_code "~/india-census-district-handbooks"
+global hb_code "~/ddl/india-census-district-handbooks"
 
 /* Default series if none supplied (pc01, pc11, pc51, pc91) */
 global hb_series pc01
@@ -46,7 +46,7 @@ program define hb_define_paths
 
   global hb_extracts   $hb_pdf/eb_table_extracts
 
-  global hb_eb_pages_csv $hb_pdf/urban_eb_pages.csv
+  global hb_eb_pages_csv $hb_extracts/urban_eb_pages.csv
 
   /* Print paths  */
   di as txt "{hline 60}"
