@@ -31,7 +31,8 @@ duplicates drop filename, force
 qui levelsof filename, local(file_list) clean
 
 /* Merge with district key use m:1 since manifest has multiple rows per file */
-merge m:1 filename using "$tmp/${series}_hb_pdf_key", gen(_merge_key) // =2, =3 only otherwise update data/pc01_hb_pdf_key
+merge m:1 filename using $tmp/${series}_hb_pdf_key, gen(_merge_key)
+// =2, =3 only otherwise update data/pc01_hb_pdf_key
 
 keep if _merge_key == 3
 drop _merge_key
@@ -76,7 +77,7 @@ count if tag & has_big_town
 di as result "PCA districts with ≥1 town ≥1,000 people: " r(N)
 
 /* keep only districts with at least one big town */
-keep if tag & has_big_town
+// keep if tag & has_big_town
 
 /* keep only location vars */
 keep ${series}_state_name ${series}_state_id ${series}_district_name ${series}_district_id
@@ -98,6 +99,7 @@ di as result "`matched' out of `total' (" %3.1f `pct' "%) of PCA large urban dis
 keep if _pca_merge == 3
 drop _pca_merge
 
+
 /* now merge back into pca town lists to prep for fuzzy match 1:m since master is district level */
 merge 1:m ${series}_state_id ${series}_district_id using $tmp/${series}u_pca_clean.dta, gen(_town_merge)
 
@@ -113,6 +115,14 @@ gen std_town = ${series}_town_pca
 duplicates list
 
 duplicates drop ${series}_state_id ${series}_district_id ${series}_town_pca, force // 9,20,faridpur and 27,9,andri ct repeated twice? investigate
+
+//count distinct towns at this stage
+/* create a var that's concatenated with comma separator */
+/* egen str town_identifier = ///
+    concat(${series}_state_id ${series}_district_id ${series}_town_id), ///
+    punct(", ") format(%12.0f)
+
+distinct town_identifier*/
 
 /* save rhs: this is the urban pca districts with at least one big town and also covered by district handbooks */
 save $tmp/${series}u_town_pca_df, replace
@@ -135,6 +145,15 @@ duplicates drop
 /* make unified var name */
 gen std_town = ${series}_town_hb
 
+/* count number of unique towns at this stage, i.e., universe of handbook panel */
+/* create a var that's concatenated with comma separator */
+egen str town_identifier = ///
+    concat(${series}_state_id ${series}_district_id ${series}_town_hb), ///
+    punct(", ") format(%12.0f)
+
+distinct town_identifier //this is the first stat for the attrition table
+
+
 save $tmp/${series}_town_hb_df, replace
 
 /* masala merge with district_handbook towns within each state and district */
@@ -144,6 +163,9 @@ masala_merge ${series}_state_id ${series}_district_id using $tmp/${series}u_town
 /* keep if match_source == 7 */
 /* export delimited using $tmp/unmatched_using.csv */
 keep if match_source <= 4
+
+// count unique number of towns preserved at this stage
+
 
 save $tmp/${series}_towns_after_pca_matched, replace
 
@@ -155,7 +177,7 @@ merge 1:m ${series}_state_id ${series}_district_id ${series}_town_hb using $tmp/
 keep if _eb_merge == 3
 drop _eb_merge
 // count unique number of towns at this stage
-distinct idm
+distinct idm // this is the second stat for the attrition table, i.e., how many handbooks towns we got after fuzzy merge
 
 keep idm ${series}_state_id ${series}_state_name ${series}_district_name ${series}_district_id ${series}_town_hb ${series}_town_id ${series}_town_pca ///
     filename location_code ward_name eb_no total_pop sc_pop st_pop
@@ -187,16 +209,15 @@ foreach v in total_pop sc_pop st_pop {
 /* merge with shrid key, m:1 since multiple towns can match to same shrid */
 merge m:1 ${series}_state_id ${series}_district_id ${series}_town_id using $tmp/${series}u_shrid_key.dta, gen(_shrid_merge)
 
+keep if _shrid_merge == 3
+
 save $tmp/${series}_combined_hb_w_pca_shrid_cln, replace
 
 /* ---------------------------- cell ---------------------------- */
 
-
-keep if _shrid_merge == 3
-
 //distinct towns at this stage
-distinct idm
-distinct shrid2 // this is also # number of shrids
+distinct idm // this is the third stat of attrition table
+distinct shrid2 // also report # number of shrids
 
 drop _shrid_merge
 
@@ -235,6 +256,7 @@ merge 1:1 shrid2 using $tmp/pc11_seg_sc_by_shrid.dta, gen(_seg_shrid_merge)
 keep if _seg_shrid_merge == 3
 // distinct number of shrid2 at this stage
 distinct shrid2
+//this is the last number of attrition table, i.e., how many shrids are in the time series
 
 /* sort in descending order of iso_sc_pc01 and find the top 10 shrids */
 gsort -iso_sc_pc01
