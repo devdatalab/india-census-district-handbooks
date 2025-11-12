@@ -254,6 +254,9 @@ use $tmp/pc01_seg_sc_by_shrid.dta, clear
 merge 1:1 shrid2 using $tmp/pc11_seg_sc_by_shrid.dta, gen(_seg_shrid_merge)
 
 keep if _seg_shrid_merge == 3
+
+save $tmp/pc01_pc11_seg_shrid_cln.dta, replace
+
 // distinct number of shrid2 at this stage
 distinct shrid2
 //this is the last number of attrition table, i.e., how many shrids are in the time series

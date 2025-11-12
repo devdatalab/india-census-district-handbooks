@@ -1,7 +1,7 @@
 # Districts NOT Covered by Handbooks — PC01
 
-**Coverage:** 464 / 582 districts (79.7%) of PCA districts with ≥1 town ≥1,000 people are covered by handbooks.
-_Uncovered states: 24 • Uncovered districts: 118_
+**Coverage:** 465 / 582 districts (79.9%) of PCA districts with ≥1 town ≥1,000 people are covered by handbooks.
+_Uncovered states: 23 • Uncovered districts: 117_
 
 
 ## bihar
@@ -11,9 +11,6 @@ _Uncovered states: 24 • Uncovered districts: 118_
 - kanker  (state_id=22, district_id=14)
 - raigarh  (state_id=22, district_id=4)
 - surguja  (state_id=22, district_id=2)
-
-## dadra nagar haveli
-- dadra nagar haveli  (state_id=26, district_id=1)
 
 ## daman diu
 - daman  (state_id=25, district_id=2)

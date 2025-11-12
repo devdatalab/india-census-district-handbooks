@@ -13,9 +13,11 @@
 
 | Metric | Count | Note |
 |---|---:|---|
-| Towns fuzzy-matched to urban PCA | 1144 | distinct `pc01_town_id` in `pc01_combined_hb_w_pca_cln.dta` |
-| Towns with SHRID joined | 1144 | intersection with `pc01u_shrid_key.dta` |
-| Towns in PC01×PC11 panel | 1040 | SHRID present in both `pc01` and `pc11` valid sets |
+| A. Towns in handbook panel (pre-fuzzy) | 3875 | distinct `pc01_state_id`, `pc01_district_id`, `pc01_town_hb` in `pc01_town_hb_df.dta` |
+| B. Towns after fuzzy-match to urban PCA | 3763 | `pc01_towns_after_pca_matched.dta` using `idm` |
+| C1. Towns with SHRID joined | 3744 | `pc01_combined_hb_w_pca_shrid_cln.dta` distinct `idm` |
+| C2. # of SHRIDs after join | 3620 | `pc01_combined_hb_w_pca_shrid_cln.dta` distinct `shrid2` |
+| D. SHRIDs in PC01×PC11 panel | 3143 | intersection of valid SHRIDs from `pc01_seg_sc_by_shrid.dta` and `pc11_seg_sc_by_shrid.dta` |
 
 ## Missing PDFs
 

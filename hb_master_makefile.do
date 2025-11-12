@@ -14,7 +14,7 @@
 
 /* 0. Define series to the year we are building and load config */
 do "~/ddl/india-census-district-handbooks/config.do"
-hb_define_paths, series("pc11") // print out relevant paths
+hb_define_paths, series("pc01") // print out relevant paths
 
 /* 1. Find relevant eb pages in district handbooks */
 /* NOTE: Need to activate correct conda environment and install modules as needed */
@@ -37,7 +37,7 @@ replace end_page = 275 if filename == "DH_09_2001_GAU.pdf"
 replace start_page = 458 if filename == "DH_21_2001_DHE.pdf"
 replace end_page = 461 if filename == "DH_21_2001_DHE.pdf"
 
-export delimited "$hb_pdf/${hb_series}_page_ranges_for_review.csv", replace
+export delimited "$hb_pdf/${hb_series}_page_ranges_corrected.csv", replace
 
 /* 2. Save relevant eb pages */
 di "Running: extract_handbook_pages.py"
@@ -54,7 +54,7 @@ python script $hb_code/process_xls_hb.py, args(`"--series $hb_series --pdf_root 
 
 /* 5. Create a clean version of the filename <> district name correspondence */
 di "Running: clean_filename_district_key.do"
-do $hb_code/clean_filename_district_keys.do
+do $hb_code/b/clean_filename_district_keys.do
 
 // here want to check if there's repeated files
 
@@ -64,25 +64,25 @@ di "Running: combine_eb_tables.py"
 python script $hb_code/combine_eb_tables.py, args(`"--series $hb_series --hb_code $hb_code --pdf_root $hb_pdf"')
 
 /* 7. Merge with premade key, report coverage of urban pca */
-di "Running: hb_merge_pca_coverage.do"
-do $hb_code/hb_merge_pca_coverage.do
+di "Running: make_seg_panel.do"
+do $hb_code/b/make_seg_panel.do
 
 /* 8. Report initial coverage for hb of urban pca throughout pipeline */
 di "Running: catalog_hb_data_loss.do"
-do $hb_code/catalog_hb_data_loss.do
+do $hb_code/loss_reporting/catalog_hb_data_loss.do
 
 /* 8. Convert coverage report into markdown table */
 local pca_dir "$tmp/${hb_series}u_pca_clean.dta"
 local hb_dir  "$tmp/${hb_series}_hb_uniq_state_dist_w_key.dta"
-local out_dir "$hb_code/reports/${hb_series}_coverage_report.md"
+local out_dir "$hb_code/loss_reporting/reports/${hb_series}_coverage_report.md"
 
 local pyargs `"--series $hb_series --pca `pca_dir' --hb `hb_dir' --out `out_dir'"'
 
-python script "$hb_code/generate_report.py", args(`pyargs')
+python script "$hb_code/loss_reporting/generate_report.py", args(`pyargs')
 
 /* 9. Make another version of the markdown that's by stage */
 di "Running: make_attrition_report.py"
-python script $hb_code/make_attrition_report.py, args(`"--series $hb_series --in_dir $tmp --out_dir $hb_code/reports"')
+python script $hb_code/loss_reporting/make_attrition_report.py, args(`"--series $hb_series --in_dir $tmp --out_dir $hb_code/loss_reporting/reports"')
 
 
 exit
