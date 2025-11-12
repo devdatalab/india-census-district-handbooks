@@ -14,7 +14,7 @@
 
 /* 0. Define series to the year we are building and load config */
 do "~/ddl/india-census-district-handbooks/config.do"
-hb_define_paths, series("pc01") // print out relevant paths
+hb_define_paths, series("pc11") // print out relevant paths
 
 /* 1. Find relevant eb pages in district handbooks */
 /* NOTE: Need to activate correct conda environment and install modules as needed */
@@ -67,9 +67,9 @@ python script $hb_code/combine_eb_tables.py, args(`"--series $hb_series --hb_cod
 di "Running: hb_merge_pca_coverage.do"
 do $hb_code/hb_merge_pca_coverage.do
 
-/* 7. Report initial coverage for hb of urban pca throughout pipeline */
-/* di "Running: catalog_hb_data_loss.do"  */
-/* do $hb_code/catalog_hb_data_loss.do */
+/* 8. Report initial coverage for hb of urban pca throughout pipeline */
+di "Running: catalog_hb_data_loss.do"
+do $hb_code/catalog_hb_data_loss.do
 
 /* 8. Convert coverage report into markdown table */
 local pca_dir "$tmp/${hb_series}u_pca_clean.dta"
@@ -80,6 +80,9 @@ local pyargs `"--series $hb_series --pca `pca_dir' --hb `hb_dir' --out `out_dir'
 
 python script "$hb_code/generate_report.py", args(`pyargs')
 
+/* 9. Make another version of the markdown that's by stage */
+di "Running: make_attrition_report.py"
+python script $hb_code/make_attrition_report.py, args(`"--series $hb_series --in_dir $tmp --out_dir $hb_code/reports"')
 
 
 exit

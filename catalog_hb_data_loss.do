@@ -74,7 +74,12 @@ replace ${hb_series}_state_id = string(_st, "%02.0f") if _st < .
 drop _st
 
 gen long _dist = real(${hb_series}_district_id)
-replace ${hb_series}_district_id = string(_dist, "%02.0f") if _dist < .
+if "$hb_series" == "pc01"{
+  replace ${hb_series}_district_id = string(_dist, "%02.0f") if _dist < .
+}
+else if "$hb_series" == "pc11"{
+  replace ${hb_series}_district_id = string(_dist, "%03.0f") if _dist < . // district id is 3-digit for pc11
+}
 drop _dist
 
 duplicates drop ${hb_series}_state_id ${hb_series}_district_id, force
