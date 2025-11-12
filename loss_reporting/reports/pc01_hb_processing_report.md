@@ -1,6 +1,6 @@
 # PC01 Handbook Processing — Markdown Report
 
-## Overall Attrition Funnel
+## Overall Attrition Funnel (PDF → EB pages → CSV → Reliable rows)
 
 | Stage | Kept | % of Total | Dropped from Prev |
 |---|---:|---:|---:|
@@ -8,6 +8,14 @@
 | 2. EB pages found | 463 | 79.42% | 16 |
 | 3. CSV extracted | 461 | 79.07% | 2 |
 | 4. Reliable EB rows | 449 | 77.02% | 12 |
+
+## Town-level Downstream Coverage
+
+| Metric | Count | Note |
+|---|---:|---|
+| Towns fuzzy-matched to urban PCA | 1144 | distinct `pc01_town_id` in `pc01_combined_hb_w_pca_cln.dta` |
+| Towns with SHRID joined | 1144 | intersection with `pc01u_shrid_key.dta` |
+| Towns in PC01×PC11 panel | 1040 | SHRID present in both `pc01` and `pc11` valid sets |
 
 ## Missing PDFs
 
