@@ -1,257 +1,219 @@
-/* This do file merges handbook pdf filenames with pre-made pdf-district keys and compare coverage against urban pca districts,
-then track attrition across the following stages:
-1. PDFs present vs. urban PCA districts
-2. PDFs that also have identified EB pages
-3. Those with CSV extracts
-4. Those CSVs that contain reliable EB rows
+/*
+Merge handbook PDF filenames with pre-made PDF-district keys and compare coverage against urban PCA districts. Then track attrition through:
+1) PDFs present vs. urban PCA districts
+2) PDFs with identified EB pages
+3) Those with CSV extracts
+4) Those CSVs with reliable EB rows
 
-It assumes you've already run config.do and hb_define_paths to populate:
+Prereq: run config.do / hb_define_paths to populate:
 $hb_series (pc01/pc11/pc91), $hb_pdf (PDF dir), $hb_extracts (extracts dir), $hb_eb_pages_csv (CSV of EB pages)
 */
 
 clear
 set more off
 
-/* Pull series/paths from config.do */
-local series "$hb_series"
-if "`series'"=="" local series "pc01" // default if not set
-local pdfdir "$hb_pdf" // directory containing district handbook PDFs
-
-//local extracts "$hb_extracts" // .../eb_table_extracts directory containing extracted CSVs
-local ebpages "$hb_eb_pages_csv" // urban_eb_pages.csv path
-
-/* Map series to PCA root macros if you already have $pc01/$pc11/$pc91 set elsewhere */
-local pcaroot ""
-if "`series'" == "pc01" {
-    local pcaroot "$pc01"
+if "$hb_series" == "pc01" {
+    global pcaroot "$pc01"
 }
-else if "`series'" == "pc11" {
-    local pcaroot "$pc11"
+else if "$hb_series" == "pc11" {
+    global pcaroot "$pc11"
 }
-else if "`series'" == "pc91" {
-    local pcaroot "$pc91"
+else if "$hb_series" == "pc91" {
+    global pcaroot "$pc91"
 }
-di "`pcaroot'"
 
 
-/************************************************************/
-/* Stage 1 attrition: pdf file exists compared to urban pca */
-/************************************************************/
+/*************************************************/
+/* Stage 1: pdfs present vs. urban PCA districts */
+/*************************************************/
 
-/* get a list of pdfs, nonrecursive so we don't look in subdirectories */
-filelist, dir("`pdfdir'") pattern("*.pdf") norecursive
+/* Nonrecursive file listing of PDFs in $hb_pdf */
+filelist, dir($hb_pdf) pattern("*.pdf") norecursive
+save $tmp/${hb_series}_og_pdf_names.dta, replace
 
-save $tmp/`series'_og_pdf_names.dta, replace
+/* Include additional drop-in folder */
+filelist, dir($hb_pdf/taha_2025_09_19) pattern("*.pdf") norecursive
+save $tmp/${hb_series}_added_pdf_names.dta, replace
 
-/* add newly added pdfs as well */
-filelist, dir("`pdfdir'/taha_2025_09_19") pattern("*.pdf")
-save $tmp/`series'_added_pdf_names.dta, replace
+filelist, dir($hb_pdf/taha_2025_09_19) pattern("*.xls") norecursive
 
-filelist, dir("`pdfdir'/taha_2025_09_19") pattern("*.xls")
+append using $tmp/${hb_series}_og_pdf_names.dta
+append using $tmp/${hb_series}_added_pdf_names.dta
 
-append using $tmp/`series'_og_pdf_names.dta
-append using $tmp/`series'_added_pdf_names.dta
-
-/* keep only a unique list of districts */
+/* Keep unique filenames */
 keep filename
 sort filename
 duplicates drop filename, force
-
-
-save $tmp/`series'_handbooks_list.dta, replace
+save $tmp/${hb_series}_handbooks_list.dta, replace
 
 /* ---------------------------- cell ---------------------------- */
+/* Merge with PDF-district key; then with urban PCA districts to assess coverage */
+use $tmp/${hb_series}_handbooks_list.dta, clear
 
-/* Merge with pdf–district keys; merge with urban PCA districts to see coverage */
-use $tmp/`series'_handbooks_list.dta, clear
-
-/* drop the .pdf or .xls suffix */
+/* Drop .pdf/.xls suffix; drop optional _EB suffix */
 replace filename = substr(filename, 1, length(filename)-4)
+replace filename = regexr(filename, "_EB$", "")
 isid filename
 
-/* drop _eb suffix as well */
-replace filename = regexr(filename, "_EB$", "")
-
-/* merge with prepared handboooks-urbanpca key */
-merge 1:1 filename using $tmp/`series'_hb_pdf_key.dta, gen(hb_key_merge)
+/* Merge with prepared handbook–urban PCA key */
+merge 1:1 filename using $tmp/${hb_series}_hb_pdf_key.dta, gen(hb_key_merge)
 
 keep if hb_key_merge == 3
 drop hb_key_merge
 
-/* convert to string */
-tostring `series'_state_id, replace
-tostring `series'_district_id, replace
+/* Ensure IDs are strings; trim whitespace */
+tostring ${hb_series}_state_id, replace
+tostring ${hb_series}_district_id, replace
 
-/* Clean whitespace in state and district id */
-replace `series'_state_id = trim(`series'_state_id)
-replace `series'_district_id = trim(`series'_district_id)
+replace ${hb_series}_state_id    = trim(${hb_series}_state_id)
+replace ${hb_series}_district_id = trim(${hb_series}_district_id)
 
-
-/* Standardize state IDs to two digits */
-gen long _st = real(`series'_state_id)
-replace `series'_state_id  = string(_st, "%02.0f") if _st < .
+/* Standardize: states = 2 digits, districts = 2 digits */
+gen long _st = real(${hb_series}_state_id)
+replace ${hb_series}_state_id = string(_st, "%02.0f") if _st < .
 drop _st
-gen long _dist = real(`series'_district_id)
-replace `series'_district_id = string(_dist, "%02.0f") if _dist < .
+
+gen long _dist = real(${hb_series}_district_id)
+replace ${hb_series}_district_id = string(_dist, "%02.0f") if _dist < .
 drop _dist
 
-duplicates drop `series'_*, force
-duplicates list `series'_state_id `series'_district_id
+duplicates drop ${hb_series}_state_id ${hb_series}_district_id, force
+duplicates list ${hb_series}_state_id ${hb_series}_district_id
 
-/* save in tmp a list of unique handbook districts */
-save $tmp/`series'_hb_districts.dta, replace
-
-
-/* group urban pca to the state–district level for coverage comparison */
-use "`pcaroot'/`series'u_pca_clean.dta", clear
-
-keep `series'_state_name `series'_state_id `series'_district_name `series'_district_id
-duplicates drop `series'_state_name `series'_state_id `series'_district_name `series'_district_id, force
-
-sort `series'_state_id `series'_district_id
-
-/* urban pca-hb pdf merge */
-merge 1:1 `series'_state_id `series'_district_id using $tmp/`series'_hb_districts.dta, gen(hb_pca_merge)
-
-/* create a binary variable indicating whether we have district handbook for a given pca urban district */
-preserve
-/* hb_pca_merge==1 is urban pca only, hb_pca_merge==3 is urban pca with handbook coverage */
-keep if hb_pca_merge == 1 | hb_pca_merge == 3 // note that hb_pca_merge=2 are handbook districts not in pca urban
-gen has_pdf = hb_pca_merge == 3
-
-keep `series'_state_name `series'_state_id `series'_district_name `series'_district_id filename has_pdf
-
-/* save in tmp initial table documenting handbook coverage for urban pca */
-save $tmp/`series'_data_loss_pdf.dta, replace
-restore
-
-/* save a list of districts in urban pca that we currently don't have in directory */
-preserve
-keep if hb_pca_merge == 1
-sort `series'_state_id `series'_district_id
-save $tmp/`series'_umatched_dist_in_pca.dta, replace
-restore
-
-/* save a list of districts in hb that we currently don't have in hb, this is for error checking */
-preserve
-keep if hb_pca_merge == 2
-sort `series'_state_id `series'_district_id
-save $tmp/`series'_unmactheddistricts_in_hb.dta, replace
-restore
-
-/* calculate coverage among pca urban districts */
-qui count if hb_pca_merge == 3
-local covered = r(N)
-
-qui count
-local total = r(N)
-
-local covpct = 100 * `covered' / `total'
-di as txt "`series' Handbooks cover " as res %6.2f `covpct' "% of pca urban districts"
-
-
-/********************************************************************************/
-/* Stage 2 attrition: out of handbook pdfs, which ones have eb pages identified */
-/********************************************************************************/
-/* import ebpages which is the csv with page ranges identified by find_eb_pages */
-import delimited using "`pdfdir'/`series'_page_ranges_for_review.csv", clear
-
-sort filename
-replace filename = subinstr(filename, ".pdf", "", .)
-
-/* let each row be a unique filename that has at least one eb page number */
-duplicates drop filename, force
-
-save $tmp/`series'_eb_page_number, replace
+/* Save unique handbook districts */
+save $tmp/${hb_series}_hb_districts.dta, replace
 
 /* ---------------------------- cell ---------------------------- */
-/* load data loss table and create new binary documenting find_eb_pages results */
-use $tmp/`series'_data_loss_pdf.dta, clear
 
-/* use m:1 merge because master is district level; using has unique filename */
-merge m:1 filename using $tmp/`series'_eb_page_number, gen(hb_eb_merge)
+/* Group urban PCA to state–district level for coverage comparison */
+use $pcaroot/${hb_series}u_pca_clean.dta, clear
 
+keep ${hb_series}_state_name ${hb_series}_state_id ${hb_series}_district_name ${hb_series}_district_id
+duplicates drop ${hb_series}_state_name ${hb_series}_state_id ${hb_series}_district_name ${hb_series}_district_id, force
+sort ${hb_series}_state_id ${hb_series}_district_id
+
+/* PCA<->HB merge */
+merge 1:1 ${hb_series}_state_id ${hb_series}_district_id using $tmp/${hb_series}_hb_districts.dta, gen(hb_pca_merge)
+
+preserve
+/* hb_pca_merge: 1 = PCA only; 3 = PCA and HB (2 = HB not in PCA) */
+keep if hb_pca_merge == 1 | hb_pca_merge == 3
+gen has_pdf = (hb_pca_merge == 3)
+keep ${hb_series}_state_name ${hb_series}_state_id ${hb_series}_district_name ${hb_series}_district_id filename has_pdf
+save $tmp/${hb_series}_data_loss_pdf.dta, replace
+restore
+
+/* PCA districts currently missing in HB */
+preserve
+keep if hb_pca_merge == 1
+sort ${hb_series}_state_id ${hb_series}_district_id
+save $tmp/${hb_series}_unmatched_dist_in_pca.dta, replace
+restore
+
+/* HB districts not in urban PCA (diagnostics) */
+preserve
+keep if hb_pca_merge == 2
+sort ${hb_series}_state_id ${hb_series}_district_id
+save $tmp/${hb_series}_unmatched_districts_in_hb.dta, replace
+restore
+
+/* Coverage among urban PCA districts */
+quietly count if hb_pca_merge == 3
+local covered = r(N)
+quietly count
+local total = r(N)
+local covpct = 100 * `covered' / `total'
+di as txt "$hb_series Handbooks cover " as res %6.2f `covpct' as txt "% of urban PCA districts"
+/* ---------------------------- cell ---------------------------- */
+
+/**********************************************************/
+/* Stage 2: Of handbooks, which have eb pages identified? */
+/**********************************************************/
+/* load output of find_eb_pages */
+import delimited using $hb_pdf/${hb_series}_page_ranges_for_review.csv, clear //this has manual corrections appended as well plus taha files
+sort filename
+
+replace filename = subinstr(filename, ".pdf", "", .)
+duplicates drop filename, force
+
+replace filename = "kaithal" if filename == "kaithal_EB"
+
+save $tmp/${hb_series}_eb_page_number.dta, replace
+
+/* ---------------------------- cell ---------------------------- */
+use $tmp/${hb_series}_data_loss_pdf.dta, clear
+
+/*  merge in second stage coverage*/
+merge m:1 filename using $tmp/${hb_series}_eb_page_number.dta, gen(hb_eb_merge)
 list filename if hb_eb_merge == 2
 
 keep if hb_eb_merge == 1 | hb_eb_merge == 3
-
-/* get a binary = 1 if that filename has at least one page_number corresponding to it */
+/* make binary variable indicating coverage */
 gen has_eb_pages = !missing(start_page, end_page)
-
 drop start_page end_page hb_eb_merge
 
-/* save in tmp table with attrition at two stages: pdf coverage of pca districts, eb table pages found */
-save $tmp/`series'_data_loss_pdf_eb, replace
+/* save stage two results (urban pca coverage + eb page detection) */
+save $tmp/${hb_series}_data_loss_pdf_eb.dta, replace
 
 
-/*****************************************************************************************/
-/* Stage 3 attrition: out of pdfs with eb pages identified, which ones converted to csvs */
-/*****************************************************************************************/
-/* get a list of csvs in eb_table_extracts */
-filelist, dir("$hb_extracts") pattern("*.csv") norecursive
+/******************************************************/
+/* Stage 3: Of EB-page PDFs, which have CSV extracts? */
+/******************************************************/
 
+/* load all file names from tables extracted */
+filelist, dir($hb_extracts) pattern("*.csv") norecursive
 keep filename
 replace filename = subinstr(filename, "_EB.csv", "", .)
+save $tmp/${hb_series}_csv_list.dta, replace
 
-/* save extracted csv list */
-save $tmp/`series'_csv_list.dta, replace
+/* bring back stage 2 table and merge into stage 3 results */
+use $tmp/${hb_series}_data_loss_pdf_eb.dta, clear
+merge m:1 filename using $tmp/${hb_series}_csv_list.dta, gen(hb_csv_merge)
 
-/* ---------------------------- cell ---------------------------- */
-use $tmp/`series'_data_loss_pdf_eb, clear
+keep if hb_csv_merge == 1 | hb_csv_merge == 3
+/* Rows with code 2 are filenames that exist in the CSV list but are not tied to a district in our Stage 2 table
+and are not needed for the attrition tally. */
 
-/* using m:1 because data_loss table is at urban pca level and can contain multiple rows of empty filname */
-merge m:1 filename using $tmp/`series'_csv_list, gen(hb_csv_merge)
-
-keep if hb_csv_merge == 1 | hb_csv_merge == 3 // note that 2 is hb pdfs not in urban pca
-
-gen llm_csv = hb_csv_merge == 3
+/* flag presence of an extract csv for this filename */
+gen llm_csv = (hb_csv_merge == 3)
 drop hb_csv_merge
-
-/* save in tmp table with attrition at three stages: pdf coverage of pca districts, eb table pages found, llm extracted csvs */
-save $tmp/`series'_data_loss_pdf_eb_csv, replace
-
+save $tmp/${hb_series}_data_loss_pdf_eb_csv.dta, replace
 
 /*******************************************************************************************************/
-/* Stage 4 attrition: out of pdfs with eb pages and converted to csvs, which ones has reliable eb rows */
+/* Stage 4: Of those CSVs, which have sufficient reliable EB rows?                                     */
 /*******************************************************************************************************/
-/* load combined handbook data, this has pca districts merged in as well, see $hb_code/combine_eb_tables.py */
-import delimited using "$hb_extracts/combined_hb/_file_manifest.csv", varnames(1) clear
+/* load output of combine_eb, this is eb level combined dataset */
+import delimited using $hb_extracts/combined_hb/_file_manifest.csv, varnames(1) clear
 
-/* fill rows that have empty town names, carry-forward town names only in unambiguous cases */
+/* Forward-fill town names only in unambiguous cases */
 replace town_hb = town_hb[_n-1] if missing(town_hb) & _n>1 & _n<_N ///
     & !missing(town_hb[_n-1]) & town_hb[_n-1]==town_hb[_n+1]
 
-/* count for each filename (called source_file here), rows containing legible fields */
+/* Count “good” rows per file; keep one row per source_file */
 gen has_data = 1 if !missing(town_hb, ward_name, eb_no, total_pop)
 egen cnt_good_rows = total(has_data), by(source_file)
-
-/* keep only one observation per source_file */
 bysort source_file: keep if _n == 1
 
-/* list source_file that has less than 20 rows of legible data */
+/* Diagnostic: list sparse files */
 list source_file cnt_good_rows if cnt_good_rows < 10
 
+/* Normalize to handbook basename; flag sufficient EB rows (>10) */
 rename source_file filename
 replace filename = subinstr(filename, "_EB", "", .)
-
-/* create a variable set to one if filename has more than 10 rows of good data */
-gen has_eb_rows = 0
-replace has_eb_rows = 1 if cnt_good_rows > 10
-
+gen has_eb_rows = (cnt_good_rows > 10)
 keep filename has_eb_rows
+save $tmp/${hb_series}_row_list.dta, replace
 
-save $tmp/`series'_row_list, replace
-
-/* ---------------------------- cell ---------------------------- */
-use $tmp/`series'_data_loss_pdf_eb_csv, clear
-
-merge m:1 filename using $tmp/`series'_row_list, gen(hb_row_merge)
+/* now merge in stage 4 results into report */
+use $tmp/${hb_series}_data_loss_pdf_eb_csv.dta, clear
+merge m:1 filename using $tmp/${hb_series}_row_list.dta, gen(hb_row_merge)
 
 keep if hb_row_merge == 1 | hb_row_merge == 3
 drop hb_row_merge
 replace has_eb_rows = 0 if missing(has_eb_rows)
 
-/* output final attrition table */
-save $tmp/`series'_handbook_processing_loss.dta, replace
+/* Final attrition table */
+save $tmp/${hb_series}_handbook_processing_loss.dta, replace
 
 exit
+
