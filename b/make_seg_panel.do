@@ -2,7 +2,6 @@
 After merging, it assesses the coverage of this merged dataset against the urban PCA dataset to identify gaps and overlaps. */
 /* Fuzzy merge with urban pca towns so that we get shrid id tacked on; then merge with shrid v2 and compute segregation measures. */
 
-
 local pdfdir = "$hb_pdf"
 local csvdir = "`pdfdir'/eb_table_extracts"
 global series "$hb_series"
@@ -146,6 +145,8 @@ masala_merge ${series}_state_id ${series}_district_id using $tmp/${series}u_town
 /* export delimited using $tmp/unmatched_using.csv */
 keep if match_source <= 4
 
+save $tmp/${series}_towns_after_pca_matched, replace
+
 /* ---------------------------- cell ---------------------------- */
 /* merge back to to get eb-level dataset  */
 merge 1:m ${series}_state_id ${series}_district_id ${series}_town_hb using $tmp/${series}_combined_hb_w_key.dta, gen(_eb_merge)
@@ -153,8 +154,10 @@ merge 1:m ${series}_state_id ${series}_district_id ${series}_town_hb using $tmp/
 
 keep if _eb_merge == 3
 drop _eb_merge
+// count unique number of towns at this stage
+distinct idm
 
-keep ${series}_state_id ${series}_state_name ${series}_district_name ${series}_district_id ${series}_town_hb ${series}_town_id ${series}_town_pca ///
+keep idm ${series}_state_id ${series}_state_name ${series}_district_name ${series}_district_id ${series}_town_hb ${series}_town_id ${series}_town_pca ///
     filename location_code ward_name eb_no total_pop sc_pop st_pop
 
 save $tmp/${series}_combined_hb_w_pca_cln, replace
@@ -183,9 +186,17 @@ foreach v in total_pop sc_pop st_pop {
 
 /* merge with shrid key, m:1 since multiple towns can match to same shrid */
 merge m:1 ${series}_state_id ${series}_district_id ${series}_town_id using $tmp/${series}u_shrid_key.dta, gen(_shrid_merge)
-// investigate this match rate
+
+save $tmp/${series}_combined_hb_w_pca_shrid_cln, replace
+
+/* ---------------------------- cell ---------------------------- */
+
 
 keep if _shrid_merge == 3
+
+//distinct towns at this stage
+distinct idm
+distinct shrid2 // this is also # number of shrids
 
 drop _shrid_merge
 
@@ -222,6 +233,8 @@ use $tmp/pc01_seg_sc_by_shrid.dta, clear
 merge 1:1 shrid2 using $tmp/pc11_seg_sc_by_shrid.dta, gen(_seg_shrid_merge)
 
 keep if _seg_shrid_merge == 3
+// distinct number of shrid2 at this stage
+distinct shrid2
 
 /* sort in descending order of iso_sc_pc01 and find the top 10 shrids */
 gsort -iso_sc_pc01
