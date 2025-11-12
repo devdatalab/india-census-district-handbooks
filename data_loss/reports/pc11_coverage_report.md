@@ -1,7 +1,7 @@
 # Districts NOT Covered by Handbooks — PC11
 
-**Coverage:** 609 / 636 districts (95.8%) of PCA districts with ≥1 town ≥1,000 people are covered by handbooks.
-_Uncovered states: 14 • Uncovered districts: 27_
+**Coverage:** 615 / 636 districts (96.7%) of PCA districts with ≥1 town ≥1,000 people are covered by handbooks.
+_Uncovered states: 11 • Uncovered districts: 21_
 
 
 ## andaman nicobar islands
@@ -13,9 +13,6 @@ _Uncovered states: 14 • Uncovered districts: 27_
 ## bihar
 - purba champaran  (state_id=10, district_id=204)
 
-## chandigarh
-- chandigarh  (state_id=4, district_id=55)
-
 ## chhattisgarh
 - janjgir champa  (state_id=22, district_id=405)
 
@@ -26,13 +23,8 @@ _Uncovered states: 14 • Uncovered districts: 27_
 - bangalore  (state_id=29, district_id=572)
 - gadag  (state_id=29, district_id=561)
 
-## kerala
-- thiruvananthapuram  (state_id=32, district_id=601)
-
 ## maharashtra
-- aurangabad  (state_id=27, district_id=515)
 - mumbai suburban  (state_id=27, district_id=518)
-- pune  (state_id=27, district_id=521)
 
 ## meghalaya
 - south garo hills  (state_id=17, district_id=295)
@@ -54,7 +46,3 @@ _Uncovered states: 14 • Uncovered districts: 27_
 
 ## tamil nadu
 - cuddalore  (state_id=33, district_id=617)
-
-## uttar pradesh
-- gonda  (state_id=9, district_id=183)
-- saharanpur  (state_id=9, district_id=132)
