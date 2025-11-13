@@ -67,8 +67,9 @@ OUT_CSV = ROOT_DIR / "urban_eb_pages.csv"   # keep in root, unchanged
 # ---------------------------------------------------------------------
 # Detection phrases / hints
 #   - PHRASES are matched in a whitespace-insensitive way (normalized).
-#   - EB_COLUMN_HINTS are matched as plain uppercase substrings.
+#   - EB_COLUMN_HINTS* are matched as plain uppercase substrings.
 # ---------------------------------------------------------------------
+# Default (non-pc91) rule: any phrase AND any EB column hint
 PHRASES = [
     "APPENDIX TO DISTRICT PRIMARY",
     "URBAN BLOCK WISE",
@@ -76,14 +77,18 @@ PHRASES = [
 ]
 EB_COLUMN_HINTS = ["LOCATION CODE", "NAME OF TOWN", "NAME OF WARD"]
 
+# pc91 special rule: any PHRASES_91 AND all of EB_COLUMN_HINTS_91
+PHRASES_91 = [
+    "TOTAL, SCHEDULED CASTE"
+]
+EB_COLUMN_HINTS_91 = []
 
 def _normalise(txt: str) -> str:
     """Remove all whitespace and uppercase for whitespace-insensitive matching."""
     return re.sub(r"\s+", "", txt.upper())
 
-
 PHRASES_NORM = [_normalise(p) for p in PHRASES]
-
+PHRASES_91_NORM = [_normalise(p) for p in PHRASES_91]
 
 def _pages_to_ranges(pages):
     """
@@ -96,6 +101,29 @@ def _pages_to_ranges(pages):
         ranges.append(f"{seq[0]}-{seq[-1]}" if len(seq) > 1 else f"{seq[0]}")
     return ", ".join(ranges)
 
+# ---------------------------------------------------------------------
+# Page-level predicate
+# ---------------------------------------------------------------------
+def _has_relevant_eb_page(page_text: str) -> bool:
+    """
+    Decide if a page is relevant based on series-specific criteria.
+    - pc91: (any PHRASES_91) AND (all of EB_COLUMN_HINTS_91)
+    - others: (any PHRASES) AND (any of EB_COLUMN_HINTS)
+    Matching:
+      * Phrases: whitespace-insensitive (normalize), case-insensitive
+      * Hints: case-insensitive simple substring(s)
+    """
+    text_upper = (page_text or "").upper()
+    text_norm = _normalise(page_text or "")
+
+    if args.series == "pc91":
+        phrase_ok = any(ph in text_norm for ph in PHRASES_91_NORM)
+        hints_ok = all(h in text_upper for h in EB_COLUMN_HINTS_91)
+        return phrase_ok and hints_ok
+    else:
+        phrase_ok = any(ph in text_norm for ph in PHRASES_NORM)
+        hints_ok = any(h in text_upper for h in EB_COLUMN_HINTS)
+        return phrase_ok and hints_ok
 
 # ---------------------------------------------------------------------
 # CSV helpers (skip-by-default support)
@@ -118,7 +146,6 @@ def _load_already_processed_filenames(out_csv_path: Path) -> set[str]:
             done.add(row[0])
     return done
 
-
 # ---------------------------------------------------------------------
 # PDF scanners
 # ---------------------------------------------------------------------
@@ -133,16 +160,13 @@ def _scan_with_pypdf(path, pbar):
         hits = []
         for pno, page in enumerate(reader.pages, 1):
             text = page.extract_text() or ""
-            # Match if any target phrase (normalized) appears AND any EB column hint is visible.
-            if (any(ph in _normalise(text) for ph in PHRASES_NORM)
-                    and any(h in text.upper() for h in EB_COLUMN_HINTS)):
+            if _has_relevant_eb_page(text):
                 hits.append(pno)
             pbar.update(1)
         return hits
     except Exception as e:
         print(f"pypdf failed on {path.name} with error: {type(e).__name__}: {e}")
         return None
-
 
 def _scan_with_pymupdf(path, pbar):
     """
@@ -154,12 +178,10 @@ def _scan_with_pymupdf(path, pbar):
     with fitz.open(path) as doc:
         for pno in range(doc.page_count):
             text = doc.load_page(pno).get_text("text")
-            if (any(ph in _normalise(text) for ph in PHRASES_NORM)
-                    and any(h in text.upper() for h in EB_COLUMN_HINTS)):
+            if _has_relevant_eb_page(text):
                 hits.append(pno + 1)
             pbar.update(1)
     return hits
-
 
 def _scan_pdf(path: Path) -> list[int]:
     """
@@ -187,7 +209,6 @@ def _scan_pdf(path: Path) -> list[int]:
 
     return pages
 
-
 def find_longest_consecutive_sequence(pages):
     """Find the longest consecutive sequence of page numbers."""
     pages = sorted(set(int(p) for p in pages))
@@ -204,7 +225,6 @@ def find_longest_consecutive_sequence(pages):
     if len(current) > len(longest):
         longest = current
     return longest
-
 
 def generate_page_range_summary():
     """
@@ -267,7 +287,6 @@ def generate_page_range_summary():
     else:
         print(f"  No valid page ranges found to create summary.")
 
-
 # ---------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------
@@ -319,7 +338,7 @@ def main():
         rows_written = 0
         skipped = 0
 
-        # Minimal additions: track filenames for no-hits and failures
+        # Track filenames for no-hits and failures
         no_hit_files = []
         failed_files = []
 
@@ -353,13 +372,13 @@ def main():
                     print(f"{pdf.name}: {_pages_to_ranges(pages)}")
                 else:
                     no_hits += 1
-                    no_hit_files.append(pdf.name)  # <— minimal change
+                    no_hit_files.append(pdf.name)
                     print(f"{pdf.name}: no hits")
             except KeyboardInterrupt:
                 sys.exit("\nInterrupted by user")
             except Exception as e:
                 failed += 1
-                failed_files.append(pdf.name)      # <— minimal change
+                failed_files.append(pdf.name)
                 print(f"{pdf.name}: ERROR {type(e).__name__}: {e}")
 
     # Summary
@@ -372,7 +391,6 @@ def main():
     print(f"  Failed to parse:    {failed}")
     print(f"  Output CSV:         {OUT_CSV} ({'created' if (recreate or first_run) else 'appended'})")
 
-    # Minimal additions: print the filenames for no hits / failures
     if no_hit_files:
         print("\n[NO HITS — filenames]")
         for name in no_hit_files:
@@ -384,7 +402,6 @@ def main():
     
     # Generate page range summary
     generate_page_range_summary()
-
 
 # Entry point
 if __name__ == "__main__":
