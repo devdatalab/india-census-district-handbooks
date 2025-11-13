@@ -1,0 +1,77 @@
+filename,state_id,state_name,district_id,district_name
+27715_1991_PER.pdf,23,tamil nadu,8,Periyar
+29900_1991_ROH.pdf,8,haryana,8,Rohtak
+29960_1991_MAN.pdf,11,karnataka,15,Mandya
+29973_1991_DUN.pdf,21,rajasthan,23,Dungarpur
+29986_1991_CHI.pdf,11,karnataka,7,Chikmagalur
+29989_1991_BIJ.pdf,11,karnataka,6,Bijapur
+29991_1991_BEL.pdf,11,karnataka,3,Belgaum
+29997_1991_SAB.pdf,7,gujarat,9,Sabarkantha
+29999_1991_BAN.pdf,7,gujarat,8,Banaskantha
+35004_1991_SUR.pdf,7,gujarat,3,Surendranagar
+35005_1991_BHA.pdf,7,gujarat,4,Bhavnagar
+35008_1991_CHU.pdf,21,rajasthan,3,Churu
+35010_1991_AJM.pdf,21,rajasthan,11,Ajmer
+35011_1991_TON.pdf,21,rajasthan,12,Tonk
+35014_1991_DHA.pdf,21,rajasthan,7,Dhaulpur
+35018_1991_BHI.pdf,21,rajasthan,20,Bhilwara
+35019_1991_BUN.pdf,21,rajasthan,25,Bundi
+35029_1991_UDA.pdf,21,rajasthan,21,Udaipur
+35030_1991_BAN.pdf,21,rajasthan,24,Banswara
+35032_1991_KOT.pdf,21,rajasthan,26,Kota
+35035_1991_JHA.pdf,21,rajasthan,27,Jhalawar
+35036_1991_BAR.pdf,21,rajasthan,17,Barmer
+35039_1991_NAG.pdf,21,rajasthan,15,Nagaur
+35042_1991_JOD.pdf,21,rajasthan,14,Jodhpur
+35045_1991_JAI.pdf,21,rajasthan,13,Jaisalmer
+35048_1991_GAN.pdf,21,rajasthan,1,Ganganagar
+35050_1991_SIK.pdf,21,rajasthan,10,Sikar
+35055_1991_BHA.pdf,21,rajasthan,6,Bharatpur
+36681_1991_NAI.pdf,25,uttar pradesh,8,Nainital
+36683_1991_MUZ.pdf,25,uttar pradesh,14,Muzaffarnagar
+36685_1991_MOR.pdf,25,uttar pradesh,10,Moradabad
+36687_1991_SAH.pdf,25,uttar pradesh,12,Saharanpur
+36691_1991_FAR.pdf,25,uttar pradesh,34,Farukhabad
+36693_1991_LUC.pdf,25,uttar pradesh,32,Lucknow
+36697_1991_BAR.pdf,25,uttar pradesh,48,Barabanki
+36699_1991_ALL.pdf,25,uttar pradesh,45,Allahabad
+36700_1991_TEH.pdf,25,uttar pradesh,3,New Tehri
+36702_1991_MAI.pdf,25,uttar pradesh,23,Mainpuri
+36704_1991_SID.pdf,25,uttar pradesh,51,Siddharthnagar
+36706_1991_JAU.pdf,25,uttar pradesh,58,Jaunpur
+36708_1991_HAM.pdf,25,uttar pradesh,41,Hamirpur
+36710_1991_KAN.pdf,25,uttar pradesh,37,Kanpur Nagar
+36712_1991_BAR.pdf,25,uttar pradesh,25,Bareilly
+36714_1991_MAH.pdf,25,uttar pradesh,52,Maharajganj
+36716_1991_FAI.pdf,25,uttar pradesh,49,Faizabad
+36718_1991_KAN.pdf,25,uttar pradesh,36,Kanpur Dehat
+36720_1991_CHA.pdf,25,uttar pradesh,2,Chamoli Gopeshwar
+36722_1991_deh.pdf,25,uttar pradesh,4,Deharadun
+36724_1991_SON.pdf,25,uttar pradesh,63,Sonbhadra
+36726_1991_SHA.pdf,25,uttar pradesh,27,Shahjahanpur
+36728_1991_PRA.pdf,25,uttar pradesh,44,Pratapgarh
+36730_1991_FAT.pdf,25,uttar pradesh,43,Fatehpur
+36734_1991_BAL.pdf,25,uttar pradesh,59,Ballia
+36736_1991_JHA.pdf,25,uttar pradesh,39,Jhansi
+36836_1991_PIT.pdf,25,uttar pradesh,6,Pithoragarh
+36838_1991_BIJ.pdf,25,uttar pradesh,9,Bijnor
+36840_1991_ETA.pdf,25,uttar pradesh,22,Etah
+36842_1991_GAR.pdf,25,uttar pradesh,5,Garhwal
+36844_1991_SIT.pdf,25,uttar pradesh,29,Sitapur
+36846_1991_RAE.pdf,25,uttar pradesh,33,Raebareli
+36848_1991_MIR.pdf,25,uttar pradesh,62,Mirzapur
+36850_1991_VAR.pdf,25,uttar pradesh,61,Varanasi
+37071_1991_GON.pdf,25,uttar pradesh,47,Gonda
+37073_1991_HAR.pdf,25,uttar pradesh,30,Hardoi
+37075_1991_JAL.pdf,25,uttar pradesh,38,Jalaun
+37077_1991_MAT.pdf,25,uttar pradesh,19,Mathura
+37079_1991_LAL.pdf,25,uttar pradesh,40,Lalitpur
+37081_1991_UNN.pdf,25,uttar pradesh,31,Unnao
+37083_1991_UTT.pdf,25,uttar pradesh,1,Uttarkashi
+37111_1991_BAH.pdf,25,uttar pradesh,46,Bahraich
+37113_1991_BAS.pdf,25,uttar pradesh,53,Basti
+37115_1991_DEO.pdf,25,uttar pradesh,55,Deoria
+37117_1991_GOR.pdf,25,uttar pradesh,54,Gorakhpur
+37119_1991_KHE.pdf,25,uttar pradesh,28,Kheri
+37121_1991_SUL.pdf,25,uttar pradesh,50,Sultanpur
+37427_1991_GHA.pdf,25,uttar pradesh,60,Ghazipur
