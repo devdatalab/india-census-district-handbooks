@@ -12,7 +12,13 @@ Stages included
   3) CSV extracted
   4) Reliable EB rows
 
+Excel-based EB sources (from raw Excel files, not LLM CSVs)
+-----------------------------------------------------------
+  • Counts and lists .xls/.xlsx workbooks in:
+      ~/iec/pc01/district_handbooks/taha_2025_09_19
+
 Town-level downstream (from your Stata pipeline)
+------------------------------------------------
   A) Towns in the handbook panel (distinct handbook towns BEFORE fuzzy)
   B) Towns after fuzzy-match to urban PCA
      • Preferred source: <series>_towns_after_pca_matched.dta (immediately after `keep if match_source <= 4`)
@@ -141,7 +147,6 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--series", required=True, choices=["pc01","pc11","pc91","pc51"])
     ap.add_argument("--in_dir",  default=".", help="Dir with <series>_*.dta")
-    # Default to the path name you asked for:
     ap.add_argument("--out_dir", default="./data_loss/reports", help="Dir to write <series>_hb_processing_report.md")
     ap.add_argument("--title",   default=None, help="Optional report title override")
 
@@ -165,6 +170,9 @@ def main():
     pc01_seg_path      = in_dir / "pc01_seg_sc_by_shrid.dta"
     pc11_seg_path      = in_dir / "pc11_seg_sc_by_shrid.dta"
 
+    # Raw Excel workbooks (Excel EB sources, independent of --in_dir)
+    excel_dir = Path("~/iec/pc01/district_handbooks/taha_2025_09_19").expanduser()
+
     out_path = out_dir / f"{series}_hb_processing_report.md"
     if not loss_path.exists():
         raise FileNotFoundError(f"Required input not found: {loss_path}")
@@ -185,10 +193,25 @@ def main():
     # -------- overall funnel --------
     total, keeps = funnel_keeps(df, STAGES)
 
+    # -------- count & list raw Excel workbooks --------
+    excel_files: List[Path] = []
+    excel_note = ""
+    if excel_dir.exists() and excel_dir.is_dir():
+        for pattern in ("*.xls", "*.xlsx"):
+            excel_files.extend(excel_dir.glob(pattern))
+        excel_files = sorted(p for p in excel_files if p.is_file())
+        excel_note = f"`.xls`/`.xlsx` files in `{excel_dir}`"
+    else:
+        excel_note = f"`{excel_dir}` not found or not a directory"
+
+    excel_count = len(excel_files) if excel_files else None
+
+    # -------- build markdown --------
     lines: List[str] = []
     title = args.title or f"{series.upper()} Handbook Processing — Markdown Report"
     lines.append(f"# {title}\n")
 
+    # Main funnel
     lines.append("## Overall Attrition Funnel (PDF → EB pages → CSV → Reliable rows)\n")
     lines.append("| Stage | Kept | % of Total | Dropped from Prev |")
     lines.append("|---|---:|---:|---:|")
@@ -200,6 +223,24 @@ def main():
         prev_kept = kept
     lines.append("")
 
+    # New section: Excel-based EB sources (summary + list)
+    lines.append("## Excel-based EB Sources\n")
+    lines.append("| Metric | Count | Note |")
+    lines.append("|---|---:|---|")
+    if excel_count is not None:
+        lines.append(f"| Raw Excel handbooks (EB tables) | {excel_count} | {excel_note} |")
+    else:
+        lines.append(f"| Raw Excel handbooks (EB tables) | _n/a_ | {excel_note} |")
+    lines.append("")
+
+    if excel_count:
+        lines.append("### Raw Excel Workbooks Used for EB Extraction\n")
+        lines.append("| # | Workbook filename |")
+        lines.append("|---:|---|")
+        for i, p in enumerate(excel_files, start=1):
+            lines.append(f"| {i} | `{p.name}` |")
+        lines.append("")
+
     # ================================
     # Town-level downstream attrition
     # (placed BEFORE drill-down lists)
@@ -207,9 +248,6 @@ def main():
     lines.append("## Town-level Downstream Coverage\n")
 
     # A) Universe of handbook towns (pre-fuzzy)
-    #    Preferred: <series>_town_hb_df.dta with columns:
-    #      <series>_state_id, <series>_district_id, <series>_town_hb
-    #    This matches your comment: “this is the first stat for the attrition table”
     df_town_universe = safe_read_stata(town_universe_path)
     if df_town_universe is None:
         # minimal fallback: try pre-merge file that still has town_hb
@@ -236,8 +274,6 @@ def main():
         lines.append(f"| A. Towns in handbook panel (pre-fuzzy) | _n/a_ | no suitable source found |")
 
     # B) Towns after fuzzy-match to urban PCA
-    #    Preferred source: *_towns_after_pca_matched.dta (immediately after keep if match_source <= 4)
-    #    Fallback:        *_combined_hb_w_pca_cln.dta, counting distinct `idm`
     df_towns_after = safe_read_stata(towns_after_path)
     if df_towns_after is not None:
         # Prefer idm, otherwise use (<series>_state_id, <series>_district_id, <series>_town_id) or std_town

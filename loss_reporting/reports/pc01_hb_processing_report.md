@@ -9,6 +9,23 @@
 | 3. CSV extracted | 461 | 79.07% | 2 |
 | 4. Reliable EB rows | 449 | 77.02% | 12 |
 
+## Excel-based EB Sources
+
+| Metric | Count | Note |
+|---|---:|---|
+| Raw Excel handbooks (EB tables) | 8 | `.xls`/`.xlsx` files in `/dartfs-hpc/rc/home/w/f0083xw/iec/pc01/district_handbooks/taha_2025_09_19` |
+
+| # | Workbook filename |
+|---:|---|
+| 1 | `Champawat_EB.xls` |
+| 2 | `Nainital_EB.xls` |
+| 3 | `Pithoragarh_EB.xls` |
+| 4 | `almora_EB.xls` |
+| 5 | `chamoli_EB.xls` |
+| 6 | `dehradun_EB.xls` |
+| 7 | `gurdaspur_EB.xls` |
+| 8 | `solan_EB.xls` |
+
 ## Town-level Downstream Coverage
 
 | Metric | Count | Note |
@@ -17,7 +34,7 @@
 | B. Towns after fuzzy-match to urban PCA | 3763 | `pc01_towns_after_pca_matched.dta` using `idm` |
 | C1. Towns with SHRID joined | 3744 | `pc01_combined_hb_w_pca_shrid_cln.dta` distinct `idm` |
 | C2. # of SHRIDs after join | 3620 | `pc01_combined_hb_w_pca_shrid_cln.dta` distinct `shrid2` |
-| D. SHRIDs in PC01×PC11 panel | 3143 | intersection of valid SHRIDs from `pc01_seg_sc_by_shrid.dta` and `pc11_seg_sc_by_shrid.dta` |
+| D. SHRIDs in PC01×PC11 panel | 3115 | intersection of valid SHRIDs from `pc01_seg_sc_by_shrid.dta` and `pc11_seg_sc_by_shrid.dta` |
 
 ## Missing PDFs
 
