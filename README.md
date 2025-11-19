@@ -66,3 +66,6 @@ into a Markdown report (`{series}_hb_processing_report.md`) that summarizes: dat
  
   [loss_reporting/reports/pc11_hb_processing_report.md](https://github.com/devdatalab/india-census-district-handbooks/blob/c130dfad741ab2656f049641648275dca5feed75/loss_reporting/reports/pc11_hb_processing_report.md)
 
+11/19/2025: Work paused until additional PC91 and PC01 district handbooks are sourced
+
+
