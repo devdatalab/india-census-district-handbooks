@@ -101,3 +101,30 @@ filename,state_id,state_name,district_id,district_name
 1991_DCHB_Nilgiri_Part_A_B,23,tamil nadu,9,nilgiri	
 1991_DCHB_North_Arcot_Part_A_B,23,tamil nadu,3,north arcot ambedker	
 1991_DCHB_PMT_Part_A_B,23,tamil nadu,15,pasumpon thevar thirumagan	
+09_41629_1991_BAN,11,karnataka,1,bangalore
+06_42451_1991_BAN,11,karnataka,2,bangalore rural	
+11_43836_1991_BEL,11,karnataka,4,bellary	
+12_44797_1991_BEL,11,karnataka,4,bellary	
+13_35609_1991_BID,11,karnataka,5,bidar	
+14_46211_1991_BID,11,karnataka,5,bidar	
+17_42417_1991_CHI,11,karnataka,8,chitradurga
+19_41616_1991_DAK,11,karnataka,9,dakshin kannad	
+18_41398_1991_DAK,11,karnataka,9,dakshin kannad	
+20_41692_1991_DHA,11,karnataka,10,dharwad	
+21_43107_1991_DHA,11,karnataka,10,dharwad	
+22_35611_1991_GUL,11,karnataka,11,gulbarga	
+23_44760_1991_HAS,11,karnataka,12,hassan	
+4_44763_1991_KOD,11,karnataka,13,kodagu	
+25_44776_1991_KOD,11,karnataka,13,kodagu	
+26_41619_1991_KOL,11,karnataka,14,kolar	
+27_43189_1991_KOL,11,karnataka,14,kolar	
+29_43814_1991_MYS,11,karnataka,16,mysore	
+30_41367_1991_MYS,11,karnataka,16,mysore	
+31_46204_1991_RAI,11,karnataka,17,raichur	
+32_35622_1991_RAI,11,karnataka,17,raichur	
+33_44788_1991_SHI,11,karnataka,18,shimoga	
+34_41387_1991_SHI,11,karnataka,18,shimoga	
+35_44786_1991_TUM,11,karnataka,19,tumkur	
+36_41386_1991_TUM,11,karnataka,19,tumkur	
+37_41613_1991_UTT,11,karnataka,20,uttar kannad	
+38_41617_1991_UTT,11,karnataka,20,uttar kannad	
