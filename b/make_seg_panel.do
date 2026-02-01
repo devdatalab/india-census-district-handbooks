@@ -261,7 +261,7 @@ bys shrid: egen tot_pop_shrid_${series} = total(total_pop)
 bys shrid: egen sc_pop_shrid_${series} = total(sc_pop)
 
 /* save EB version of dataset with dissimilarity and isolation calculated at the town level */
-save $tmp/${series}_seg_eb_level, replace
+save $iec/${hb_series}/$hb_series_hb_eb_pop, replace
 
 replace d_sc_${series} = . if eb_units_shrid < 4
 replace iso_sc_${series} = . if eb_units_shrid < 4
