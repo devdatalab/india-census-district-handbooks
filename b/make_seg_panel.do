@@ -1,6 +1,11 @@
-/* This do file merges the combined district handbook dataset with a pre-made key that maps each filename to district id and state id from pca town directory (e.g., pc01u_pca_clean).
-After merging, it assesses the coverage of this merged dataset against the urban PCA dataset to identify gaps and overlaps. */
-/* Fuzzy merge with urban pca towns so that we get shrid id tacked on; then merge with shrid v2 and compute segregation measures. */
+/* This do file merges the combined district handbook dataset with a pre-made key that maps
+   each filename to district id and state id from pca town directory (e.g., pc01u_pca_clean).
+
+After merging, it assesses the coverage of this merged dataset against the urban PCA dataset to identify
+gaps and overlaps. */
+
+/* Fuzzy merge with urban pca towns so that we get shrid id tacked on; then merge with shrid v2 and compute
+  segregation measures. */
 
 local pdfdir = "$hb_pdf"
 local csvdir = "`pdfdir'/eb_table_extracts"
@@ -234,12 +239,15 @@ bys shrid: gen int eb_units_shrid = _N
 gen_dissimilarity, min(sc_pop) maj(non_sc_pop) gen("d_sc_${series}")  label("SC (shrid)") upper(shrid)
 gen_isolation, min(sc_pop) maj(non_sc_pop) gen("iso_sc_${series}") label("SC (shrid)") upper(shrid)
 
-replace d_sc_${series} = . if eb_units_shrid < 4
-replace iso_sc_${series} = . if eb_units_shrid < 4
-
 /* get population at the shrid lvl */
 bys shrid: egen tot_pop_shrid_${series} = total(total_pop)
 bys shrid: egen sc_pop_shrid_${series} = total(sc_pop)
+
+/* save EB version of dataset with dissimilarity and isolation calculated at the town level */
+save $tmp/${series}_seg_eb_level, replace
+
+replace d_sc_${series} = . if eb_units_shrid < 4
+replace iso_sc_${series} = . if eb_units_shrid < 4
 
 /* collapse to shrid level: here taking the mean doesn't matter because populations and indices constant within shrid */
 collapse (mean) d_sc_${series} iso_sc_${series} tot_pop_shrid_${series} sc_pop_shrid_${series} (firstnm) ${series}_state_id ${series}_state_name, by(shrid)
