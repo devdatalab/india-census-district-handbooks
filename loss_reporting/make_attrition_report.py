@@ -1,5 +1,18 @@
 #!/usr/bin/env python3
 """
+INPUTS:
+  - ~/iec/tmp/pcXX_handbook_processing_loss.dta
+  - ~/iec/tmp/pcXX_town_hb_df.dta
+  - ~/iec/tmp/pcXX_towns_after_pca_matched.dta
+  - ~/iec/tmp/pcXX_combined_hb_w_pca_cln.dta
+  - ~/iec/tmp/pcXX_combined_hb_w_pca_shrid_cln.dta
+  - ~/iec/tmp/pc01_seg_sc_by_shrid.dta
+  - ~/iec/tmp/pc11_seg_sc_by_shrid.dta
+  - ~/iec/pc01/district_handbooks/taha_2025_09_19/*.xls
+  - ~/iec/pc01/district_handbooks/taha_2025_09_19/*.xlsx
+OUTPUTS:
+  - ~/ddl/india-census-district-handbooks/loss_reporting/reports/pcXX_hb_processing_report.md
+
 make_attrition_report.py
 
 Generate a Markdown attrition report for handbook processing and downstream merges.

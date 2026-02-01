@@ -1,4 +1,21 @@
-/* This do file merges the combined district handbook dataset with a pre-made key that maps
+/*
+INPUTS:
+  - ~/iec/pcXX/district_handbooks/eb_table_extracts/combined_hb/_file_manifest.csv
+  - ~/iec/pcXX/district_handbooks_xii_b/eb_table_extracts/combined_hb/_file_manifest.csv
+  - ~/iec/tmp/pcXX_hb_pdf_key.dta
+  - ~/iec/pcXX/pcXXu_pca_clean.dta
+  - ~/iec/frozen_data/shrug/v2.1.pakora/pc-keys/native/pcXXu_shrid_key.dta
+OUTPUTS:
+  - ~/iec/tmp/pcXX_hb_uniq_state_dist_w_key.dta
+  - ~/iec/tmp/pcXX_combined_hb_w_key.dta
+  - ~/iec/tmp/pcXX_town_hb_df.dta
+  - ~/iec/tmp/pcXX_towns_after_pca_matched.dta
+  - ~/iec/tmp/pcXX_combined_hb_w_pca_cln.dta
+  - ~/iec/tmp/pcXX_combined_hb_w_pca_shrid_cln.dta
+  - ~/iec/tmp/pcXX_seg_sc_by_shrid.dta
+  - ~/iec/tmp/pc01_pc11_seg_shrid_cln.dta
+
+This do file merges the combined district handbook dataset with a pre-made key that maps
    each filename to district id and state id from pca town directory (e.g., pc01u_pca_clean).
 
 After merging, it assesses the coverage of this merged dataset against the urban PCA dataset to identify

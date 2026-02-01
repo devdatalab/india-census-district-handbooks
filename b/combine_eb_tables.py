@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 """
+INPUTS:
+  - ~/iec/pcXX/district_handbooks/eb_table_extracts/*.csv
+  - ~/iec/pcXX/district_handbooks_xii_b/eb_table_extracts/*.csv
+OUTPUTS:
+  - ~/iec/pcXX/district_handbooks/eb_table_extracts/combined_hb/_file_manifest.csv
+  - ~/iec/pcXX/district_handbooks_xii_b/eb_table_extracts/combined_hb/_file_manifest.csv
+
 Build a unified handbook data and merge to district-state and town info
 
 1. Read all handbook_ebs csvs in PC01/district_handbooks/eb_table_extracts and combine

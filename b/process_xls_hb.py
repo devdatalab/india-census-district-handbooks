@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+"""
+INPUTS:
+  - ~/iec/pcXX/district_handbooks/*.xls
+  - ~/iec/pcXX/district_handbooks/*.xlsx
+  - ~/iec/pcXX/district_handbooks_xii_b/*.xls
+  - ~/iec/pcXX/district_handbooks_xii_b/*.xlsx
+OUTPUTS:
+  - ~/iec/pcXX/district_handbooks/eb_table_extracts/*.csv
+  - ~/iec/pcXX/district_handbooks_xii_b/eb_table_extracts/*.csv
+"""
 # process_xls_hb.py  — detect EB rows by pattern, not headers
 
 from pathlib import Path

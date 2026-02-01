@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 """
+INPUTS:
+  - ~/iec/pcXX/pcXXu_pca_clean.dta
+  - ~/iec/tmp/pcXX_hb_uniq_state_dist_w_key.dta
+OUTPUTS:
+  - ~/ddl/india-census-district-handbooks/loss_reporting/reports/pcXX_coverage_report.md
+
 make_uncovered_markdown.py
 
 Generates a Markdown report listing states and districts from the PCA (by series)

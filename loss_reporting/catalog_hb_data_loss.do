@@ -1,4 +1,16 @@
 /*
+INPUTS:
+  - ~/iec/pcXX/district_handbooks/*.pdf
+  - ~/iec/pcXX/district_handbooks/taha_2025_09_19/*.pdf
+  - ~/iec/pcXX/district_handbooks/taha_2025_09_19/*.xls
+  - ~/iec/pcXX/pcXXu_pca_clean.dta
+  - ~/iec/pcXX/district_handbooks/pcXX_page_ranges_for_review.csv
+  - ~/iec/pcXX/district_handbooks/eb_table_extracts/*.csv
+  - ~/iec/pcXX/district_handbooks/eb_table_extracts/combined_hb/_file_manifest.csv
+  - ~/iec/tmp/pcXX_hb_pdf_key.dta
+OUTPUTS:
+  - ~/iec/tmp/pcXX_handbook_processing_loss.dta
+
 Merge handbook PDF filenames with pre-made PDF-district keys and compare coverage against urban PCA districts. Then track attrition through:
 1) PDFs present vs. urban PCA districts
 2) PDFs with identified EB pages
@@ -221,4 +233,3 @@ replace has_eb_rows = 0 if missing(has_eb_rows)
 save $tmp/${hb_series}_handbook_processing_loss.dta, replace
 
 exit
-

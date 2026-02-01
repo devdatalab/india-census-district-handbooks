@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 """
+INPUTS:
+  - ~/iec/pcXX/district_handbooks/eb_table_extracts/*.pdf
+  - ~/iec/pcXX/district_handbooks_xii_b/eb_table_extracts/*.pdf
+OUTPUTS:
+  - ~/iec/pcXX/district_handbooks/eb_table_extracts/*.csv
+  - ~/iec/pcXX/district_handbooks_xii_b/eb_table_extracts/*.csv
+
 Script to extract tables from PDF files using Gemini LLM API.
 - Loads prompt template from file
 - Processes all PDFs in a directory

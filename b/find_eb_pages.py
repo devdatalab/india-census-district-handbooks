@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
 """
+INPUTS:
+  - ~/iec/pcXX/district_handbooks/*.pdf
+  - ~/iec/pcXX/district_handbooks_xii_b/*.pdf
+  - ~/iec/pcXX/district_handbooks/urban_eb_pages.csv
+  - ~/iec/pcXX/district_handbooks_xii_b/urban_eb_pages.csv
+OUTPUTS:
+  - ~/iec/pcXX/district_handbooks/urban_eb_pages.csv
+  - ~/iec/pcXX/district_handbooks_xii_b/urban_eb_pages.csv
+  - ~/iec/pcXX/district_handbooks/pcXX_page_ranges_for_review.csv
+  - ~/iec/pcXX/district_handbooks_xii_b/pcXX_page_ranges_for_review.csv
+
 find_pages.py
 
 Scans every PDF in a given directory for pages that likely contain urban EB tables,

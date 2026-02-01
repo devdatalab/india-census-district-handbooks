@@ -1,3 +1,16 @@
+"""
+INPUTS:
+  - ~/iec/pcXX/district_handbooks/pcXX_page_ranges_for_review.csv
+  - ~/iec/pcXX/district_handbooks/*.pdf
+  - ~/iec/pcXX/district_handbooks_xii_b/pcXX_page_ranges_for_review.csv
+  - ~/iec/pcXX/district_handbooks_xii_b/*.pdf
+OUTPUTS:
+  - ~/iec/pcXX/district_handbooks/eb_table_extracts/*_EB.pdf
+  - ~/iec/pcXX/district_handbooks/eb_table_extracts/pcXX_extraction_summary.csv
+  - ~/iec/pcXX/district_handbooks_xii_b/eb_table_extracts/*_EB.pdf
+  - ~/iec/pcXX/district_handbooks_xii_b/eb_table_extracts/pcXX_extraction_summary.csv
+"""
+
 import pandas as pd
 import os
 import argparse
@@ -120,4 +133,3 @@ if results:
 print(f"\n=== Summary ===")
 print(f"Successfully extracted: {len(results)}")
 print(f"Skipped/Failed: {len(skipped)}")
-
