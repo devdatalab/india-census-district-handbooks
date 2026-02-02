@@ -14,7 +14,9 @@
 
 /* 0. Define series to the year we are building and load config */
 do "~/ddl/india-census-district-handbooks/config.do"
-hb_define_paths, series("pc01") // print out relevant paths
+
+// print out relevant paths
+hb_define_paths, series("pc01") 
 
 /* 1. Find relevant eb pages in district handbooks */
 /* NOTE: Need to activate correct conda environment and install modules as needed */
