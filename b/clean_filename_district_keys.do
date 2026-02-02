@@ -1,11 +1,13 @@
-/*
-INPUTS:
-  - ~/ddl/india-census-district-handbooks/data/pcXX_hb_pdf_keys.csv
-OUTPUTS:
-  - ~/iec/tmp/pcXX_hb_pdf_key.dta
 
-This do file cleans human-made handbook pdfs to district keys
-*/
+/***********************************************************************/
+/* INPUTS:                                                             */
+/*   - ~/ddl/india-census-district-handbooks/data/pcXX_hb_pdf_keys.csv */
+/* OUTPUTS:                                                            */
+/*   - ~/iec/tmp/pc[01]_hb_pdf_key.dta                                 */
+/* GOAL:                                                               */
+/*   Clean district name->handbook_id keys and convert to dta          */
+/***********************************************************************/
+
 local series "$hb_series"
 
 /* import the raw district key */
